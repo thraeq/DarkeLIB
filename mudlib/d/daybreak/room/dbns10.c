@@ -7,8 +7,9 @@ void create() {
     set_property("night light", 2);
     add_exit("/d/damned/virtual/room_8_9.world", "mountains");
     add_exit(ROOMS+"dbns9","south");
-    add_exit("/d/nocte/kuril/rooms/entrance","east");
- 
-    set("short","Daybreak Valley Road");
-    set("long","Daybreak Valley Road runs north-south through Daybreak Ridge");
+// Removed bad pathing to kuril from DBR to necromancer guild Tiny
+    //add_exit("/d/nocte/kuril/rooms/entrance","east");
+//Basic mapping added by Tiny 1/19/2020 
+    set("short","   M\n   | \n   @   \n   | \n   0\nDaybreak Valley Road");
+    set("long","   M\n   | \n   @   \n   | \n   0\nDaybreak Valley Road runs north-south through Daybreak Ridge");
 }

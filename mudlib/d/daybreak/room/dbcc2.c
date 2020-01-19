@@ -9,6 +9,7 @@ void create() {
     add_exit(ROOMS+"dbcc1","south");
     add_exit(ROOMS+"shop/chest","east");
     add_exit("/d/damned/akkad/castle_shop", "west");
-    set("short","Commerce Court");
-    set("long","Commerce Court runs north-south through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   0\n   | \nS--@--S\n   | \n   0\nCommerce Court");
+    set("long","   0\n   | \nS--@--S\n   | \n   0\nCommerce Court runs north-south through Daybreak Ridge.");
 }

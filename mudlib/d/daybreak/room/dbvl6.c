@@ -7,6 +7,7 @@ void create() {
     set_property("night light", 2);
     add_exit(ROOMS+"dbvl5", "west");
     add_exit(ROOMS+"shop/weaponsmith", "east");
-    set("short","Victory Lane");
-    set("long","Victory Lane runs west through Daybreak Ridge");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   \n    \n0--@--S\n    \n   \nVictory Lane");
+    set("long","   \n    \n0--@--S\n    \n   \nVictory Lane runs west through Daybreak Ridge");
 }

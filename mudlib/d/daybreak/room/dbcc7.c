@@ -9,6 +9,7 @@ void create() {
     add_exit(ROOMS+"dbcc6", "east");
     add_exit(ROOMS+"dbcc8","south");
     add_exit("/d/damned/guilds/join_rooms/tinker_join", "west");
-    set("short","Commerce Court");
-    set("long","Commerce Court runs east and south through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   \n    \nG--@--0\n   | \n   0\nCommerce Court");
+    set("long","   \n    \nG--@--0\n   | \n   0\nCommerce Court runs east and south through Daybreak Ridge.");
 }

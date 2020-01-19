@@ -9,7 +9,7 @@ void create() {
     add_exit(ROOMS+"dbns7","south");
     add_exit(ROOMS+"dbslum","west");
     add_exit(ROOMS+"db_slum","west");
- 
-    set("short","Daybreak Valley Road");
-    set("long","Daybreak Valley Road runs north-south through Daybreak Ridge");
+//Basic mapping added by Tiny 1/19/2020 
+    set("short","   0\n   | \n0--@   \n   | \n   0\nDaybreak Valley Road");
+    set("long","   0\n   | \n0--@   \n   | \n   0\nDaybreak Valley Road runs north-south through Daybreak Ridge");
 }

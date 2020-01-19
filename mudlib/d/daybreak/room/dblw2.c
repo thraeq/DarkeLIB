@@ -7,7 +7,7 @@ void create() {
     set_property("night light", 2);
     add_exit(ROOMS+"dblw1", "north");
     add_exit(ROOMS+"dblw3","south");
-
-    set("short","Luminous Way");
-    set("long","Luminous Way runs north-south through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   0\n   | \n   @   \n   | \n   0\nLuminous Way");
+    set("long","   0\n   | \n   @   \n   | \n   0\nLuminous Way runs north-south through Daybreak Ridge.");
 }

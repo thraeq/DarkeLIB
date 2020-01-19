@@ -9,6 +9,7 @@ void create() {
     add_exit(ROOMS+"dbcc6","west");
     add_exit(ROOMS+"shop/armourer", "north");
 //      add_exit("/wizards/thrace/shop/ingot_shop", "east"); // yea whatever thrace laf
-    set("short","Commerce Court");
-    set("long","Commerce Court runs north and west through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   S\n   | \n0--@   \n   | \n   0\nCommerce Court");
+    set("long","   S\n   | \n0--@   \n   | \n   0\nCommerce Court runs north and west through Daybreak Ridge.");
 }

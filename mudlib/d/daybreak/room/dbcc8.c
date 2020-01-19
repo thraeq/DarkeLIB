@@ -10,6 +10,7 @@ void create() {
     add_exit(ROOMS+"shop/money_changer", "west");
     add_exit(ROOMS+"shop/general_store", "south");
     add_exit(ROOMS+"dbcc9","east");
-    set("short","Commerce Court");
-    set("long","Commerce Court runs north and west through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   0\n   | \nS--@--0\n   | \n   S\nCommerce Court");
+    set("long","   0\n   | \nS--@--0\n   | \n   S\nCommerce Court runs north and west through Daybreak Ridge.");
 }

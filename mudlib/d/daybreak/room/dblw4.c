@@ -8,6 +8,7 @@ void create() {
     add_exit(ROOMS+"dblw3", "north");
     add_exit(ROOMS+"dblw5","west");
     add_exit(ROOMS+"shop/magic","south");
-    set("short","Luminous Way");
-    set("long","Luminous Way runs north and west through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   0\n   | \n0--@   \n   | \n   S\nLuminous Way");
+    set("long","   0\n   | \n0--@   \n   | \n   S\nLuminous Way runs north and west through Daybreak Ridge.");
 }

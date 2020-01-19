@@ -1,29 +1,17 @@
 # DarkeLIB
-The original DarkeLIB as used by Daybreak Ridge from 1999. This is a fork of parnells git repo.  Changes are being made to remove errors and make it easier to install.  This is also a place for wizards of the server we are working on to collaborate fixes and changes to the code.
+The original DarkeLIB as used by Daybreak Ridge from 1999. i made some edits in 2005 wuth schroom and hellbringer.
+
+thrace and i hosted darkelib as daybreak ridge in 1998 with traer. i got the darkelib from drizzt and zortek with permission.
 
 # How to use
-The following commands were run on linux mint 19.3 in a terminal window.  For all of the sudo commands you will need to enter your password for each of them.  Also I would recommend taking note of where you run this, as it will install in the location that you are currently at in a folder called DarkeLIB-master.
 
-============Instructions==========
-
-sudo apt-get install docker.io
-
-sudo apt-get install docker-compose
-
-sudo apt-get install libicu-dev
-
-wget https://github.com/thraeq/DarkeLIB/archive/master.zip
-
-unzip master.zip
-
-cd DarkeLIB-master
-
-chmod -R 777 *
-
-sudo docker-compose up
-
-
-
-
+* Download and install docker
+  * set docker to linux mode if you're on windows
+* Clone or download this repo into a folder
+* execute `docker-compose up`
+* if you don't have docker-compose then:
+  * `docker build -t darkelib:latest .`
+  * windows: `docker run --rmi -p 7878:7878 -v %CD%:/home/parnell/mud darkelib`
 
 Log in as parnell `password` to be admin
+

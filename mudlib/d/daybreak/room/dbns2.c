@@ -8,6 +8,7 @@ void create() {
     add_exit(ROOMS+"dbns1", "south");
     add_exit(ROOMS+"dbns3","north");
     add_exit("/d/damned/inn/main_room", "east");
-    set("short","Daybreak Valley Road");
-    set("long","Daybreak Valley Road is the main north-south artery in Daybreak Ridge.  The road is lined with hedge rows about four and a half feet tall which are cut to allow entry to the various homes and shops along the road.  Tall lamp posts are placed along the road to provide light during the night.  To the east the Blue Dragon inn sits, inviting you to enter and relax, further north you can see the fountain in the town square.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   0\n   | \n   @--I\n   | \n   0\nDaybreak Valley Road");
+    set("long","   0\n   | \n   @--I\n   | \n   0\nDaybreak Valley Road is the main north-south artery in Daybreak Ridge.  The road is lined with hedge rows about four and a half feet tall which are cut to allow entry to the various homes and shops along the road.  Tall lamp posts are placed along the road to provide light during the night.  To the east the Blue Dragon inn sits, inviting you to enter and relax, further north you can see the fountain in the town square.");
 }

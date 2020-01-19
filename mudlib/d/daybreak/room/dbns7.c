@@ -8,7 +8,7 @@ void create() {
     add_exit(ROOMS+"dbns8", "north");
     add_exit(ROOMS+"dbns6","south");
     add_exit("/d/damned/guilds/join_rooms/nightblade_join.c","east");
- 
-    set("short","Daybreak Valley Road");
-    set("long","Daybreak Valley Road runs north-south through Daybreak Ridge");
+//Basic mapping added by Tiny 1/19/2020 
+    set("short","   0\n   | \n   @--G\n   | \n   0\nDaybreak Valley Road");
+    set("long","   0\n   | \n   @--G\n   | \n   0\nDaybreak Valley Road runs north-south through Daybreak Ridge");
 }

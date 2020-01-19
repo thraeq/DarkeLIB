@@ -7,19 +7,9 @@ void create() {
    add_exit("/d/damned/guilds/join_rooms/cleric_join", "east");
    add_exit("/d/daybreak/room/dbbw1", "west");
    add_exit("/d/damned/guilds/cleric/cleric_shop.c", "south");
-   set("short","Confessional");
-   set("long", @TEXT
-You have entered the sacred confessional.  A priest may be called
-so that you may confess your sins.  You should feel free to honestly
-express yourself and pray for your salvation.  Should you feel the
-need, a donation box is available for your tithe and a storage locker
-is provided for any material offerings you may have. Through a broad
-arch-way to the east is the cloister of the Clerics Guild and to the
-south a small church owned store.
-
-You feel an unmistakable impression that should you leave any chest
-or locker open, all items contained therein would be given unto our God.
-TEXT
+//Basic mapping added by Tiny 1/19/2020
+   set("short","   \n    \n0--@--G\n   | \n   S\nConfessional");
+   set("long","   \n    \n0--@--G\n   | \n   S\nYou have entered the sacred confessional.  A priest may be called so that you may confess your sins.  You should feel free to honestly express yourself and pray for your salvation.  Should you feel the need, a donation box is available for your tithe and a storage locker is provided for any material offerings you may have. Through a broad arch-way to the east is the cloister of the Clerics Guild and to the south a small church owned store. \nYou feel an unmistakable impression that should you leave any chest or locker open, all items contained therein would be given unto our God."
 );
 }
 

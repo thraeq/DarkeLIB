@@ -8,6 +8,7 @@ void create() {
     add_exit(ROOMS+"dblw2", "north");
     add_exit(ROOMS+"dblw4","south");
     add_exit("/d/damned/guilds/join_rooms/sword-mage_join", "east");
-    set("short","Luminous Way");
-    set("long","Luminous Way runs north-south through Daybreak Ridge.");
+//Basic mapping added by Tiny 1/19/2020
+    set("short","   0\n   | \n   @--G\n   | \n   0\nLuminous Way");
+    set("long","   0\n   | \n   @--G\n   | \n   0\nLuminous Way runs north-south through Daybreak Ridge.");
 }
