@@ -35,10 +35,11 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Dock Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   \n    \n0--@--0\n    \n   \nDock Street");
     set("long", "Dock Street extends eastward.  Its dry, dirt road sends up "+
       "small swirls of dust with every footstep.  Small, shabby houses line the "+
-      "causeway north and south."
+      "causeway north and south.\n   \n    \n0--@--0\n    \n   \n"
     );
     add_exit("/d/khojem/port/room/wgate","west");
     add_exit("/d/khojem/port/room/s02","east");

@@ -34,11 +34,12 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Noble Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   \n    \n0--@--0\n    \n   \nNoble Street");
     set("long", "Noble Street extends east and west.  "+
       "The street's dry dirt sends up small swirls of dust with every "+
       "footstep.  From here you can see a large mansion to the east at the "+
-      "turn of the street."
+      "turn of the street.\n   \n    \n0--@--0\n    \n   \n"
     );
     add_exit("/d/khojem/port/room/s15","west");
     add_exit("/d/khojem/port/room/s20","east");

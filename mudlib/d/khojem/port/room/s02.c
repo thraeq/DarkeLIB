@@ -28,11 +28,12 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Dock Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   \n    \n0--@--0\n    \n   \nDock Street");
     set("long", "Dock Street extends east and west.  Its dry, dirt road sends up "+
       "small swirls of dust with every footstep.  The wall of a building is to "+
       "the north and a shabby house is to the south.  The street opens to a "+
-      "large square to the east."
+      "large square to the east.\n   \n    \n0--@--0\n    \n   \n"
     );
     add_exit("/d/khojem/port/room/s01","west");
     add_exit("/d/khojem/port/room/s04","east");

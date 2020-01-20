@@ -18,12 +18,13 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Wharf Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   | \n   @   \n   d \n   \nWharf Street");
     set("long","Wharf Street ends here and extends north.  "+
       "The harbor is just to the east and south.  "+
       "The wooden boards beneath your feet creak with every footstep.  "+
       "Far to the south is a breakwater that protects the small harbor "+
-      "from winter storms and reduces chop."
+      "from winter storms and reduces chop.\n   0\n   | \n   @   \n   d \n   \n"
     );
     add_exit("/d/khojem/port/room/s13","north");
     add_exit("/d/khojem/port/room/h4","down");

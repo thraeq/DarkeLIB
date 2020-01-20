@@ -9,11 +9,12 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Wharf Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   | \n0--@   \n   | \n   0\nWharf Street");
     set("long","Wharf Street extends north and south.  "+
       "The harbor is just to the east.  "+
       "The wooden boards beneath your feet creak with every footstep.  "+
-      "A large, rundown warehouse is to the west."
+      "A large, rundown warehouse is to the west.\n   0\n   | \n0--@   \n   | \n   0\n"
     );
     add_exit("/d/khojem/port/room/warehouse","west");
     add_exit("/d/khojem/port/room/s12","north");

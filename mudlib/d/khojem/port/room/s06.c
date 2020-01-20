@@ -9,14 +9,15 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Wharf Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   | \n0--@--0\n   | \n   0\nWharf Street");
     set("long", "Wharf Street and Noble Street intersect here.  Each street is "+
       "constructed of dry dirt that sends up small swirls of dust with every "+
       "footstep.  The great north wall of Vo'Sangor connects to a massive "+
       "escarpment to the northwest.  Hollowed out at the escarpment's base "+
       "is a small box-like canyon that you can see just to your west.  "+
       "Wharf Street continues south from this point and a tower of some sort "+
-      "can be seen in that direction."
+      "can be seen in that direction.\n   0\n   | \n0--@--0\n   | \n   0\n"
     );
     add_exit("/d/khojem/port/room/ngate","north");
     add_exit("/d/khojem/port/room/s07","south");

@@ -44,8 +44,9 @@ void create() {
     set_property("light", 2);
     set_property("night light",1);
     set_property("indoors", 0);
-    set("short", "Box Canyon");
-    set("long", "Noble Street terminates here at a small box-like canyon.  "+
+//Basic mapping added by Tiny 1/19/202
+    set("short", "  \n     \n   @--0\n    \n   \nBox Canyon");
+    set("long", "  \n     \n   @--0\n    \n   \nNoble Street terminates here at a small box-like canyon.  "+
       "The ground is dry dirt that sends up small swirls of dust with every "+
       "footstep.  The great north and west walls of Vo'Sangor connects to a massive "+
       "escarpment.  The escarpment towers above you.  "+

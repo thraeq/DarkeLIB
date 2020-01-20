@@ -9,8 +9,9 @@ void create() {
     set_property("light", -1);
     set_property("night light",-2);
     set_property("indoors", 1);
-    set("short", "Mage's Keep");
-    set("long", "This is the base of a large, circular stone tower.  A lighted "+
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   u \n   @--0\n     \n    \nMage's Keep");
+    set("long", "   0\n   u \n   @--0\n     \n    \nThis is the base of a large, circular stone tower.  A lighted "+
       "shop is to the east.  A dark"
       "spiral, stone staircase leads upwards.  The arched gateway to the city "+
       "is just towards the north."

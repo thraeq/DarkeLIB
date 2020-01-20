@@ -29,9 +29,10 @@ void create() {
     set_property("light", 2);
     set_property("night light",2);
     set_property("indoors", 1);
-    set("short", "The west gate");
+    set("short", "   \n    \nW--@--0\n   | \n   0\nThe west gate");
     set("day long",
-      "An arched gateway, made from roughly-hewned stone, forms a small "+
+//Basic mapping added by Tiny 1/19/2020
+      "   \n    \nW--@--0\n   | \n   0\nAn arched gateway, made from roughly-hewned stone, forms a small "+
       "alcove that protects the town's gatekeepers during their long duty "+
       "tour.  A dirt road extends to the east and the rest of the port town "+
       "of Vo'Sangor can be seen.  A brass sign is securely fastened to the wall."

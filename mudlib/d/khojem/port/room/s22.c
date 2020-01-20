@@ -34,12 +34,13 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Noble Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   | \n   @   \n   | \n   0\nNoble Street");
     set("long", "Noble Street extends north and south.  "+
       "The street's dry dirt sends up small swirls of dust with every "+
       "footstep.  A railing to the east protects travelers from falling into the "+
       "harbor's water.  Farther east you can see the backside of the Rusty "+
-      "Parrot that is supported above the water by many timber stilts."
+      "Parrot that is supported above the water by many timber stilts.\n   0\n   | \n   @   \n   | \n   0\n"
     );
     add_exit("/d/khojem/port/room/s21","north");
     add_exit("/d/khojem/port/room/s23","south");

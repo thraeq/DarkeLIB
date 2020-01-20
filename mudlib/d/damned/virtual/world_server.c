@@ -38,7 +38,7 @@ void virtual_setup(string room) {
     return;
   }
 /*
-if(x == 12 && y == 12)
+if(x == 12 && y == 12) 
 add_exit("/d/damned/arena/booths_room", "arena");
 */
   exits_x = allocate(4);
@@ -58,9 +58,9 @@ add_exit("/d/damned/arena/booths_room", "arena");
   if(random(10) == 3 && memory_info() < 5000000)
     clone_monster(terrain_type);
   brook = (type == lower_case(type));
-  set("day long", get_day_long(capitalize(type),x+y) +
+  set("day long", get_day_long(capitalize(type),x+y) + 
 	get_xtra_long(exits_x,exits_y));
-  set("night long", get_night_long(capitalize(type),x+y) +
+  set("night long", get_night_long(capitalize(type),x+y) + 
 	get_xtra_long(exits_x,exits_y));
   set_items(get_items(capitalize(type)));
   switch(capitalize(type)) {
@@ -142,28 +142,29 @@ add_exit("/d/damned/arena/booths_room", "arena");
       }
     }
   }
-  //City of VO Tiny
-  if(x == 11 && y == 9) {
-  set("night long", (string)query("night long") + "%^BOLD%^"
-  "The City of Vo'sangar.%^RESET%^");
-  set("day long", (string)query("day long") + "%^BOLD%^"
-  "The City of Vo'sangar.%^RESET%^");
-  add_exit("/d/khojem/port/room/wgate", "city");
-  }
+//City of VO Tiny
+if(x == 11 && y == 9) {
+set("night long", (string)query("night long") + "%^BOLD%^"
+"The City of Vo'sangar.%^RESET%^");
+set("day long", (string)query("day long") + "%^BOLD%^"
+"The City of Vo'sangar.%^RESET%^");
+add_exit("/d/khojem/port/room/wgate", "city");
+}
 
-  //CITY OF AKKAD Tiny
-  if(x == 5 && y == 9) {
-  set("night long", (string)query("night long") + "%^BOLD%^"
-  "The City of Akkad.%^RESET%^");
-  set("day long", (string)query("day long") + "%^BOLD%^"
-  "The City of Akkad.%^RESET%^");
-  add_exit("/d/damned/akkad/ak_out4", "city");
-  }
+//CITY OF AKKAD Tiny
+if(x == 5 && y == 9) {
+set("night long", (string)query("night long") + "%^BOLD%^"
+"The City of Akkad.%^RESET%^");
+set("day long", (string)query("day long") + "%^BOLD%^"
+"The City of Akkad.%^RESET%^");
+add_exit("/d/damned/akkad/ak_out4", "city");
+}
+
 
   items_file = get_dir("/d/damned/data/");
   i = sizeof(items_file);
   minerals = ([]);
-#if 1
+#if 1 
   while(i--) {
     if(!sscanf(items_file[i], "mineral_%s.db", min_type)) continue;
     words = explode(read_file("/d/damned/data/"+items_file[i], y + 1, 1), ":");
@@ -195,7 +196,7 @@ string get_xtra_long(int *x, int *y) {
       if(j == (sizeof(dirs[line[i]]) - 1)
 	&& sizeof(dirs[line[i]]) > 1) desc += "and ";
       desc += dirs[line[i]][j];
-      if(j == (sizeof(dirs[line[i]]) - 1) ||
+      if(j == (sizeof(dirs[line[i]]) - 1) || 
 	 sizeof(dirs[line[i]]) > 2) desc += ", ";
       else desc += " ";
     }
@@ -279,7 +280,7 @@ void damage_all() {
   string *limbs;
   int flag;
 
-  who_here = filter_array(all_inventory(this_object()),
+  who_here = filter_array(all_inventory(this_object()), 
 			  "living_filter", this_object());
   if(!who_here || !sizeof(who_here)) return;
   i = sizeof(who_here);
@@ -509,3 +510,16 @@ void clone_monster(string terrain) {
     mon->move(this_object());
   return;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

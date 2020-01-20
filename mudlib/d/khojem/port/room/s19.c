@@ -39,11 +39,12 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Dock Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   | \n0--@--0\n    \n   \nDock Street");
     set("long","Dock Street extends east and west.  "+
       "The harbor is just to the south.  A tall tower is off to the west.  "+
       "The wooden boards beneath your feet creak with every footstep.  "+
-      "Some sort of shop is to the north.  A sign is above the open doorway."
+      "Some sort of shop is to the north.  A sign is above the open doorway.\n   0\n   | \n0--@--0\n    \n   \n"
     );
     add_exit("/d/khojem/port/room/master","north");
     add_exit("/d/khojem/port/room/s17","west");

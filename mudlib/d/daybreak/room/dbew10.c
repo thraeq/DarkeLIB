@@ -9,6 +9,6 @@ void create() {
     add_exit("/d/damned/virtual/room_8_9.world","mountains");
     add_exit(ROOMS+"dbvl1", "south");
 //Basic mapping added by Tiny 1/19/2020
-    set("short","   \n    \nM--@--0\n   | \n   0\nMain Street");
-    set("long","   \n    \nM--@--0\n   | \n   0\nMain Street runs east-west through Daybreak Ridge");
+    set("short","   \n    \nM  @--0\n   | \n   0\nMain Street");
+    set("long","   \n    \nM  @--0\n   | \n   0\nMain Street runs east-west through Daybreak Ridge");
 }
