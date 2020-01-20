@@ -18,10 +18,10 @@ void create() {
       "Wharf Street continues south from this point and a tower of some sort "+
       "can be seen in that direction."
     );
-    add_exit("/wizards/khojem/port/room/ngate","north");
-    add_exit("/wizards/khojem/port/room/s07","south");
-    add_exit("/wizards/khojem/port/room/r1","west");
-    add_exit("/wizards/khojem/port/room/s15","east");
+    add_exit("/d/khojem/port/room/ngate","north");
+    add_exit("/d/khojem/port/room/s07","south");
+    add_exit("/d/khojem/port/room/r1","west");
+    add_exit("/d/khojem/port/room/s15","east");
     set_items(([
      ({ "wall", "escarpment", "canyon" }) :
         "The city's north and west walls are fixed in a massive rock formation "+

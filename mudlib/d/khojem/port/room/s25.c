@@ -18,10 +18,10 @@ void init() {
 void reset(){
   set_open("hatch",0);
   set_locked("hatch",0);
-  "/wizards/khojem/port/room/ship2"->set_open("hatch",0);
-  "/wizards/khojem/port/room/ship2"->set_locked("hatch",0);
+  "/d/khojem/port/room/ship2"->set_open("hatch",0);
+  "/d/khojem/port/room/ship2"->set_locked("hatch",0);
   add_invis_exit("south");
-  "/wizards/khojem/port/room/ship2"->add_invis_exit("north");
+  "/d/khojem/port/room/ship2"->add_invis_exit("north");
 }
 
 void create() {
@@ -35,12 +35,12 @@ void create() {
       "A schooner is berthed closeby to the south.  "+
       "The wooden boards beneath your feet creak with every footstep."
     );
-    add_exit("/wizards/khojem/port/room/s24","west");
-    add_exit("/wizards/khojem/port/room/h23","down");
+    add_exit("/d/khojem/port/room/s24","west");
+    add_exit("/d/khojem/port/room/h23","down");
     set_pre_exit_functions(({"down"}),({"go_down"}));
-    add_exit("/wizards/khojem/port/room/ship2","south");
+    add_exit("/d/khojem/port/room/ship2","south");
     add_invis_exit("south");
-    set_door("hatch","/wizards/khojem/port/room/ship2","south",0);
+    set_door("hatch","/d/khojem/port/room/ship2","south",0);
     set_open("hatch",0);
     set_locked("hatch",0);
     set_func("hatch","open","do_open");
@@ -77,7 +77,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("south");
-  "/wizards/khojem/port/room/ship2"->remove_invis_exit("north");
+  "/d/khojem/port/room/ship2"->remove_invis_exit("north");
   write("The hatch easily swings open.\n");
   say(this_player()->query_cap_name()+" opens a hatch to the south.\n");
   return 1;
@@ -85,7 +85,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("south");
-  "/wizards/khojem/port/room/ship2"->add_invis_exit("north");
+  "/d/khojem/port/room/ship2"->add_invis_exit("north");
   write("A hatch is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a hatch shut.\n");
   return 1;

@@ -36,7 +36,7 @@ create() {
     money->move(this_object());
 	new("/d/damned/virtual/scimitar_4.weapon")->move(this_object());
 	force_me("wield scimitar in right hand");
-	new("/wizards/khojem/nomad/armor/green_sash")->move(this_object());
+	new("/d/khojem/nomad/armor/green_sash")->move(this_object());
 	force_me("wear sash");
 }
 

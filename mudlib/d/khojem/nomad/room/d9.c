@@ -28,7 +28,7 @@ int clean_up() {
 void reset() {
     ::reset();
     if(check_mobs()<6) {
-      new("/wizards/khojem/nomad/mon/sidewinder")->move(this_object());
+      new("/d/khojem/nomad/mon/sidewinder")->move(this_object());
     }
 }
 
@@ -52,11 +52,11 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/rv1","northwest");
-    add_exit("/wizards/khojem/nomad/room/d2","east");
-    add_exit("/wizards/khojem/nomad/room/d1","southeast");
-    add_exit("/wizards/khojem/nomad/room/d8","south");
-    add_exit("/wizards/khojem/nomad/room/sp1","north");
+    add_exit("/d/khojem/nomad/room/rv1","northwest");
+    add_exit("/d/khojem/nomad/room/d2","east");
+    add_exit("/d/khojem/nomad/room/d1","southeast");
+    add_exit("/d/khojem/nomad/room/d8","south");
+    add_exit("/d/khojem/nomad/room/sp1","north");
     add_pre_exit_function("north","go_north");
     set_items(([
         "sign" : "The sign points to the north.\n"+
@@ -68,7 +68,7 @@ void create() {
     ]));
     set_smell("default", "The dry, arid air burns your nose.");
     set_listen("default", "The silence is interrupted only by your footsteps.");
-    new("/wizards/khojem/nomad/obj/sign")->move(this_object());
+    new("/d/khojem/nomad/obj/sign")->move(this_object());
 }
 
 int go_north(){
@@ -77,7 +77,7 @@ int go_north(){
     "sand yields to your efforts and you lack leverage to escape from the sand "+
     "marsh.\n\nAfter a short fall you land on a soft layer of sand.\n"
   );
-  tell_room("/wizards/khojem/nomad/room/sp1",
+  tell_room("/d/khojem/nomad/room/sp1",
     this_player()->query_cap_name()+" falls from above and "+
      "lands flat on his ass beside you just beside you.\n");
   return 1;
@@ -100,7 +100,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/siderwinder")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/siderwinder")  
     return 1;                                        
   return 0;
 }                                      

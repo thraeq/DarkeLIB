@@ -15,9 +15,9 @@ void create() {
       "The wooden boards beneath your feet creak with every footstep.  "+
       "A large, rundown warehouse is to the west."
     );
-    add_exit("/wizards/khojem/port/room/warehouse","west");
-    add_exit("/wizards/khojem/port/room/s12","north");
-    add_exit("/wizards/khojem/port/room/s14","south");
+    add_exit("/d/khojem/port/room/warehouse","west");
+    add_exit("/d/khojem/port/room/s12","north");
+    add_exit("/d/khojem/port/room/s14","south");
     set_items(([
      ({ "warehouse" }) :
         "It looks like an old, weather-ravaged wooden warehouse.",

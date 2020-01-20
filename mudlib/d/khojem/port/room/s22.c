@@ -16,7 +16,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/citizen2")  
+  if(base_name(mob) == "/d/hojem/port/mon/citizen2")  
     return 1;                                        
   return 0;
 }
@@ -25,7 +25,7 @@ void reset(){
   ::reset();
   if(!present("citizen")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/citizen2")->move(this_object());
+      new("/d/khojem/port/mon/citizen2")->move(this_object());
   }
 }
 
@@ -41,8 +41,8 @@ void create() {
       "harbor's water.  Farther east you can see the backside of the Rusty "+
       "Parrot that is supported above the water by many timber stilts."
     );
-    add_exit("/wizards/khojem/port/room/s21","north");
-    add_exit("/wizards/khojem/port/room/s23","south");
+    add_exit("/d/khojem/port/room/s21","north");
+    add_exit("/d/khojem/port/room/s23","south");
     set_items(([
      ({ "street","dirt street","Noble Street","noble street" }) :
         "Its a dusty little road.",

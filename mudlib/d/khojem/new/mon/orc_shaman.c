@@ -48,16 +48,16 @@ create() {
 	set_skill("conjuration",85);
 	set_fingers(5);
 	set("aggressive", (: call_other, this_object(), "no_other_monsters" :) );
-	new("/wizards/khojem/new/weapon/darkestaff")->
+	new("/d/khojem/new/weapon/darkestaff")->
 	  move(this_object());
 	force_me("wield staff in right hand and left hand");
-	new("/wizards/khojem/new/armor/shaman_robe")->
+	new("/d/khojem/new/armor/shaman_robe")->
 	  move(this_object());
 	force_me("wear robe");
-	new("/wizards/khojem/new/armor/slippers")->
+	new("/d/khojem/new/armor/slippers")->
       move(this_object());
     force_me("wear slippers");
-    new("/wizards/khojem/new/armor/shaman_hood")->
+    new("/d/khojem/new/armor/shaman_hood")->
       move(this_object());
     force_me("wear hood");	
 }

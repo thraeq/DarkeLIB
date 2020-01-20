@@ -9,7 +9,7 @@ inherit ROOM;
 void reset() {
    ::reset();
    if (!present("commoner")) {
-      new("/wizards/khojem/new/mon/commoner")->move(this_object());
+      new("/d/khojem/new/mon/commoner")->move(this_object());
    }
 }
 

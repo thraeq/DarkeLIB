@@ -37,8 +37,8 @@ void create() {
       "keeps a neat and orderly tent.  This tent is smaller than the large "+
       "barracks tent to the south."
     );
-    add_exit("/wizards/khojem/nomad/camp/warrior_tent","south");
-    set_door("tent flap","/wizards/khojem/nomad/camp/warrior_tent","south",0);
+    add_exit("/d/khojem/nomad/camp/warrior_tent","south");
+    set_door("tent flap","/d/khojem/nomad/camp/warrior_tent","south",0);
     set_func("tent flap","open","do_open");
     set_func("tent flap","close","do_close");
     set_items(([
@@ -56,7 +56,7 @@ void create() {
     ]));
     set_smell("default", "A musty smell fills the tent.");
     set_listen("default", "The clamour from the rest of the camp is far to the south.");
-    obj=new("/wizards/khojem/nomad/obj/desk");
+    obj=new("/d/khojem/nomad/obj/desk");
     obj->move(this_object());
 }
 
@@ -70,7 +70,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("south");
-  "/wizards/khojem/nomad/camp/warrior_tent"->remove_invis_exit("north");
+  "/d/khojem/nomad/camp/warrior_tent"->remove_invis_exit("north");
   write("The canvas tent flap folds away as you open it.\n");
   say(this_player()->query_cap_name()+" easily opens the tent flap on "+
     "the south wall.\n");
@@ -79,7 +79,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/nomad/camp/warrior_tent"->add_invis_exit("north");
+  "/d/khojem/nomad/camp/warrior_tent"->add_invis_exit("north");
   write("The tent flap falls limpy to the floor.\n");
   say(this_player()->query_cap_name()+" closes a tent flap to the north.\n");
   return 1;

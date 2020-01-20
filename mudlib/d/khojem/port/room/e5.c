@@ -9,15 +9,15 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("earl")) {
-    new("/wizards/khojem/port/mon/earl")->move(this_object());
+    new("/d/khojem/port/mon/earl")->move(this_object());
   }
   if(!present("viscount")) {
-    new("/wizards/khojem/port/mon/viscount")->move(this_object());
+    new("/d/khojem/port/mon/viscount")->move(this_object());
   }
   if(!present("legionnaire")) {
-    new("/wizards/khojem/port/mon/legion3")->move(this_object());
-    new("/wizards/khojem/port/mon/legion3")->move(this_object());
-    new("/wizards/khojem/port/mon/legion3")->move(this_object());
+    new("/d/khojem/port/mon/legion3")->move(this_object());
+    new("/d/khojem/port/mon/legion3")->move(this_object());
+    new("/d/khojem/port/mon/legion3")->move(this_object());
   }
 }  
 
@@ -33,7 +33,7 @@ void create() {
       "oil paintings.  The walls are paneled in english oak.  "+
       "An archway leads north to a balcony."
     );
-    add_exit("/wizards/khojem/port/room/e3","north");
+    add_exit("/d/khojem/port/room/e3","north");
     set_items(([
      ({ "window" }) :
         "A broad window looks out across the harbor of Vo'Sangor.",
@@ -76,6 +76,6 @@ void create() {
         "describe a construction project to expand the town."
     ]));
     set_listen("default", "You hear seagull crys through the window.");
-    new("/wizards/khojem/port/obj/desk")->move(this_object());
+    new("/d/khojem/port/obj/desk")->move(this_object());
 }
 

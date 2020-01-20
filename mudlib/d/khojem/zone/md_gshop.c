@@ -10,7 +10,7 @@ inherit ROOM;
 // void reset() {
 //    ::reset();
 //    if (!present("morty")) {
-//       new("/wizards/khojem/zone/mon/morty")->move(this_object());
+//       new("/d/khojem/zone/mon/morty")->move(this_object());
 //    }
 // }
 

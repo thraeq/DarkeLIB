@@ -23,7 +23,7 @@ void create() {
     set_possible_to_close(1);
     set_key("key_that_does_not_exist");
     set_property("magic hold",40);
-    obj=new("/wizards/khojem/nomad/weapon/ob_dirk");
+    obj=new("/d/khojem/nomad/weapon/ob_dirk");
     obj->move(this_object());
     return;
 }

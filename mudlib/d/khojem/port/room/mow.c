@@ -7,11 +7,11 @@ inherit ROOM;
 void reset() {
     ::reset();
   if(!present("sailor")) {
-    new("/wizards/khojem/port/mon/sailor2")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor2")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor2")->move(this_object());
-    new("/wizards/khojem/port/mon/marine")->move(this_object());
-    new("/wizards/khojem/port/mon/marine")->move(this_object());
+    new("/d/khojem/port/mon/sailor2")->move(this_object());
+    new("/d/khojem/port/mon/sailor2")->move(this_object());
+    new("/d/khojem/port/mon/sailor2")->move(this_object());
+    new("/d/khojem/port/mon/marine")->move(this_object());
+    new("/d/khojem/port/mon/marine")->move(this_object());
   }
 }    
 
@@ -29,9 +29,9 @@ void create() {
       "A wooden ladder descends down into the hull of the craft and an open "+
       "doorway leads northward."
     );
-    add_exit("/wizards/khojem/port/room/s11","plank");
-    add_exit("/wizards/khojem/port/room/mowa","down");
-    add_exit("/wizards/khojem/port/room/mowb","north");
+    add_exit("/d/khojem/port/room/s11","plank");
+    add_exit("/d/khojem/port/room/mowa","down");
+    add_exit("/d/khojem/port/room/mowb","north");
     set_items(([
      ({ "gunwhales" }) :
         "The high gunwhales surround the deck and provide protection when "+

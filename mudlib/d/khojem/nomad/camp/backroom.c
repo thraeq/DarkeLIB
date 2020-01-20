@@ -15,10 +15,10 @@ void init() {
 void reset() {
     ::reset();
    if(!present("gambler")) {
-      new("/wizards/khojem/nomad/mon/gambler")->move(this_object());
+      new("/d/khojem/nomad/mon/gambler")->move(this_object());
    }
    if(!present("pit boss")) {
-      new("/wizards/khojem/nomad/mon/pit_boss")->move(this_object());
+      new("/d/khojem/nomad/mon/pit_boss")->move(this_object());
    }
 }
 
@@ -41,8 +41,8 @@ void create() {
       "it that way.  Dark heavy smoke layers down from the tent's ceiling.  It "+
       "appears this is the local gambling hall."
     );
-    add_exit("/wizards/khojem/nomad/camp/pub","northeast");
-    set_door("curtain","/wizards/khojem/nomad/camp/pub","northeast",0);
+    add_exit("/d/khojem/nomad/camp/pub","northeast");
+    set_door("curtain","/d/khojem/nomad/camp/pub","northeast",0);
     set_func("curtain","open","do_open");
     set_func("curtain","close","do_close");
     set_items(([
@@ -56,7 +56,7 @@ void create() {
     ]));
     set_smell("default", "The strong smell of burning tobacco fills the tent.");
     set_listen("default", "The din from the hash house can be heard in the distance.");
-    obj=new("/wizards/khojem/nomad/obj/roulette_wheel");
+    obj=new("/d/khojem/nomad/obj/roulette_wheel");
     obj->move(this_object());
 }
 
@@ -70,7 +70,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("northeast");
-  "/wizards/khojem/nomad/camp/pub"->remove_invis_exit("southwest");
+  "/d/khojem/nomad/camp/pub"->remove_invis_exit("southwest");
   write("The curtain flows away as you open it.");
   say(this_player()->query_cap_name()+" opens a curtain.");
   return 1;
@@ -78,7 +78,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("northeast");
-  "/wizards/khojem/nomad/camp/pub"->add_invis_exit("southwest");
+  "/d/khojem/nomad/camp/pub"->add_invis_exit("southwest");
   write("A curtain falls limpy to the floor.\n");
   say(this_player()->query_cap_name()+" closes a curtain.\n");
   return 1;

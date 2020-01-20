@@ -35,38 +35,38 @@ create() {
     set_max_hp(40);
     set_hp(40);
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/weapon/hammer")->
+      case 0:new("/d/khojem/new/weapon/hammer")->
                  move(this_object());
              force_me("wield hammer in right hand");
              break;
-      case 1:new("/wizards/khojem/new/weapon/hand_axe")->
+      case 1:new("/d/khojem/new/weapon/hand_axe")->
                  move(this_object());
              force_me("wield axe in right hand");
              break;
-      case 2:new("/wizards/khojem/new/weapon/quarterstaff")->
+      case 2:new("/d/khojem/new/weapon/quarterstaff")->
                  move(this_object());
              force_me("wield quarterstaff in right hand and left hand");
              break;
-      case 3:new("/wizards/khojem/new/weapon/morningstar")->
+      case 3:new("/d/khojem/new/weapon/morningstar")->
                  move(this_object());
              force_me("wield morningstar in right hand");
              break;
     }
 
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/armor/rag_shirt")->
+      case 0:new("/d/khojem/new/armor/rag_shirt")->
                  move(this_object());
              force_me("wear jacket");
              break;
-      case 1:new("/wizards/khojem/new/armor/stone_shield")->
+      case 1:new("/d/khojem/new/armor/stone_shield")->
                  move(this_object());
              force_me("wear shield");
              break;
-      case 2:new("/wizards/khojem/new/armor/pants")->
+      case 2:new("/d/khojem/new/armor/pants")->
                  move(this_object());
              force_me("wear pants");
              break;
-      case 3:new("/wizards/khojem/new/armor/leather_mittens")->
+      case 3:new("/d/khojem/new/armor/leather_mittens")->
                  move(this_object());
              force_me("wear mittens");
              break;

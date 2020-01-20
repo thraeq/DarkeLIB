@@ -32,7 +32,7 @@ create() {
     set_max_hp(10);
     set_hp(10);
     set_alignment(50);
-    new("/wizards/khojem/new/obj/ball")->move(this_object());
+    new("/d/khojem/new/obj/ball")->move(this_object());
     set_languages(({ "elvish" }));
     set_lang_prof("elvish",10);
     set_emotes(5, ({

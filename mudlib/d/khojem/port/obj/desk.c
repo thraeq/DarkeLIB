@@ -17,7 +17,7 @@ void create() {
     set_weight(99999);
     set_max_internal_encumbrance(600);
     set_possible_to_close(1);
-    obj=new("/wizards/khojem/port/obj/harbor_map");
+    obj=new("/d/khojem/port/obj/harbor_map");
     obj->move(this_object());
     obj=new("std/obj/coins");
     obj->set_money("gold",(random(60)+5));

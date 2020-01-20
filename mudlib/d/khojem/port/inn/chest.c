@@ -15,7 +15,7 @@ void reset() {
    ::reset();
    seteuid(getuid());
    if (!present("Dovan") && open) {
-      new("/wizards/khojem/port/inn/dovan")->move(this_object());
+      new("/d/khojem/port/inn/dovan")->move(this_object());
    }
 }
 
@@ -23,14 +23,14 @@ void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",3);
-   add_exit("/wizards/khojem/port/inn/chest_store", "west");
-   set_door("wooden door", "/wizards/khojem/port/inn/chest_store", 
+   add_exit("/d/khojem/port/inn/chest_store", "west");
+   set_door("wooden door", "/d/khojem/port/inn/chest_store", 
      "west","port_chest_store");
    set_open("wooden door", 0);
    set_locked("wooden door", 1);
    set_lock_level("wooden door", 40);
-   add_exit("/wizards/khojem/port/inn/main_room", "south");
-   set_door("south door", "/wizards/khojem/port/inn/main_room",
+   add_exit("/d/khojem/port/inn/main_room", "south");
+   set_door("south door", "/d/khojem/port/inn/main_room",
      "south","port_chest_shop");
    set_open("south door", 1);
    set_locked("south door", 0);
@@ -73,9 +73,9 @@ int read_sign() {
 void open_door() {
   set_locked("south door", 0);
   set_open("south door", 1);
-  call_other("/wizards/khojem/port/inn/main_room", 
+  call_other("/d/khojem/port/inn/main_room", 
     "set_locked","north door", 0);
-  call_other("/wizards/khojem/port/inn/main_room",
+  call_other("/d/khojem/port/inn/main_room",
     "set_open","north door", 1);
   open = 1;
   this_object()->reset();
@@ -96,22 +96,22 @@ void close_door() {
   while(i--) {
     if(living(inv[i])) {
       message("info", "The shop is closing now.  You must leave.", inv[i]);
-      find_object_or_load("/wizards/khojem/port/inn/main_room");
-      inv[i]->move_player("/wizards/khojem/port/inn/main_room");
+      find_object_or_load("/d/khojem/port/inn/main_room");
+      inv[i]->move_player("/d/khojem/port/inn/main_room");
     }
   }
   set_open("south door", 0);
   set_locked("south door", 1);
-  call_other("/wizards/khojem/port/inn/main_room",
+  call_other("/d/khojem/port/inn/main_room",
     "set_open","north door", 0);
-  call_other("/wizards/khojem/port/inn/main_room",
+  call_other("/d/khojem/port/inn/main_room",
     "set_locked","north door", 1);
    open = 0;
 }
 int do_button(string str) {
   if(str != "button") { return 0; }
-   find_object_or_load("/wizards/khojem/port/inn/locksmith");
-   this_player()->move_player("/wizards/khojem/port/inn/locksmith");
+   find_object_or_load("/d/khojem/port/inn/locksmith");
+   this_player()->move_player("/d/khojem/port/inn/locksmith");
    return 1;
 }
 

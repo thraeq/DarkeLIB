@@ -38,8 +38,8 @@ void create() {
       "the temple's roof overhang above.  In the distance you can see "+
       "sand dunes that stretch out beyond the lip of the ravine.\n"
     );
-    add_exit("/wizards/khojem/nomad/temple/t09","east");
-    add_exit("/wizards/khojem/nomad/temple/t10","west");
+    add_exit("/d/khojem/nomad/temple/t09","east");
+    add_exit("/d/khojem/nomad/temple/t10","west");
     set_items(([
      ({ "temple" , "structure" }) :
         "The structure appears it may have been a temple at one time.  Sculptured "+

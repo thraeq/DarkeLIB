@@ -17,7 +17,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/citizen2")  
+  if(base_name(mob) == "/d/khojem/port/mon/citizen2")  
     return 1;                                        
   return 0;
 }
@@ -26,7 +26,7 @@ void reset(){
   ::reset();
   if(!present("citizen")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/citizen2")->move(this_object());
+      new("/d/khojem/port/mon/citizen2")->move(this_object());
   }
 }
 
@@ -39,8 +39,8 @@ void create() {
       "The woodwork is well cared for and cleaned regularly.  The individual "+
       "owning this home must be wealthy enough to afford the expensive maintaince."
     );
-    add_exit("/wizards/khojem/port/room/s15","north");
-    set_door("acqua door","/wizards/khojem/port/room/s15","north",0);
+    add_exit("/d/khojem/port/room/s15","north");
+    set_door("acqua door","/d/khojem/port/room/s15","north",0);
     set_func("acqua door","open","do_open");
     set_func("acqua door","close","do_close");
     set_items(([
@@ -61,7 +61,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/port/room/s15"->remove_invis_exit("south");
+  "/d/khojem/port/room/s15"->remove_invis_exit("south");
   write("A acqua door swings wide open.\n");
   say(this_player()->query_cap_name()+" opens a acqua door.\n");
   return 1;
@@ -69,7 +69,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/port/room/s15"->add_invis_exit("south");
+  "/d/khojem/port/room/s15"->add_invis_exit("south");
   write("A acqua door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a acqua door shut.\n");
   return 1;

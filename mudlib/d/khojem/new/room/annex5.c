@@ -14,8 +14,8 @@ void create() {
     set("long", "You are on a path a small hut is to the east. The trees grow "+
       "close around and cut off some of the light from above. "
     );
-    add_exit("/wizards/khojem/new/room/annex4","south");
-    add_exit("/wizards/khojem/new/shop/still","east");
+    add_exit("/d/khojem/new/room/annex4","south");
+    add_exit("/d/khojem/new/shop/still","east");
     set_items(([
      ({ "tree","trees", "woods" }) :
         "The trees are large, healthy trees filled with foliage.",

@@ -30,10 +30,10 @@ void create() {
     );
     add_exit("/d/standard/square","square");
     add_exit("/d/standard/adv_main","hall");
-    add_exit("/wizards/khojem/port/room/s09","port");
-    add_exit("/wizards/khojem/new/room/entry","new");
+    add_exit("/d/khojem/port/room/s09","port");
+    add_exit("/d/khojem/new/room/entry","new");
     add_exit("/d/damned/akkad/ak_center","fountain");
-    add_exit("/wizards/khojem/nomad/room/entry","nomad");
+    add_exit("/d/khojem/nomad/room/entry","nomad");
     set_items(([
       ({"notes","desk"}) :
         "The desk is littered with hurriedly scribbled notes about\n"

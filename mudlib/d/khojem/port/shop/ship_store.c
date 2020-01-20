@@ -18,9 +18,9 @@ void create() {
   set_property("no summon", 1);
   set_property("no teleport", 1);
   set_property("storage room", 1);
-  add_exit("/wizards/khojem/port/shop/shipwright", "south");
+  add_exit("/d/khojem/port/shop/shipwright", "south");
   add_invis_exit("south");
-  set_door("storeroom door","/wizards/khojem/port/shop/shipwright", "south",
+  set_door("storeroom door","/d/khojem/port/shop/shipwright", "south",
 	   "a key that does not exist");
   set_open("storeroom door", 0);
   set_locked("storeroom door", 1);
@@ -48,7 +48,7 @@ void reset() {
   inv = all_inventory(this_object());
   call_out("remove_all", 5, inv);
   bob = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/port/shop/shipwright"));
+		find_object_or_load("/d/khojem/port/shop/shipwright"));
   if(bob) {
     message("info", "Shipwright says in Common: Wait a second.  I've got a new
 "+
@@ -81,14 +81,14 @@ void clone_once() {
 
 int do_open() {
   remove_invis_exit("south");
-  "/wizards/khojem/port/shop/shipwrigth"->remove_invis_exit("north");
+  "/d/khojem/port/shop/shipwrigth"->remove_invis_exit("north");
   say(this_player()->query_cap_name()+" opens a storeroom door.\n");
   return 1;
 }
  
 int do_close() {
   add_invis_exit("south");
-  "/wizards/khojem/port/shop/shipwright"->add_invis_exit("north");
+  "/d/khojem/port/shop/shipwright"->add_invis_exit("north");
   say(this_player()->query_cap_name()+" slams a storeroom door shut.\n");
   return 1;
 }

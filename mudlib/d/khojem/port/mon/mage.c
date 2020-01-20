@@ -21,7 +21,7 @@ void init() {
     if(living(inv[i]) && (!inv[i]->query_kho_mon())) {
       lvl = (int)inv[i]->query_level();
       if(inv[i] != this_object())
-      write_file("/wizards/khojem/log/mage.log",
+      write_file("/d/khojem/log/mage.log",
         "=== Init:  "+inv[i]->query_cap_name()+" "+lvl+"\t\t\t"+
         ctime(time())+"\n");
     }
@@ -79,20 +79,20 @@ void catch_tell(string str) {
   
   if(sscanf(str, "%s drops dead before %s", who, b) == 2 ) {
     force_me("grin");
-    write_file("/wizards/khojem/log/mage.log",
+    write_file("/d/khojem/log/mage.log",
       "*** Player Kill:  "+who+"\t\t"+ctime(time())+"\n");
     return;
   }
   if(sscanf(str, "%s dies a horrible %s", who, b) == 2 ) {
     force_me("grin");
-    write_file("/wizards/khojem/log/mage.log",
+    write_file("/d/khojem/log/mage.log",
       "*** Player Kill:  "+who+"\t\t"+ctime(time())+"\n");
   }
   return;
 }
 
 void die() {
-  write_file("/wizards/khojem/log/mage.log",
+  write_file("/d/khojem/log/mage.log",
     ">>> Mage died \t\t\t"+ctime(time())+"\n");
    ::die();
 }

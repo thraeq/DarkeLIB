@@ -25,8 +25,8 @@ void create() {
       "Far to the south is a breakwater that protects the small harbor "+
       "from winter storms and reduces chop."
     );
-    add_exit("/wizards/khojem/port/room/s13","north");
-    add_exit("/wizards/khojem/port/room/h4","down");
+    add_exit("/d/khojem/port/room/s13","north");
+    add_exit("/d/khojem/port/room/h4","down");
     set_pre_exit_functions(({"down"}),({"go_down"}));
     set_items(([
      ({ "breakwater" }) :

@@ -8,10 +8,10 @@ inherit VAULT;
 void reset(){
   set_open("brass door",0);
   set_locked("brass door",1);
-  "/wizards/khojem/port/room/e7"->set_open("brass door",0);
-  "/wizards/khojem/port/room/e7"->set_locked("brass door",1);
+  "/d/khojem/port/room/e7"->set_open("brass door",0);
+  "/d/khojem/port/room/e7"->set_locked("brass door",1);
   add_invis_exit("east");
-  "/wizards/khojem/port/room/e7"->add_invis_exit("west");
+  "/d/khojem/port/room/e7"->add_invis_exit("west");
 }
 
 void create() {
@@ -24,9 +24,9 @@ void create() {
       "his mansion with the trappings of wealth.  The rough-hewned, stone walls "+
       "and floor form a short hallway that leads to a brass door."
     );
-    add_exit("/wizards/khojem/port/room/e1","up");
-    add_exit("/wizards/khojem/port/room/e7","east");
-    set_door("brass door","/wizards/khojem/port/room/e7","east","earl_vault_key");
+    add_exit("/d/khojem/port/room/e1","up");
+    add_exit("/d/khojem/port/room/e7","east");
+    set_door("brass door","/d/khojem/port/room/e7","east","earl_vault_key");
     set_property("magic hold",80);
     set_open("brass door",0);
     set_locked("brass door",1);
@@ -54,7 +54,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("east");
-  "/wizards/khojem/port/room/e7"->remove_invis_exit("west");
+  "/d/khojem/port/room/e7"->remove_invis_exit("west");
   write("The brass door easily swings open.\n");
   say(this_player()->query_cap_name()+" opens a brass door to the east.\n");
   return 1;
@@ -62,7 +62,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("east");
-  "/wizards/khojem/port/room/e7"->add_invis_exit("west");
+  "/d/khojem/port/room/e7"->add_invis_exit("west");
   write("A brass door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a brass door shut.\n");
   return 1;

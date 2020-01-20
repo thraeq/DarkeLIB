@@ -51,7 +51,7 @@ create() {
 	set_skill("prayer",100);
 	set_skill("body alteration",95);
 	set_fingers(5);
-	new("/wizards/khojem/nomad/weapon/nomad_staff")->
+	new("/d/khojem/nomad/weapon/nomad_staff")->
 	  move(this_object());
 	force_me("wield staff in right hand and left hand");
 }

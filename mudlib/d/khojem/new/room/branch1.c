@@ -47,13 +47,13 @@ int go_south(){
   if(this_player()->query_flying()){
     write("Your flight capability allows you to escape from a fall.\n"+
       "You gently sail down to the forest floor.\n");
-    tell_room("/wizards/khojem/new/room/wood4",
+    tell_room("/d/khojem/new/room/wood4",
       this_player()->query_cap_name()+" gently sails down from the tree above you.\n");
     return 1;
   }
   this_player()->add_hp(-50);
   write("After a short fall you hit the forest floor and land in a heap.\n");
-  tell_room("/wizards/khojem/new/room/wood4",
+  tell_room("/d/khojem/new/room/wood4",
     this_player()->query_cap_name()+" falls from above and "+
      "elegantly lands flat on his face beside you.\n");
   return 1;

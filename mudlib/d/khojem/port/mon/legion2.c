@@ -33,22 +33,22 @@ create() {
     set("aggressive", (: call_other, this_object(), "no_other_monsters" :));
 	zlevel = random(3);
     if(zlevel == 0) {
-   	  new("/wizards/khojem/port/weapon/flail")->move(this_object());
+   	  new("/d/khojem/port/weapon/flail")->move(this_object());
 	  force_me("wield flail in right hand");
 	}
     if(zlevel == 1) {
-	  new("/wizards/khojem/port/weapon/trident")->move(this_object());
+	  new("/d/khojem/port/weapon/trident")->move(this_object());
 	  force_me("wield trident in right hand and left hand");
 	}
     if(zlevel == 2) {
-	  new("/wizards/khojem/port/weapon/falchion")->move(this_object());
+	  new("/d/khojem/port/weapon/falchion")->move(this_object());
 	  force_me("wield falchion in right hand");
 	 }
     new("/d/damned/virtual/corslet.armour")->move(this_object());
     force_me("wear corslet");
-    new("/wizards/khojem/port/armor/legion_helm")->move(this_object());
+    new("/d/khojem/port/armor/legion_helm")->move(this_object());
     force_me("wear helmet");
-    new("/wizards/khojem/port/armor/beaver")->move(this_object());
+    new("/d/khojem/port/armor/beaver")->move(this_object());
     force_me("wear beaver");
     is_followed = 0;   
 }

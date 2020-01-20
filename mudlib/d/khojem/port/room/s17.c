@@ -18,7 +18,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/peon")  
+  if(base_name(mob) == "/d/khojem/port/mon/peon")  
     return 1;                                        
   return 0;
 }
@@ -27,7 +27,7 @@ void reset(){
   ::reset();
   if(!present("peon")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/peon")->move(this_object());
+      new("/d/khojem/port/mon/peon")->move(this_object());
   }
 }
 
@@ -53,12 +53,12 @@ void create() {
       "and supported above the harbor's water by timbers. "+
       "A ladder is here that leads down to the water's surface."  
     );
-    add_exit("/wizards/khojem/port/room/s16","north");
-    add_exit("/wizards/khojem/port/room/s09","west");
-    add_exit("/wizards/khojem/port/room/s19","east");
-    add_exit("/wizards/khojem/port/room/s08","northwest");
-    add_exit("/wizards/khojem/port/room/tp","northeast");
-    add_exit("/wizards/khojem/port/room/h1","down");
+    add_exit("/d/khojem/port/room/s16","north");
+    add_exit("/d/khojem/port/room/s09","west");
+    add_exit("/d/khojem/port/room/s19","east");
+    add_exit("/d/khojem/port/room/s08","northwest");
+    add_exit("/d/khojem/port/room/tp","northeast");
+    add_exit("/d/khojem/port/room/h1","down");
     set_pre_exit_functions(({"down"}),({"go_down"}));
     set_items(([
      ({ "ladder" }) :

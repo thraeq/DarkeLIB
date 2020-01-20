@@ -45,7 +45,7 @@ create() {
 	add_spell("disruption bolt","$A");
 	set_spell_level("disruption bolt",4);
 	set_skill("chaos magic",55);
-	new("/wizards/khojem/nomad/armor/white_sash")->move(this_object());
+	new("/d/khojem/nomad/armor/white_sash")->move(this_object());
 	force_me("wear sash");
 }
 

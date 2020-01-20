@@ -8,10 +8,10 @@ inherit ROOM;
 
 void reset() {
    ::reset();
-   new("/wizards/khojem/zone/mon/sentry")->move(this_object());
-   new("/wizards/khojem/zone/mon/sentry")->move(this_object());
-   new("/wizards/khojem/zone/mon/sentry")->move(this_object());
-   new("/wizards/khojem/zone/mon/sentry")->move(this_object());
+   new("/d/khojem/zone/mon/sentry")->move(this_object());
+   new("/d/khojem/zone/mon/sentry")->move(this_object());
+   new("/d/khojem/zone/mon/sentry")->move(this_object());
+   new("/d/khojem/zone/mon/sentry")->move(this_object());
 }
 
 void create() {

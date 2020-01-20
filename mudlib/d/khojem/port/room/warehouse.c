@@ -12,13 +12,13 @@ void reset() {
     ::reset();
   search_flag = 0;
   if(!present("worker")) {
-    new("/wizards/khojem/port/mon/worker2")->move(this_object());
-    new("/wizards/khojem/port/mon/worker2")->move(this_object());
+    new("/d/khojem/port/mon/worker2")->move(this_object());
+    new("/d/khojem/port/mon/worker2")->move(this_object());
   }
   if(check_mobs()<5) {
-    new("/wizards/khojem/port/mon/worker1")->move(this_object());
-    new("/wizards/khojem/port/mon/worker1")->move(this_object());
-    new("/wizards/khojem/port/mon/worker1")->move(this_object());
+    new("/d/khojem/port/mon/worker1")->move(this_object());
+    new("/d/khojem/port/mon/worker1")->move(this_object());
+    new("/d/khojem/port/mon/worker1")->move(this_object());
   }
 }    
 
@@ -34,7 +34,7 @@ void create() {
       "warehouse can stay very busy.  Many crates and boxes are stacked "+
       "here for storage."
     );
-    add_exit("/wizards/khojem/port/room/s13","east");
+    add_exit("/d/khojem/port/room/s13","east");
     set_items(([
      ({ "warehouse" }) :
         "It looks like an old, weather-ravaged wooden warehouse.",
@@ -129,7 +129,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/worker1")  
+  if(base_name(mob) == "/d/khojem/port/mon/worker1")  
     return 1;                                        
   return 0;
 }

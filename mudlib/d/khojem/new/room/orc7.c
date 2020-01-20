@@ -10,10 +10,10 @@ void reset(){
   if(query_open("stone door")) {
     set_open("stone door",0);
     set_locked("stone door",1);
-    "/wizards/khojem/new/room/troom"->set_open("stone door",0);
-    "/wizards/khojem/new/room/troom"->set_locked("stone door",1);
+    "/d/khojem/new/room/troom"->set_open("stone door",0);
+    "/d/khojem/new/room/troom"->set_locked("stone door",1);
     add_invis_exit("north");
-    "/wizards/khojem/new/room/troom"->add_invis_exit("south");
+    "/d/khojem/new/room/troom"->add_invis_exit("south");
   }   
 }
 
@@ -30,7 +30,7 @@ void create() {
     add_exit("orc8","east");
     add_exit("troom","north");
     add_invis_exit("north");
-    set_door("stone door","/wizards/khojem/new/room/troom","north","chieftain's key");
+    set_door("stone door","/d/khojem/new/room/troom","north","chieftain's key");
     set_open("stone door",0);
     set_locked("stone door",1);
     set_func("stone door","open","do_open");
@@ -62,7 +62,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/new/room/troom"->remove_invis_exit("south");
+  "/d/khojem/new/room/troom"->remove_invis_exit("south");
   write("With considerable effort you manage to open the door.\n"+
     "The stone door's hinges moan and creak as the door opens.\n");
   say(this_player()->query_cap_name()+" leans and pushes against the "+
@@ -72,7 +72,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/new/room/troom"->add_invis_exit("south");
+  "/d/khojem/new/room/troom"->add_invis_exit("south");
   write("The weight of the stone door makes it difficult to close.\n"+
     "It creaks and moans but finally slams shut with a hollow rumble.\n");
   say(this_player()->query_cap_name()+" struggles against the weight "+

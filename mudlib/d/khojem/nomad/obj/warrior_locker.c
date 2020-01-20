@@ -28,7 +28,7 @@ void create() {
     obj->move(this_object());
     obj=new("/d/damned/virtual/scimitar_6.weapon");
     obj->move(this_object());
-    obj=new("/wizards/khojem/nomad/obj/compass");
+    obj=new("/d/khojem/nomad/obj/compass");
     obj->move(this_object());
     toggle_closed();
     set_lock("locked");

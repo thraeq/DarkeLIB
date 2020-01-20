@@ -15,10 +15,10 @@ void create() {
       "Below is a long drop and would hurt if you fell from this height.  "+
       "In the distance the town of Vo'Sangor stretches out beneath you."
     );
-    add_exit("/wizards/khojem/port/room/r3","up");
+    add_exit("/d/khojem/port/room/r3","up");
     set_pre_exit_functions(({ "up" }),({"do_up"}));
     add_invis_exit("up");
-    add_exit("/wizards/khojem/port/room/r1","down");
+    add_exit("/d/khojem/port/room/r1","down");
     set_pre_exit_functions(({ "down" }),({"do_dn"}));
     add_invis_exit("down");
     set_items(([
@@ -48,11 +48,11 @@ int do_up() {
   }
   this_player()->add_hp(-100);
   write("After a few feet you slip and land in a heap on the ground below.\n");
-  tell_room("/wizards/khojem/port/room/r1",
+  tell_room("/d/khojem/port/room/r1",
     this_player()->query_cap_name()+" falls from above and "+
      "elegantly lands flat on his face beside you.\n");
-  find_object_or_load("/wizards/khojem/port/room/r1");
-  this_player()->move_player("/wizards/khojem/port/room/r1");
+  find_object_or_load("/d/khojem/port/room/r1");
+  this_player()->move_player("/d/khojem/port/room/r1");
   return 0;
 }
 
@@ -69,7 +69,7 @@ int do_dn() {
   }
   this_player()->add_hp(-50);
   write("After a few feet you slip and land in a heap on the ground below.\n");
-  tell_room("/wizards/khojem/port/room/r1",
+  tell_room("/d/khojem/port/room/r1",
     this_player()->query_cap_name()+" falls from above and "+
      "elegantly lands flat on his face beside you.\n");
   return 1;

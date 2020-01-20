@@ -62,7 +62,7 @@ int do_release(string str){
   set_verb("slash");
   set_parry_bonus(-40);
   set_property("connected",0);
-  ob=new("/wizards/khojem/pommel");
+  ob=new("/d/khojem/pommel");
   ob->move(this_player());
   return 1;
 }

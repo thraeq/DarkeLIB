@@ -36,7 +36,7 @@ create() {
 	set_class("fighter");
 	zlevel = random(10);
 	if(zlevel == 0) {
-	    obj = new("/wizards/khojem/port/obj/coffin_key");
+	    obj = new("/d/khojem/port/obj/coffin_key");
 	    obj->set_name("dirty mop");
 	    obj->set_id(({ "mop" }));
 	    obj->set("short","dirty mop");

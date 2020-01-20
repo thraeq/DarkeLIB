@@ -7,11 +7,11 @@ inherit ROOM;
 void reset() {
     ::reset();
   if(!present("sailor")) {
-    new("/wizards/khojem/port/mon/sailor2")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor2")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor2")->move(this_object());
-    new("/wizards/khojem/port/mon/marine")->move(this_object());
-    new("/wizards/khojem/port/mon/marine")->move(this_object());
+    new("/d/khojem/port/mon/sailor2")->move(this_object());
+    new("/d/khojem/port/mon/sailor2")->move(this_object());
+    new("/d/khojem/port/mon/sailor2")->move(this_object());
+    new("/d/khojem/port/mon/marine")->move(this_object());
+    new("/d/khojem/port/mon/marine")->move(this_object());
   }
 }    
 
@@ -26,7 +26,7 @@ void create() {
       "to be used to barracks the crew of the ship.  "+
       "A wooden ladder leads up to the ship's deck."
     );
-    add_exit("/wizards/khojem/port/room/mow","up");
+    add_exit("/d/khojem/port/room/mow","up");
     set_items(([
      ({ "sails", "sail", "riggings", "rigging", "cleats", "cleat" }) :
         "The sails are wrapped around the yardarms and tied with rope.  "+

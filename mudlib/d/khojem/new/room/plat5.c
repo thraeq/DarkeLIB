@@ -10,9 +10,9 @@ void reset(){
   object mon;
   ::reset();
   if(!present("hawker")) 
-    new("/wizards/khojem/new/mon/elf_hawker")->move(this_object());
+    new("/d/khojem/new/mon/elf_hawker")->move(this_object());
   if(!present("commoner"))
-    new("/wizards/khojem/new/mon/commoner")->move(this_object());
+    new("/d/khojem/new/mon/commoner")->move(this_object());
 }  
 
 void create() {
@@ -25,7 +25,7 @@ void create() {
       "wood-elves.  A place of business is north from here.  "+
       "The forest floor is far below."
     );
-    add_exit("/wizards/khojem/new/shop/grocery_shop","north");
+    add_exit("/d/khojem/new/shop/grocery_shop","north");
     add_exit("walk7","south");
     add_exit("walk6","east");
     set_items(([

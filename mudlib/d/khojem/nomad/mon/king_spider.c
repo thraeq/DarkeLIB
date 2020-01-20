@@ -50,7 +50,7 @@ create() {
     money=new("std/obj/coins");
     money->set_money("silver",((random(20))+30));
     money->move(this_object());
-	new("/wizards/khojem/nomad/armor/white-green_sash")->move(this_object());
+	new("/d/khojem/nomad/armor/white-green_sash")->move(this_object());
 	force_me("wear sash");
 }
 

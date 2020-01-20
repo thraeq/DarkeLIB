@@ -37,28 +37,28 @@ create() {
       case 0:new("/d/damned/virtual/hammer_3.weapon")->
                  move(this_object());
              force_me("wield hammer in right hand");
-             new("/wizards/khojem/new/armor/rag_shirt")->
+             new("/d/khojem/new/armor/rag_shirt")->
                  move(this_object());
              force_me("wear shirt");
              break;
       case 1:new("/d/damned/virtual/hand-axe_3.weapon")->
                  move(this_object());
              force_me("wield axe in right hand");
-             new("/wizards/khojem/new/armor/stone_shield")->
+             new("/d/khojem/new/armor/stone_shield")->
                  move(this_object());
              force_me("wear shield on left hand");
              break;
       case 2:new("/d/damned/virtual/morning-star_3.weapon")->
                  move(this_object());
              force_me("wield morning star in right hand");
-             new("/wizards/khojem/new/armor/rag_pants")->
+             new("/d/khojem/new/armor/rag_pants")->
                  move(this_object());
              force_me("wear pants");
              break;
       case 3:new("/d/damned/virtual/hand-axe_3.weapon")->
                  move(this_object());
              force_me("wield axe in right hand");
-             new("/wizards/khojem/new/armor/leather_mittens")->
+             new("/d/khojem/new/armor/leather_mittens")->
                  move(this_object());
              force_me("wear mitten on right hand");
              break;

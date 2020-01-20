@@ -18,8 +18,8 @@ void init() {
 void reset() {
     ::reset();
     if(!present("gatekeeper")) {
-      new("/wizards/khojem/port/mon/gatekeeper")->move(this_object());
-      new("/wizards/khojem/port/mon/gatekeeper")->move(this_object());
+      new("/d/khojem/port/mon/gatekeeper")->move(this_object());
+      new("/d/khojem/port/mon/gatekeeper")->move(this_object());
     }
 }
 
@@ -43,8 +43,8 @@ void create() {
     );
     add_exit("/d/damned/virtual/room_11_9.world","north");
     set_pre_exit_functions(({"north"}),({"exit_city"}));
-    add_exit("/wizards/khojem/port/room/constable","east");
-    add_exit("/wizards/khojem/port/room/s06","south");
+    add_exit("/d/khojem/port/room/constable","east");
+    add_exit("/d/khojem/port/room/s06","south");
     set_items(([
      ({ "arch","gateway" }) :
         "The stones of the arch are massive and superbly crafted.\n",

@@ -16,23 +16,23 @@ void init(){
 void reset() {
    ::reset();
     if(check_peasant()<10) {
-      new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
-      new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
+      new("/d/khojem/nomad/mon/peasant")->move(this_object());
+      new("/d/khojem/nomad/mon/peasant")->move(this_object());
     }      
    if(!present("akmed")) {
-      new("/wizards/khojem/nomad/mon/akmed")->move(this_object());
+      new("/d/khojem/nomad/mon/akmed")->move(this_object());
    }
    if(!present("coco")) {
-      new("/wizards/khojem/nomad/mon/coco")->move(this_object());
+      new("/d/khojem/nomad/mon/coco")->move(this_object());
    }
    if(!present("merz")) {
-      new("/wizards/khojem/nomad/mon/merz")->move(this_object());
+      new("/d/khojem/nomad/mon/merz")->move(this_object());
    }
    if(!present("shopguard")) {
-      new("/wizards/khojem/nomad/mon/shopguard")->move(this_object());
-      new("/wizards/khojem/nomad/mon/shopguard")->move(this_object());
-      new("/wizards/khojem/nomad/mon/shopguard")->move(this_object());
-      new("/wizards/khojem/nomad/mon/shopguard")->move(this_object());
+      new("/d/khojem/nomad/mon/shopguard")->move(this_object());
+      new("/d/khojem/nomad/mon/shopguard")->move(this_object());
+      new("/d/khojem/nomad/mon/shopguard")->move(this_object());
+      new("/d/khojem/nomad/mon/shopguard")->move(this_object());
    }
 }
 
@@ -41,8 +41,8 @@ void create() {
    set_property("light",3);
    set_property("indoors",1);
    set_property("no castle", 1);
-   add_exit("/wizards/khojem/nomad/camp/center", "north");
-   add_exit("/wizards/khojem/nomad/camp/pub", "south");
+   add_exit("/d/khojem/nomad/camp/center", "north");
+   add_exit("/d/khojem/nomad/camp/pub", "south");
    set("short","Nomad's Bazaar");
    set("long",
      "This appears to be a bazaar for the nomads.  Inside this large tent "+
@@ -89,7 +89,7 @@ int check_peasant() {
 }
 
 int my_peasant_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/peasant")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/peasant")  
     return 1;                                        
   return 0;
 }                                      

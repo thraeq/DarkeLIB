@@ -8,7 +8,7 @@ void create() {
     set_property("night light", 2);
     add_exit(ROOMS+"db_square", "out");
     add_exit("/d/damned/virtual/room_9_7.world", "goblin");
-    add_exit("/d/damned/virtual/room_24_21.world", "kuril"); 
+    add_exit("/d/damned/virtual/room_24_21.world", "kuril");
     add_exit("/d/damned/virtual/room_5_9.world", "akkad");
     add_exit("/d/damned/virtual/room_11_9.world", "vo");
     add_exit("/d/damned/virtual/room_25_15.world", "canyon");
@@ -23,8 +23,8 @@ void create() {
     add_exit("/d/damned/virtual/room_70_70.world", "ancient");
 
 
-  
- 
+
+
     set("short","Portal");
     set("long", "Portal before you go to Town Square.");
 }

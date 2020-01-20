@@ -24,11 +24,11 @@ void create() {
     set_pre_exit_functions(({ "up" }),({ "go_up" }));
     set_smell("default", "The air smells dank and cold.");
     set_listen("default", "You hear a humming sound from all around.");
-    new("/wizards/khojem/new/mon/evil_faerie")->move(this_object());
+    new("/d/khojem/new/mon/evil_faerie")->move(this_object());
 }
 
 int go_up(){
-    tell_room("/wizards/khojem/new/room/mage_hut","A trapdoor appears "+
+    tell_room("/d/khojem/new/room/mage_hut","A trapdoor appears "+
       "out of it steps "+this_player()->query_cap_name()+".  The trapdoor "+
       "closes behind him.\n");
     return 1;

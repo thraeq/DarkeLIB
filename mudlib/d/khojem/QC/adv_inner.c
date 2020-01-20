@@ -23,7 +23,7 @@ void create() {
     add_exit("/d/standard/boards/damned","damned");
     add_exit("/d/standard/adv_main", "darke");
     add_exit("/d/standard/square", "square");
-    add_exit("/wizards/khojem/QC/QC","qc");
+    add_exit("/d/khojem/QC/QC","qc");
 
     ob = new("std/bboard");
     ob->set_name("board");

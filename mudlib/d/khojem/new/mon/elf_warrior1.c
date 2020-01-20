@@ -36,7 +36,7 @@ create() {
     set_wimpy(0);
     set_alignment(20);
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/weapon/wooden_spear")->
+      case 0:new("/d/khojem/new/weapon/wooden_spear")->
                  move(this_object());
              force_me("wield spear in right hand and left hand");
              break;

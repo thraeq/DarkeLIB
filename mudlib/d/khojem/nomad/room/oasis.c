@@ -43,11 +43,11 @@ void create() {
       "sand gets in your eye.  In the distance you can still see the "+
       "the sand dunes that surround this oasis in the desert."
     );
-    add_exit("/wizards/khojem/nomad/room/s1","south");
-    add_exit("/wizards/khojem/nomad/room/d11","northwest");
-    add_exit("/wizards/khojem/nomad/room/e1","northeast");
-    add_exit("/wizards/khojem/nomad/room/d10","southwest");
-    add_exit("/wizards/khojem/nomad/room/d5","west");
+    add_exit("/d/khojem/nomad/room/s1","south");
+    add_exit("/d/khojem/nomad/room/d11","northwest");
+    add_exit("/d/khojem/nomad/room/e1","northeast");
+    add_exit("/d/khojem/nomad/room/d10","southwest");
+    add_exit("/d/khojem/nomad/room/d5","west");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",
@@ -60,8 +60,8 @@ void create() {
     set_smell("default", "The dry, arid air burns your nose.");
     set_listen("default", "You hear the palms sway in the breeze above.");
     set_search("default",(: call_other, this_object(),"do_search" :));
-    new("/wizards/khojem/nomad/obj/oasis")->move(this_object());
-    new("/wizards/khojem/nomad/obj/mono2")->move(this_object());
+    new("/d/khojem/nomad/obj/oasis")->move(this_object());
+    new("/d/khojem/nomad/obj/mono2")->move(this_object());
 }
 
 int do_drink(string str) {
@@ -91,7 +91,7 @@ void do_search() {
     search_count=1;
     write("Your search is successful.\nYou discover a thief!");
     zplayer=(this_player()->query_cap_name());
-    ob=new("/wizards/khojem/nomad/mon/thief");
+    ob=new("/d/khojem/nomad/mon/thief");
     ob->move(this_object());
     ob->kill_ob(this_player(),0);
   }

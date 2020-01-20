@@ -25,7 +25,7 @@ void init() {
     if(living(inv[i]) && (!inv[i]->query_kho_mon())) {
       lvl = (int)inv[i]->query_level();
       if(inv[i] != this_object())
-      write_file("/wizards/khojem/log/earl.log",
+      write_file("/d/khojem/log/earl.log",
        "=== Init:  "+inv[i]->query_cap_name()+" "+lvl+"\t\t\t"+
         ctime(time())+"\n");
     }
@@ -60,8 +60,8 @@ create() {
     set_skill("illusionism",110);
     set_skill("concentrate",90);
     set_fingers(5);
-    new("/wizards/khojem/port/obj/earl_desk_key")->move(this_object());
-    new("/wizards/khojem/port/weapon/epee")->move(this_object());
+    new("/d/khojem/port/obj/earl_desk_key")->move(this_object());
+    new("/d/khojem/port/weapon/epee")->move(this_object());
     command("use concentrate");
     wielding = 0;
 }
@@ -83,20 +83,20 @@ void catch_tell(string str) {
   
   if(sscanf(str, "%s drops dead before %s", who, b) == 2 ) {
     force_me("grin");
-    write_file("/wizards/khojem/log/earl.log",
+    write_file("/d/khojem/log/earl.log",
       "*** Player Kill:  "+who+"\t\t"+ctime(time())+"\n");
     return;
   }
   if(sscanf(str, "%s dies a horrible %s", who, b) == 2 ) {
     force_me("grin");
-    write_file("/wizards/khojem/log/earl.log",
+    write_file("/d/khojem/log/earl.log",
       "*** Player Kill:  "+who+"\t\t"+ctime(time())+"\n");
   }
   return;
 }
 
 void die() {
-  write_file("/wizards/khojem/log/earl.log",
+  write_file("/d/khojem/log/earl.log",
     ">>> Earl of Vo'Sangor died \t\t"+ctime(time())+"\n");
    ::die();
 }

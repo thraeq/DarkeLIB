@@ -24,7 +24,7 @@ void create() {
 
 int do_read(string str) {
   if(str != "diary" && str != "captain's diary") { return 0; }
-  this_player()->more("/wizards/khojem/nomad/obj/diary_text");
+  this_player()->more("/d/khojem/nomad/obj/diary_text");
   return 1;
 }
 

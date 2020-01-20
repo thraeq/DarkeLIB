@@ -35,7 +35,7 @@ void create() {
      ]));
     set_smell("default", "The smell of growth and decaying wood is everywhere.");
     set_listen("default", "You hear the occasional sound of birds singing.");
-    new("/wizards/khojem/new/obj/vat")->move(this_object());
+    new("/d/khojem/new/obj/vat")->move(this_object());
 }
 
 int do_drink(string str) {

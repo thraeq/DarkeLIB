@@ -25,7 +25,7 @@ int clean_up() {
 void reset() {
     ::reset();
     if(check_mobs()<6) {
-      new("/wizards/khojem/nomad/mon/sidewinder")->move(this_object());
+      new("/d/khojem/nomad/mon/sidewinder")->move(this_object());
     }
 }
 
@@ -49,11 +49,11 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/d3","northwest");
-    add_exit("/wizards/khojem/nomad/room/well","northeast");
-    add_exit("/wizards/khojem/nomad/room/e1","east");
-    add_exit("/wizards/khojem/nomad/room/oasis","southeast");
-    add_exit("/wizards/khojem/nomad/room/d4","west");
+    add_exit("/d/khojem/nomad/room/d3","northwest");
+    add_exit("/d/khojem/nomad/room/well","northeast");
+    add_exit("/d/khojem/nomad/room/e1","east");
+    add_exit("/d/khojem/nomad/room/oasis","southeast");
+    add_exit("/d/khojem/nomad/room/d4","west");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",
@@ -73,7 +73,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/sidewinder")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/sidewinder")  
     return 1;                                        
   return 0;
 } 

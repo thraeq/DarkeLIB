@@ -13,8 +13,8 @@ void init() {
 void reset() {
     ::reset();
    if(!present("eunuch")) {
-      new("/wizards/khojem/nomad/mon/eunuch")->move(this_object());
-      new("/wizards/khojem/nomad/mon/eunuch")->move(this_object());
+      new("/d/khojem/nomad/mon/eunuch")->move(this_object());
+      new("/d/khojem/nomad/mon/eunuch")->move(this_object());
   }   
 }
 
@@ -35,8 +35,8 @@ void create() {
       "ventilated and lit.  Many carpets form the floor of the tent and "+
       "any sand tracked in from the camp is quickly swept away.\n"
     );
-    add_exit("/wizards/khojem/nomad/camp/center","northwest");
-    add_exit("/wizards/khojem/nomad/camp/hareem2","south");   
+    add_exit("/d/khojem/nomad/camp/center","northwest");
+    add_exit("/d/khojem/nomad/camp/hareem2","south");   
     set_pre_exit_functions(({"south"}),({"go_south"}));
     set_items(([
      ({ "tent" }) :

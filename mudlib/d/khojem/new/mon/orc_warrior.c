@@ -62,19 +62,19 @@ create() {
              break;
     }
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/armor/rag_shirt")->
+      case 0:new("/d/khojem/new/armor/rag_shirt")->
                  move(this_object());
              force_me("wear shirt");
              break;
-      case 1:new("/wizards/khojem/new/armor/stone_shield")->
+      case 1:new("/d/khojem/new/armor/stone_shield")->
                  move(this_object());
              force_me("wear shield");
              break;
-      case 2:new("/wizards/khojem/new/armor/rag_pants")->
+      case 2:new("/d/khojem/new/armor/rag_pants")->
                  move(this_object());
              force_me("wear pants");
              break;
-      case 3:new("/wizards/khojem/new/armor/leather_mittens")->
+      case 3:new("/d/khojem/new/armor/leather_mittens")->
                  move(this_object());
              force_me("wear mitten on right hand");
              break;

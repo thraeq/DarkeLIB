@@ -27,12 +27,12 @@ void create() {
       "to the southeast.  Shops can be seen north and west of here.  A sign "+
       "hangs above each doorway."  
     );
-    add_exit("/wizards/khojem/port/shop/droblek_shop","north");
-    add_exit("/wizards/khojem/port/room/s04","south");
-    add_exit("/wizards/khojem/port/shop/gedrak_shop","west");
-    add_exit("/wizards/khojem/port/room/s08","east");
-    add_exit("/wizards/khojem/port/room/s09","southeast");
-    set_door("north door", "/wizards/khojem/port/shop/droblek_shop", "north",
+    add_exit("/d/khojem/port/shop/droblek_shop","north");
+    add_exit("/d/khojem/port/room/s04","south");
+    add_exit("/d/khojem/port/shop/gedrak_shop","west");
+    add_exit("/d/khojem/port/room/s08","east");
+    add_exit("/d/khojem/port/room/s09","southeast");
+    set_door("north door", "/d/khojem/port/shop/droblek_shop", "north",
       "a non-existent key");
 	set_open("north door", 1);
     set_locked("north door", 0);
@@ -66,12 +66,12 @@ int read(string str) {
   return 0;
 }
 void close_door() {
-  call_other("/wizards/khojem/port/shop/droblek_shop", "close_door");
+  call_other("/d/khojem/port/shop/droblek_shop", "close_door");
   return;
 }
 
 void open_door() {
-  call_other("/wizards/khojem/port/shop/droblek_shop", "open_door");
+  call_other("/d/khojem/port/shop/droblek_shop", "open_door");
   return;
 }
 

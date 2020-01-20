@@ -73,7 +73,7 @@ void create() {
   set_related_guilds(( {"necromancer","elementalist","enchanter"}));
 
   add_exit("/d/damned/guilds/arch-mage/meeting","west");
-  add_exit("/wizards/khojem/port/room/t1","east");
+  add_exit("/d/khojem/port/room/t1","east");
   
   set("guildmaster", "/d/damned/guilds/arch-mage/arch-mage_gm");
   //  The guildmaster is automatically cloned if no pc guildmaster is

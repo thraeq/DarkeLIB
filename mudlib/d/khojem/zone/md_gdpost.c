@@ -8,7 +8,7 @@ inherit ROOM;
 
 void reset() {
    ::reset();
-   new("/wizards/khojem/zone/mon/sgt_guard")->move(this_object());
+   new("/d/khojem/zone/mon/sgt_guard")->move(this_object());
 }
 
 void create() {

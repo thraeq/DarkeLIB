@@ -35,7 +35,7 @@ create() {
 	}),1);
 	new("/d/damned/virtual/wall-shield.armour")->move(this_object());
 	force_me("wear shield on right hand");
-	new("/wizards/khojem/port/weapon/flail")->move(this_object());
+	new("/d/khojem/port/weapon/flail")->move(this_object());
 	force_me("wield flail in left hand");
 }
 

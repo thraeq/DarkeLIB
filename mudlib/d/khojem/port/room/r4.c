@@ -7,7 +7,7 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("giant"))
-      new("/wizards/khojem/port/mon/giant")->move(this_object());
+      new("/d/khojem/port/mon/giant")->move(this_object());
 }
 
 void create() {
@@ -22,7 +22,7 @@ void create() {
       "to the east and south.  Mountains raise up towards the north and a desert "+
       "can be seen to the northwest."  
     );
-    add_exit("/wizards/khojem/port/room/r3","down");
+    add_exit("/d/khojem/port/room/r3","down");
     set_pre_exit_functions(({ "down" }),({"do_dn"}));
     add_invis_exit("down");
     set_items(([
@@ -69,12 +69,12 @@ int do_dn() {
   this_player()->add_hp(-200);
   write("After a few feet you slip and tumble downward.\n"+
     "After a long fall you land in a heap on the ground below.\n");
-  tell_room("/wizards/khojem/port/room/r1",
+  tell_room("/d/khojem/port/room/r1",
     this_player()->query_cap_name()+" falls from above and "+
      "crashes down on his face beside you.  You hear the sound "+
      "of breaking bones.\n");
-  find_object_or_load("/wizards/khojem/port/room/r1");
-  this_player()->move_player("/wizards/khojem/port/room/r1");
+  find_object_or_load("/d/khojem/port/room/r1");
+  this_player()->move_player("/d/khojem/port/room/r1");
   return 0;
 }
 

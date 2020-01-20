@@ -42,7 +42,7 @@ void create() {
       "along the walkway.  Any attempt to climb the steep dune would be "+
       "impossible.  The dune is too soft and steep for you to climb it.\n"
     );
-    add_exit("/wizards/khojem/nomad/temple/t08","east");
+    add_exit("/d/khojem/nomad/temple/t08","east");
     set_items(([
      ({ "temple" , "structure" }) :
         "The structure appears it may have been a temple at one time.  Sculptured "+

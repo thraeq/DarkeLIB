@@ -9,7 +9,7 @@ inherit VAULT;
 void reset(){
   ::reset();
   if(!present("legionnaire"))
-    new("/wizards/khojem/port/mon/legion1")->move(this_object());
+    new("/d/khojem/port/mon/legion1")->move(this_object());
 }  
 
 void create() {
@@ -24,14 +24,14 @@ void create() {
       "staircase leads to the second floor.  A smaller exit reveals steps leading "+
       "down into the basement."
     );
-    add_exit("/wizards/khojem/port/room/e2","north");
-    add_exit("/wizards/khojem/port/room/e3","up");
-    add_exit("/wizards/khojem/port/room/e4","down");
-    add_exit("/wizards/khojem/port/room/s20","southwest");
+    add_exit("/d/khojem/port/room/e2","north");
+    add_exit("/d/khojem/port/room/e3","up");
+    add_exit("/d/khojem/port/room/e4","down");
+    add_exit("/d/khojem/port/room/s20","southwest");
     add_invis_exit("southwest");
     set_pre_exit_functions(({"up"}),({"go_up"}));
     set_pre_exit_functions(({"down"}),({"go_down"}));
-    set_door("teal door","/wizards/khojem/port/room/s20","southwest",
+    set_door("teal door","/d/khojem/port/room/s20","southwest",
       "sangor key");
     set_func("teal door","open","do_open");
     set_func("teal door","close","do_close");
@@ -68,7 +68,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("southwest");
-  "/wizards/khojem/port/room/s20"->remove_invis_exit("northeast");
+  "/d/khojem/port/room/s20"->remove_invis_exit("northeast");
   write("A teal door swings wide open.\n");
   say(this_player()->query_cap_name()+" opens a teal door.\n");
   return 1;
@@ -76,7 +76,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("southwest");
-  "/wizards/khojem/port/room/s20"->add_invis_exit("northeast");
+  "/d/khojem/port/room/s20"->add_invis_exit("northeast");
   write("A teal door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a teal door shut.\n");
   return 1;

@@ -32,7 +32,7 @@ void create() {
      "drow", "pix", "treefolk", "vr'krr", "middle-english",
      "gnollish", "zebber", "lithic", "serra", "sylvan",
      "catfolk", "ogryn", "rachk", "gr'grr" }));
-   set("storage room","/wizards/khojem/port/shop/zalrag_store");
+   set("storage room","/d/khojem/port/shop/zalrag_store");
    set("markup", 20);
    set("no sell",1);
    set_property("handedness", "right hand");

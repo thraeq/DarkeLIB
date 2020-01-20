@@ -44,7 +44,7 @@ int query_time_left(string owner) {
 
   if(member_array(owner, query_all_owners()) < 0)
     return 0;
-  room_file = sprintf("/wizards/khojem/port/virtual/inn_%d.inn",
+  room_file = sprintf("/d/khojem/port/virtual/inn_%d.inn",
     query_room_num(owner));
   if(!owners[room_file]) return 0;
   if(!mapp(owners[room_file]) || !owners[room_file]["time"]) {
@@ -91,7 +91,7 @@ void move_all_inv(object room_obj) {
     while(i--) {
       if(base_name(inv[i]) == "/std/obj/coins") inv[i]->remove();
       else
-        inv[i]->move(load_object("/wizards/khojem/port/inn/inn_store"));
+        inv[i]->move(load_object("/d/khojem/port/inn/inn_store"));
     }
   }
   return;
@@ -127,7 +127,7 @@ int get_next_room() {
   for(j=0;j < max; j++) {
     num = sprintf("%d%2'0'd", j/ROOMS_PER_FLOOR + 1,j%ROOMS_PER_FLOOR);
     if(!owners ||
-      !owners[sprintf("/wizards/khojem/port/virtual/inn_%s.inn", 
+      !owners[sprintf("/d/khojem/port/virtual/inn_%s.inn", 
         num)])
     return atoi(num);
   }
@@ -164,10 +164,10 @@ void create() {
       "the wall which has the inn's rates.  Try telling the "
       "clerk 'help' for info on renting rooms.\n");
   set_items(([ "sign" : "Try reading it." ]));
-  add_exit("/wizards/khojem/port/inn/foyer", "northeast");
-  add_exit("/wizards/khojem/port/room/s16","southwest");
-  add_exit("/wizards/khojem/port/inn/chest","north");
-  set_door("north door", "/wizards/khojem/port/inn/chest", 
+  add_exit("/d/khojem/port/inn/foyer", "northeast");
+  add_exit("/d/khojem/port/room/s16","southwest");
+  add_exit("/d/khojem/port/inn/chest","north");
+  set_door("north door", "/d/khojem/port/inn/chest", 
     "north","port_chest_shop");
   this_object()->reset();
   return;
@@ -195,7 +195,7 @@ void reset() {
   ::reset();
   if(!present("clerk", this_object())) {
     seteuid(getuid());
-    ob = new("/wizards/khojem/port/inn/inn_clerk");
+    ob = new("/d/khojem/port/inn/inn_clerk");
     ob->move(this_object());
   }
   if(!present("trash can"))

@@ -45,7 +45,7 @@ create() {
     set_lang_prof("drow",8);
     set_lang_prof("middle-english",8);
     set_primary_lang("common");
-    new("/wizards/khojem/port/armor/dress")->move(this_object());
+    new("/d/khojem/port/armor/dress")->move(this_object());
     force_me("wear dress");
     set_emotes(1, ({
 	  "Bertha looks longingly at you.",

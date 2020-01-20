@@ -24,7 +24,7 @@ void create() {
 
 int do_read(string str) {
   if(str == "map" || str == "harbor map") { 
-    this_player()->more("/wizards/khojem/port/obj/map_text");
+    this_player()->more("/d/khojem/port/obj/map_text");
     return 1;
   }
   return 0;

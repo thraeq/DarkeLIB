@@ -27,7 +27,7 @@ void create() {
     "You are high atop a palm tree.  Below, you can see the camp's "
     " fires.  Sand and darkness surround the small oasis."
   );
-  add_exit("/wizards/khojem/nomad/camp/stable","down");
+  add_exit("/d/khojem/nomad/camp/stable","down");
   set_items(([
     ({ "camp" , "nomad camp" }) :
       "The camp is sprawled out below you in an array of tents of "

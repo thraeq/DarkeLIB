@@ -20,9 +20,9 @@ void init() {
 void reset() {
     ::reset();
     if(!present("sergeant"))
-      new("/wizards/khojem/nomad/mon/sergeant")->move(this_object());
+      new("/d/khojem/nomad/mon/sergeant")->move(this_object());
     while(check_mobs()<5)
-      new("/wizards/khojem/nomad/mon/guard")->move(this_object());
+      new("/d/khojem/nomad/mon/guard")->move(this_object());
 }
 
 void create() {
@@ -45,8 +45,8 @@ void create() {
       "is littered with tents of various size.  Small dogs run loose "+
       "between the tents.  Several of the tents are lit by torchlight.\n"
     );
-    add_exit("/wizards/khojem/nomad/camp/center","east");
-    add_exit("/wizards/khojem/nomad/room/oasis","west");
+    add_exit("/d/khojem/nomad/camp/center","east");
+    add_exit("/d/khojem/nomad/room/oasis","west");
     set_items(([
      ({ "camp" , "nomad camp", "nomad's camp" }) :
         "The camp is a sprawl of canvas tents with low-sloped roofs.  "+
@@ -73,10 +73,10 @@ void create() {
     ]));
     set_smell("default", "The dry, arid air burns your nose.");
     set_listen("default", "The camp is noisy.  People shouting and dogs barking.");
-    find_object_or_load("/wizards/khojem/nomad/camp/tent1");
-    find_object_or_load("/wizards/khojem/nomad/camp/tent2");
-    find_object_or_load("/wizards/khojem/nomad/camp/shop");
-    find_object_or_load("/wizards/khojem/nomad/camp/center");
+    find_object_or_load("/d/khojem/nomad/camp/tent1");
+    find_object_or_load("/d/khojem/nomad/camp/tent2");
+    find_object_or_load("/d/khojem/nomad/camp/shop");
+    find_object_or_load("/d/khojem/nomad/camp/center");
 }
 
 int check_mobs() {
@@ -88,7 +88,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/guard")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/guard")  
     return 1;                                        
   return 0;
 }

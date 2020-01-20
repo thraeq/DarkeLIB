@@ -8,8 +8,8 @@ inherit VAULT;
 void reset(){
   set_open("iron trapdoor",0);
   set_locked("iron trapdoor",0);
-  "/wizards/khojem/port/room/t4"->set_open("iron trapdoor",0);
-  "/wizards/khojem/port/room/t4"->set_locked("iron trapdoor",0);
+  "/d/khojem/port/room/t4"->set_open("iron trapdoor",0);
+  "/d/khojem/port/room/t4"->set_locked("iron trapdoor",0);
 }
 
 void create() {
@@ -24,9 +24,9 @@ void create() {
       "darkened landing.  You perceive that the tower has greatly narrowed its "+
       "diameter at this level compared with that at the tower's base."
     );
-    add_exit("/wizards/khojem/port/room/t2","down");
-    add_exit("/wizards/khojem/port/room/t4","up");
-    set_door("iron trapdoor","/wizards/khojem/port/room/t4","up",0);
+    add_exit("/d/khojem/port/room/t2","down");
+    add_exit("/d/khojem/port/room/t4","up");
+    set_door("iron trapdoor","/d/khojem/port/room/t4","up",0);
     set_open("iron trapdoor",0);
     set_locked("iron trapdoor",0);
     set_func("iron trapdoor","open","do_open");

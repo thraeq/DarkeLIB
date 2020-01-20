@@ -42,7 +42,7 @@ create() {
 	add_spell("drain life","$A");
 	set_spell_level("drain life",6);
 	set_skill("necromancy",70);
-	new("/wizards/khojem/nomad/armor/mummy_wrappings")->move(this_object());
+	new("/d/khojem/nomad/armor/mummy_wrappings")->move(this_object());
 	force_me("wear rags");
     money=new("std/obj/coins");
     money->set_money("silver",((random(20))+20));

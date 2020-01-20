@@ -8,11 +8,11 @@ inherit VAULT;
 void reset() {
     ::reset();
   if(!present("pirate")) {
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
   }
 }    
 
@@ -30,10 +30,10 @@ void create() {
       "A wooden ladder descends "+
       "down into the hull of the craft."
     );
-    add_exit("/wizards/khojem/port/room/s25","north");
-    add_exit("/wizards/khojem/port/room/ship2a","down");
+    add_exit("/d/khojem/port/room/s25","north");
+    add_exit("/d/khojem/port/room/ship2a","down");
     add_invis_exit("north");
-    set_door("hatch","/wizards/khojem/port/room/s25","north",0);
+    set_door("hatch","/d/khojem/port/room/s25","north",0);
     set_func("hatch","open","do_open");
     set_func("hatch","close","do_close");
     set_items(([
@@ -77,13 +77,13 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/port/room/s25"->remove_invis_exit("south");
+  "/d/khojem/port/room/s25"->remove_invis_exit("south");
   return 1;
 }
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/port/room/s25"->add_invis_exit("south");
+  "/d/khojem/port/room/s25"->add_invis_exit("south");
   return 1;
 }
 

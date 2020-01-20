@@ -18,7 +18,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/worker1")  
+  if(base_name(mob) == "/d/khojem/port/mon/worker1")  
     return 1;                                        
   return 0;
 }
@@ -27,7 +27,7 @@ void reset(){
   ::reset();
   if(!present("worker")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/worker1")->move(this_object());
+      new("/d/khojem/port/mon/worker1")->move(this_object());
   }
 }
 
@@ -52,10 +52,10 @@ void create() {
       "The wooden boards beneath your feet creak with every footstep.  "+
       "Some sort of shop is to the west.  A sign is above the open doorway."
     );
-    add_exit("/wizards/khojem/port/shop/tavern","west");
-    add_exit("/wizards/khojem/port/room/s10","north");
-    add_exit("/wizards/khojem/port/room/s12","south");
-    add_exit("/wizards/khojem/port/room/mow","plank");
+    add_exit("/d/khojem/port/shop/tavern","west");
+    add_exit("/d/khojem/port/room/s10","north");
+    add_exit("/d/khojem/port/room/s12","south");
+    add_exit("/d/khojem/port/room/mow","plank");
     set_items(([
      ({ "ship","finely rigged ship" }) :
         "The ship is a large man-o-war with tall masts and a high gunwhale.  "+

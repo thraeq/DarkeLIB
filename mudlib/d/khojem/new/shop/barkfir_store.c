@@ -27,7 +27,7 @@ void reset() {
   i = sizeof(inv);
   while(i--) if(!living(inv[i])) inv[i]->remove();
   barkfir = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/new/shop/grocery_shop"));
+		find_object_or_load("/d/khojem/new/shop/grocery_shop"));
   if(barkfir) {
     message("info", "Barkfir says in Common: Wait a second.  I've got a lot "+
 	    "fresh food & goods for you...", environment(barkfir));
@@ -52,11 +52,11 @@ void finish_deliver(object barkfir) {
 void clone_ten() {
   object ob;
 
-  ob = new("/wizards/khojem/new/obj/melon");
+  ob = new("/d/khojem/new/obj/melon");
   ob->move(this_object());
-  ob = new("/wizards/khojem/new/obj/bread");
+  ob = new("/d/khojem/new/obj/bread");
   ob->move(this_object());
-  ob = new("/wizards/khojem/new/obj/berries");
+  ob = new("/d/khojem/new/obj/berries");
   ob->move(this_object());
   ob = new("/std/obj/torch");
   ob->move(this_object());
@@ -65,10 +65,10 @@ void clone_ten() {
 void clone_four() {
   object ob;
 
-  ob = new("/wizards/khojem/new/obj/mutton");
+  ob = new("/d/khojem/new/obj/mutton");
   ob->move(this_object());
-  ob = new("/wizards/khojem/new/obj/pigsfeet");
+  ob = new("/d/khojem/new/obj/pigsfeet");
   ob->move(this_object());
-  ob = new("/wizards/khojem/new/obj/waterskin");
+  ob = new("/d/khojem/new/obj/waterskin");
   ob->move(this_object());
 }

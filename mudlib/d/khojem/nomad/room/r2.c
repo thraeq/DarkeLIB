@@ -30,8 +30,8 @@ void create() {
       "the road with thick sand.  The deep sand makes your travel tiresome.  "+
       "Rolling sand dunes can be seen on both sides of the road.\n"
     );
-    add_exit("/wizards/khojem/nomad/room/r1","west");
-    add_exit("/wizards/khojem/nomad/room/d1","east");
+    add_exit("/d/khojem/nomad/room/r1","west");
+    add_exit("/d/khojem/nomad/room/d1","east");
     set_items(([
         "road" : "Coarse gravel stones allow wheeled carts to travel this "+
           "sandy terrain.  But, you see it has fallen into disrepair.\n",

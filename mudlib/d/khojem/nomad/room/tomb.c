@@ -13,11 +13,11 @@ void reset(){
   if(trap_found) trap_found=0;
   if(query_open("trapdoor")) {
     set_open("trapdoor",0);
-    "/wizards/khojem/nomad/room/pit"->set_open("trapdoor",0);
+    "/d/khojem/nomad/room/pit"->set_open("trapdoor",0);
     add_invis_exit("down");
   }
   if(!present("mummy")){
-    new("/wizards/khojem/nomad/mon/mummy")->move(this_object());
+    new("/d/khojem/nomad/mon/mummy")->move(this_object());
   }   
 }
 
@@ -29,8 +29,8 @@ void create() {
     set("long", "This very, dark cramped chamber serves as a tomb.  "+
       "The walls are made of sandstone and the floor of soft sand."
     );
-    add_exit("/wizards/khojem/nomad/room/sp3","west");
-    set_door("sandstone door","/wizards/khojem/nomad/room/sp3","west","sand key");
+    add_exit("/d/khojem/nomad/room/sp3","west");
+    set_door("sandstone door","/d/khojem/nomad/room/sp3","west","sand key");
     set_func("sandstone door","open","do_open");
     set_func("sandstone door","close","do_close");
     set_property("magic hold",70);
@@ -74,7 +74,7 @@ void look_at_trapdoor() {
 
 int do_open() {
   remove_invis_exit("west");
-  "/wizards/khojem/nomad/room/sp3"->remove_invis_exit("east");
+  "/d/khojem/nomad/room/sp3"->remove_invis_exit("east");
   write("The sandstone door makes a grinding noise as it opens.\n"+
     "Sand falls from the door's sill and dusts you in sand.\n");
   say(this_player()->query_cap_name()+" slowly opens the sandstone door to\n"+
@@ -84,7 +84,7 @@ int do_open() {
 
 int do_close() {
   add_invis_exit("west");
-  "/wizards/khojem/nomad/room/sp3"->add_invis_exit("east");
+  "/d/khojem/nomad/room/sp3"->add_invis_exit("east");
   write("The sandstone door makes a grinding sound as it closes shut.\n");
   say(this_player()->query_cap_name()+" closes the sandstone door.  It makes "+
     "a grinding sound as it closes.\n");
@@ -94,7 +94,7 @@ int do_close() {
 int do_trap_open() {
   if(!trap_found) return 0;
   remove_invis_exit("down");
-  "/wizards/khojem/nomad/room/pit"->remove_invis_exit("up");
+  "/d/khojem/nomad/room/pit"->remove_invis_exit("up");
   write("The trapdoor opens.  Its rusty hinges creak.\n");
   say(this_player()->query_cap_name()+" opens a trapdoor in the floor.  "+
     "Its rusty hinges creak while opening.\n");
@@ -104,7 +104,7 @@ int do_trap_open() {
 int do_trap_close() {
   if(!trap_found) return 0;
   add_invis_exit("down");
-  "/wizards/khojem/nomad/room/pit"->add_invis_exit("up");
+  "/d/khojem/nomad/room/pit"->add_invis_exit("up");
   write("The trapdoor closes.  Its rusty hinges creak.\n");
   say(this_player()->query_cap_name()+" closes a trapdoor.  The hinges "+
     "creak and moan.\n");
@@ -119,8 +119,8 @@ void do_search() {
   if(random(100)<skill){
     write("While sifting through the sand on the floor you uncover "+
       "a trapdoor!");
-    add_exit("/wizards/khojem/nomad/room/pit","down");
-    set_door("trapdoor","/wizards/khojem/nomad/room/pit","down",0);
+    add_exit("/d/khojem/nomad/room/pit","down");
+    set_door("trapdoor","/d/khojem/nomad/room/pit","down",0);
     set_func("trapdoor","open","do_trap_open");
     set_func("trapdoor","close","do_trap_close");
     trap_found=1;

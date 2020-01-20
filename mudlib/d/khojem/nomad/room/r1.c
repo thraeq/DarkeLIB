@@ -32,8 +32,8 @@ void create() {
       "is getting more difficult.  Rolling sand dunes can be seen on both sides "+
       "of the road.\n"
     );
-    add_exit("/wizards/khojem/nomad/room/entry","west");
-    add_exit("/wizards/khojem/nomad/room/r2","east");
+    add_exit("/d/khojem/nomad/room/entry","west");
+    add_exit("/d/khojem/nomad/room/r2","east");
     set_items(([
         "road" : "Coarse gravel stones allow wheeled carts to travel this "+
           "sandy terrain.  But, you see it has fallen into disrepair.\n",

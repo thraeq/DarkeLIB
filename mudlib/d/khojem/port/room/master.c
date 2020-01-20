@@ -8,7 +8,7 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("master"))
-    new("/wizards/khojem/port/mon/dagget")->move(this_object());
+    new("/d/khojem/port/mon/dagget")->move(this_object());
 }  
 
 void create() {
@@ -22,7 +22,7 @@ void create() {
       "vessels at the wharfs of Vo'Sangor.  Given the worn rundown "+
       "look of the office you figure it must not pay well."
     );
-    add_exit("/wizards/khojem/port/room/s19","south");
+    add_exit("/d/khojem/port/room/s19","south");
     set_items(([
      ({ "office", "shack" }) :
         "The office is littered with papers and leftover food articles.  "+

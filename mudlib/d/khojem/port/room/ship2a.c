@@ -7,11 +7,11 @@ inherit ROOM;
 void reset() {
     ::reset();
   if(!present("sailor")) {
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
-    new("/wizards/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
+    new("/d/khojem/port/mon/pirate1")->move(this_object());
   }
 }    
 
@@ -27,7 +27,7 @@ void create() {
       "from the small waves that lap against its hull.  "+
       "A wooden ladder leads up to the craft's deck."
     );
-    add_exit("/wizards/khojem/port/room/ship2","up");
+    add_exit("/d/khojem/port/room/ship2","up");
     set_items(([
      ({ "deck" }) :
         "The underside of the teakwood deck is used to hang hammocks.",

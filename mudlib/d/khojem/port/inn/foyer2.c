@@ -10,10 +10,10 @@ void create() {
     set("long",
         "You reach a second-story landing.  You see hallways leading "+
         "to the north, east, and south.  You see a staircase leading down.");
-    add_exit("/wizards/khojem/port/inn/foyer", "down");
-    add_exit("/wizards/khojem/port/inn/hall_20", "north");
-    add_exit("/wizards/khojem/port/inn/hall_21", "east");
-    add_exit("/wizards/khojem/port/inn/hall_22", "west");
+    add_exit("/d/khojem/port/inn/foyer", "down");
+    add_exit("/d/khojem/port/inn/hall_20", "north");
+    add_exit("/d/khojem/port/inn/hall_21", "east");
+    add_exit("/d/khojem/port/inn/hall_22", "west");
     return;
 }
 

@@ -34,7 +34,7 @@ void create() {
    set_languages(({"common", "stormspeak", "elvish", "yin", "dwarvish",
                 "drow", "pix", "treefolk", "vr'krr", "middle-english",
                             "catfolk", "ogryn", "rachk", "gr'grr" }));
-   set("storage room","/wizards/khojem/port/inn/chest_store");
+   set("storage room","/d/khojem/port/inn/chest_store");
    set("markup", 20);
    set_property("handedness", "right hand");
    set("no sell", 1);

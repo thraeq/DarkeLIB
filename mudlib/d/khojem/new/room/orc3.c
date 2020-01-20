@@ -20,8 +20,8 @@ void init() {
 void reset() {
 	::reset();
     if (!present("half-orc guard" , this_object()) ) {
-        new("/wizards/khojem/new/mon/orc_guard")->move(this_object());
-        new("/wizards/khojem/new/mon/orc_guard")->move(this_object());	  
+        new("/d/khojem/new/mon/orc_guard")->move(this_object());
+        new("/d/khojem/new/mon/orc_guard")->move(this_object());	  
     }
 }
 

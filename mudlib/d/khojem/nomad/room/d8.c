@@ -30,9 +30,9 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/d1","east");
-    add_exit("/wizards/khojem/nomad/room/d7","south");
-    add_exit("/wizards/khojem/nomad/room/d9","west");
+    add_exit("/d/khojem/nomad/room/d1","east");
+    add_exit("/d/khojem/nomad/room/d7","south");
+    add_exit("/d/khojem/nomad/room/d9","west");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",

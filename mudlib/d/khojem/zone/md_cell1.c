@@ -29,7 +29,7 @@ void create() {
         "rat"  :  "You spot a rat running away from you."
       ]));
     add_exit("md_dung2","south");
-    set_door("door","/wizards/khojem/zone/md_dung2","south",0);
+    set_door("door","/d/khojem/zone/md_dung2","south",0);
     set_smell("default", "A horrible, rotten smell permeates the air.");
     set_listen("default", "You hear a rats clawed paws nearby.");
 }

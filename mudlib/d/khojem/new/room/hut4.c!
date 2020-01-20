@@ -48,9 +48,9 @@ int open_stone(string str) {
   say(this_player()->query_cap_name()+" suddenly drops through a "+
     "hole that just opened in the floor.\n");
   this_player()->
-    move(find_object_or_load("/wizards/khojem/new/room/annex0"));
+    move(find_object_or_load("/d/khojem/new/room/annex0"));
   write("\nYou land in a heap on the hard floor.\n");
-  tell_room("/wizards/khojem/new/room/annex0",
+  tell_room("/d/khojem/new/room/annex0",
     this_player()->query_cap_name()+" falls from above and "+
      "elegantly lands flat on his face beside you.\n");
   return 1;

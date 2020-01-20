@@ -17,11 +17,11 @@ void init() {
 void reset() {
     ::reset();
     if(check_mobs()<1) {
-      new("/wizards/khojem/nomad/mon/rogue")->move(this_object());
+      new("/d/khojem/nomad/mon/rogue")->move(this_object());
     }
     if(check_peasant()<10) {
-      new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
-      new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
+      new("/d/khojem/nomad/mon/peasant")->move(this_object());
+      new("/d/khojem/nomad/mon/peasant")->move(this_object());
     }      
 }
 
@@ -46,8 +46,8 @@ void create() {
       "floor of this huge tent.  Children and dogs run wild through the large "+
       "space.\n"
     );
-    add_exit("/wizards/khojem/nomad/camp/center","southeast");
-    add_exit("/wizards/khojem/nomad/camp/tent2","northwest");
+    add_exit("/d/khojem/nomad/camp/center","southeast");
+    add_exit("/d/khojem/nomad/camp/tent2","northwest");
     set_items(([
      ({ "tent" }) :  
         "The tent has a low-pitch roof and is trussed with some timber bracing along "+
@@ -72,7 +72,7 @@ void create() {
     set_search("sheets",   (: call_other, this_object(),"do_search" :));
     set_smell("default", "A musty smell fills the tent.");
     set_listen("default", "It is quieter here than out in the camp's center.");
-    obj=new("/wizards/khojem/nomad/obj/basket");
+    obj=new("/d/khojem/nomad/obj/basket");
     obj->move(this_object());
     obj->toggle_closed();  
     search_count=0;  
@@ -86,7 +86,7 @@ int check_peasant() {
 }
 
 int my_peasant_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/peasant")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/peasant")  
     return 1;                                        
   return 0;
 }                                      
@@ -100,7 +100,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/rogue")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/rogue")  
     return 1;                                        
   return 0;
 }                                      

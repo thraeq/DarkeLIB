@@ -17,7 +17,7 @@ void create() {
     "to look down into the courtyard at the castle's entrance." 
   );
   add_exit("/d/damned/guilds/paladin/meeting","stairs");
-  add_exit("/wizards/khojem/port/room/r1","down");
+  add_exit("/d/khojem/port/room/r1","down");
   add_invis_exit("down");
   set_pre_exit_functions(({"down"}),({"go_down"}));
 }
@@ -26,7 +26,7 @@ int go_down() {
   if(this_player()->query_flying()){
     write("You gently soar down from the high parapet.\n");
     message("info",this_player()->query_cap_name()+"soars down "
-        "from above.","/wizards/khojem/port/room/r1",this_player()
+        "from above.","/d/khojem/port/room/r1",this_player()
     );
     return 1;
   }

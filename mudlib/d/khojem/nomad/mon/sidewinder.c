@@ -29,7 +29,7 @@ void create() {
       "A sidewinder coils for a strike and displays its fangs.",
       "The sidewinder briefly retreats."
     }),1);    
-// new("/wizards/khojem/nomad/weapon/snake_fang")->move(this_object());
+// new("/d/khojem/nomad/weapon/snake_fang")->move(this_object());
 // force_me("wield fang in tail");
 }
 

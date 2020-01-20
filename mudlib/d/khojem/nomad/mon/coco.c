@@ -39,6 +39,6 @@ void create() {
    set_lang_prof("catfolk",9);
    set_lang_prof("gr'grr",9);
    set_lang_prof("rachk",10);
-   set("storage room","/wizards/khojem/nomad/camp/shop_store2");
+   set("storage room","/d/khojem/nomad/camp/shop_store2");
    set("markup", 220);
 }

@@ -15,9 +15,9 @@ void reset() {
 
     ::reset();
     if(m<6) {
-      new("/wizards/khojem/nomad/mon/sand_devil")->move(this_object());
+      new("/d/khojem/nomad/mon/sand_devil")->move(this_object());
     }
-    if(m<3) new("/wizards/khojem/nomad/mon/sand_devil")->move(this_object());
+    if(m<3) new("/d/khojem/nomad/mon/sand_devil")->move(this_object());
 }
 
 void init() {
@@ -49,8 +49,8 @@ void create() {
       "all around you."
     );
     add_exit("/d/damned/virtual/room_21_12.world","east");
-    add_exit("/wizards/khojem/nomad/room/d11","west");
-    add_exit("/wizards/khojem/nomad/room/oasis","southwest");
+    add_exit("/d/khojem/nomad/room/d11","west");
+    add_exit("/d/khojem/nomad/room/oasis","southwest");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",
@@ -70,7 +70,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/sand_devil")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/sand_devil")  
     return 1;                                        
   return 0;
 } 

@@ -16,11 +16,11 @@ void init() {
 void reset() {
    ::reset();
   if(!present("camel")) {
-    new("/wizards/khojem/nomad/mon/camel")->move(this_object());
-    new("/wizards/khojem/nomad/mon/camel")->move(this_object());
-    new("/wizards/khojem/nomad/mon/camel")->move(this_object());
-    new("/wizards/khojem/nomad/mon/camel")->move(this_object());
-    new("/wizards/khojem/nomad/mon/camel")->move(this_object());
+    new("/d/khojem/nomad/mon/camel")->move(this_object());
+    new("/d/khojem/nomad/mon/camel")->move(this_object());
+    new("/d/khojem/nomad/mon/camel")->move(this_object());
+    new("/d/khojem/nomad/mon/camel")->move(this_object());
+    new("/d/khojem/nomad/mon/camel")->move(this_object());
   }
 }
 
@@ -42,7 +42,7 @@ void create() {
   set("night long","The night air chills your bones and robs "
     "you of body heat.  "+desc
   );
-  add_exit("/wizards/khojem/nomad/camp/center","northeast");
+  add_exit("/d/khojem/nomad/camp/center","northeast");
   set_items(([
     ({ "stable" , "stables" }) :
       "It is an unorganized affair.  It is a small clearing in "
@@ -70,10 +70,10 @@ int do_climb(string str){
     write("With considerable effort you manage to climb the palm "
       "tree.\n");
     message("info",this_player()->query_cap_name()+" struggles to the "
-      "top of the palm tree.\n","/wizards/khojem/nomad/camp/tree",
+      "top of the palm tree.\n","/d/khojem/nomad/camp/tree",
       this_player());
-    find_object_or_load("/wizards/khojem/nomad/camp/tree");
-    this_player()->move_player("/wizards/khojem/nomad/camp/tree");
+    find_object_or_load("/d/khojem/nomad/camp/tree");
+    this_player()->move_player("/d/khojem/nomad/camp/tree");
     return 1;
   }
   return 0;

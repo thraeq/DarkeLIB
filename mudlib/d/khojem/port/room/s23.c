@@ -16,7 +16,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/constable")  
+  if(base_name(mob) == "/d/khojem/port/mon/constable")  
     return 1;                                        
   return 0;
 }
@@ -25,7 +25,7 @@ void reset(){
   ::reset();
   if(!present("constable")) {
     if(check_mobs()<4)
-      new("/wizards/khojem/port/mon/constable")->move(this_object());
+      new("/d/khojem/port/mon/constable")->move(this_object());
   }
 }
 
@@ -40,9 +40,9 @@ void create() {
       "The harbor is just to the south.  "+
       "The wooden boards beneath your feet creak with every footstep."
     );
-    add_exit("/wizards/khojem/port/room/s22","north");
-    add_exit("/wizards/khojem/port/room/s19","west");
-    add_exit("/wizards/khojem/port/room/s24","east");
+    add_exit("/d/khojem/port/room/s22","north");
+    add_exit("/d/khojem/port/room/s19","west");
+    add_exit("/d/khojem/port/room/s24","east");
     set_items(([
      ({ "boards","wooden boards" }) :
         "The wooden boards of the dock are supported above the water my timbers.  "+

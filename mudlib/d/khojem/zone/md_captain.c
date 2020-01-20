@@ -9,10 +9,10 @@ inherit VAULT;
 void reset() {
    ::reset();
    if (!present("drawers")) {
-      new("/wizards/khojem/zone/obj/drawers")->move(this_object());
+      new("/d/khojem/zone/obj/drawers")->move(this_object());
    }
    if (!present("captain")) {
-      new("/wizards/khojem/zone/mon/captain")->move(this_object());
+      new("/d/khojem/zone/mon/captain")->move(this_object());
    }
 }
 
@@ -48,7 +48,7 @@ void create() {
           (: call_other, this_object(), "look_at_eyes" :)
       ]));
     add_exit("md_donjon3","east");
-    set_door("door","/wizards/khojem/zone/md_donjon3","east",0);
+    set_door("door","/d/khojem/zone/md_donjon3","east",0);
     set_smell("default", "A horrible, rotten smell permeates the air.");
 }
 

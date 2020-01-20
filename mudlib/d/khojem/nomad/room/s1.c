@@ -43,9 +43,9 @@ void create() {
       "all around you."
     );
     add_exit("/d/damned/virtual/room_21_12.world","south");
-    add_exit("/wizards/khojem/nomad/room/d6","northwest");
-    add_exit("/wizards/khojem/nomad/room/oasis","northeast");
-    add_exit("/wizards/khojem/nomad/room/d10","north");
+    add_exit("/d/khojem/nomad/room/d6","northwest");
+    add_exit("/d/khojem/nomad/room/oasis","northeast");
+    add_exit("/d/khojem/nomad/room/d10","north");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",
@@ -71,7 +71,7 @@ void do_search() {
       "You discovered a sleeping sandman.\n"+
       "He disliked being awakened by your search!\n");
     zplayer=(this_player()->query_cap_name());
-    ob=new("/wizards/khojem/nomad/mon/sand_man");
+    ob=new("/d/khojem/nomad/mon/sand_man");
     ob->move(this_object());
     ob->kill_ob(this_player(),0);
   }

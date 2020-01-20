@@ -18,9 +18,9 @@ void reset() {
 
     ::reset();
     if(m<6) {
-      new("/wizards/khojem/nomad/mon/sand_tiger")->move(this_object());
+      new("/d/khojem/nomad/mon/sand_tiger")->move(this_object());
     }
-    if(m<3) new("/wizards/khojem/nomad/mon/sand_tiger")->move(this_object());
+    if(m<3) new("/d/khojem/nomad/mon/sand_tiger")->move(this_object());
 }
 
 void create() {
@@ -43,11 +43,11 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/d6","north");
-    add_exit("/wizards/khojem/nomad/room/n1","northeast");
-    add_exit("/wizards/khojem/nomad/room/d3","east");
-    add_exit("/wizards/khojem/nomad/room/d1","south");
-    add_exit("/wizards/khojem/nomad/room/d9","west");
+    add_exit("/d/khojem/nomad/room/d6","north");
+    add_exit("/d/khojem/nomad/room/n1","northeast");
+    add_exit("/d/khojem/nomad/room/d3","east");
+    add_exit("/d/khojem/nomad/room/d1","south");
+    add_exit("/d/khojem/nomad/room/d9","west");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",
@@ -67,7 +67,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/sand_tiger")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/sand_tiger")  
     return 1;                                        
   return 0;
 }

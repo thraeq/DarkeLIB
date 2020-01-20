@@ -14,7 +14,7 @@ Description:
   but mostly in the level 6-12 range.
   
 Pathname:
-  /wizards/khojem/nomad
+  /d/khojem/nomad
   
 World Map Location:
   /d/damned/virtual/room_21_12.world
@@ -22,7 +22,7 @@ World Map Location:
   The area has four exit rooms that exit to this location.
   
 Area Entry:
-  /wizards/khojem/nomad/room/entry.c
+  /d/khojem/nomad/room/entry.c
   World map should have a desert road description and 
   "go road" for entry.
   
@@ -56,10 +56,10 @@ Mobs:
 Quest:
   Nutnux, a lvl 20 fighter mob, roams the wastelands in search of his
   sash, the quest item.  A quest summary and how to solve it is in
-  /wizards/khojem/nomad/obj/nutnux_quest_summary.  The quest object
-  file is in:  /wizards/khojem/nomad/obj/nutnux_quest_ob.c and will
+  /d/khojem/nomad/obj/nutnux_quest_summary.  The quest object
+  file is in:  /d/khojem/nomad/obj/nutnux_quest_ob.c and will
   require copy to the quest directory.  The quest item is found in:
-  /wizards/khojem/nomad/obj/quest_sash.c.
+  /d/khojem/nomad/obj/quest_sash.c.
 
 Weapons:
   Several weapon-types are loaded into this area.  They all are coded
@@ -67,16 +67,16 @@ Weapons:
   player's skill level for the weapon on wield.  Most of these
   are slightly better than the weapons supplied from the virtual server.
   Nutnux carries a rapier weapon.  It is intended as an offhand weapon.
-  These can be found in:  /wizards/khojem/nomad/weapon
+  These can be found in:  /d/khojem/nomad/weapon
   
 Armor:
   Few armor items are loaded in this phase.  Mostly they are sashes worn
   as belts.  A cloak-type armor is worn by Harghuul, a sword-demon guardian
   of the temple.  I plan on adding a good deal of armor in the future
-  phases.  Armors are found in:  /wizards/khojem/nomad/armor
+  phases.  Armors are found in:  /d/khojem/nomad/armor
   
 Misc Objects:
-  /wizards/khojem/nomad/obj contains various objects required for the area.
+  /d/khojem/nomad/obj contains various objects required for the area.
   The compass and roulette_wheel objects will appear in the future at the
   encampment.  The spider_chest is a lock-pick only item (a key is not 
   loaded, but supplied for testing in non_key.c).  Several monolith objects
@@ -93,7 +93,7 @@ Added Notes:
   ravine.  The area is stocked with a few spiders and a hidden, locked
   door to a tomb.  The tomb has a hidden trapdoor to a pit worm.
   
-  The directory:  /wizards/khojem/nomad/camp has some files I coded 
+  The directory:  /d/khojem/nomad/camp has some files I coded 
   recently for the encampment.  These can be ignored.
   
   

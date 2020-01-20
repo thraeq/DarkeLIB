@@ -16,7 +16,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/citizen")  
+  if(base_name(mob) == "/d/khojem/port/mon/citizen")  
     return 1;                                        
   return 0;
 }
@@ -25,7 +25,7 @@ void reset(){
   ::reset();
   if(!present("citizen")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/citizen")->move(this_object());
+      new("/d/khojem/port/mon/citizen")->move(this_object());
   }
 }
 
@@ -40,12 +40,12 @@ void create() {
       "Of course, with all rare items they come with a cost.  A tall tower is "+
       "to the east.  Dock Street extends west from here."  
     );
-    add_exit("/wizards/khojem/port/room/s03","north");
-    add_exit("/wizards/khojem/port/room/s05","south");
-    add_exit("/wizards/khojem/port/room/s02","west");
-    add_exit("/wizards/khojem/port/room/s09","east");
-    add_exit("/wizards/khojem/port/room/s08","northeast");
-    add_exit("/wizards/khojem/port/room/s10","southeast");
+    add_exit("/d/khojem/port/room/s03","north");
+    add_exit("/d/khojem/port/room/s05","south");
+    add_exit("/d/khojem/port/room/s02","west");
+    add_exit("/d/khojem/port/room/s09","east");
+    add_exit("/d/khojem/port/room/s08","northeast");
+    add_exit("/d/khojem/port/room/s10","southeast");
     set_items(([
      ({ "square","merchant square" }) :
         "Its a dusty opening in the center of town.",

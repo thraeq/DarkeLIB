@@ -9,8 +9,8 @@ inherit ROOM;
 void reset() {
     ::reset();
     if(!present("hyena")){
-      new("/wizards/khojem/nomad/mon/hyena")->move(this_object());
-      new("/wizards/khojem/nomad/mon/hyena")->move(this_object());
+      new("/d/khojem/nomad/mon/hyena")->move(this_object());
+      new("/d/khojem/nomad/mon/hyena")->move(this_object());
     }
 }
 
@@ -33,7 +33,7 @@ void create() {
       "you to avoid them as you walk.  The ravine's base is very dark and "+
       "you can only see a few feet ahead.  "
     );
-    add_exit("/wizards/khojem/nomad/room/rv3","west");
+    add_exit("/d/khojem/nomad/room/rv3","west");
     set_items(([
      ({ "rocks", "rock" }) :
         "The rocks are razor-sharp.  Climbing down or up is your only "+

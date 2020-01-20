@@ -33,7 +33,7 @@ create() {
 	set_class("fighter");
 	new("/d/damned/virtual/scimitar_6.weapon")->move(this_object());
 	force_me("wield scimitar in right hand");
-	new("/wizards/khojem/nomad/armor/sunvisor")->move(this_object());
+	new("/d/khojem/nomad/armor/sunvisor")->move(this_object());
 	force_me("wear visor");
 }
 

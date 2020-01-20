@@ -46,9 +46,9 @@ create() {
 	add_spell("drain life","$R");
 	set_spell_level("drain life",6);
 	set_skill("necromancy",60);
-	new("/wizards/khojem/nomad/weapon/triple_blade")->move(this_object());
+	new("/d/khojem/nomad/weapon/triple_blade")->move(this_object());
 	force_me("wield sword in right hand and left hand");
-	new("/wizards/khojem/nomad/armor/black_cape")->move(this_object());
+	new("/d/khojem/nomad/armor/black_cape")->move(this_object());
     money=new("std/obj/coins");
     money->set_money("silver",((random(20))+40));
     money->move(this_object());

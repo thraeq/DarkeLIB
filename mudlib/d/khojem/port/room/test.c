@@ -9,7 +9,7 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("earl")) {
-    new("/wizards/khojem/port/mon/earl")->move(this_object());
+    new("/d/khojem/port/mon/earl")->move(this_object());
   }
 }  
 
@@ -25,7 +25,7 @@ void create() {
       "oil paintings.  The walls are paneled in english oak.  "+
       "An archway leads north to a balcony."
     );
-    add_exit("/wizards/khojem/port/room/e3","north");
+    add_exit("/d/khojem/port/room/e3","north");
     set_items(([
      ({ "conference table", "table" }) :
         "The highly, polished conference table is filled with papers that "+

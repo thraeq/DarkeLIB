@@ -22,7 +22,7 @@ void init() {
     if(living(inv[i])) {
       lvl = (int)inv[i]->query_level(); 
       if(inv[i] != this_object())
-      write_file("/wizards/khojem/log/demi-dragon.log",
+      write_file("/d/khojem/log/demi-dragon.log",
       "=== Init:  "+inv[i]->query_cap_name()+" "+lvl+"\t\t\t"+
         ctime(time())+"\n");
     }
@@ -106,19 +106,19 @@ void catch_tell(string str) {
   
   if(sscanf(str, "%s drops dead before %s", who, b) == 2 ) {
     force_me("grin");
-    write_file("/wizards/khojem/log/demi-dragon.log",
+    write_file("/d/khojem/log/demi-dragon.log",
       "*** Player Kill:  "+who+"\t\t"+ctime(time())+"\n");
   }
   if(sscanf(str, "%s dies a horrible %s", who, b) == 2 ) {
     force_me("grin");
-    write_file("/wizards/khojem/log/demi-dragon.log",
+    write_file("/d/khojem/log/demi-dragon.log",
       "*** Player Kill:  "+who+"\t\t\t"+ctime(time())+"\n");
   }
   return;
 }
 
 void die() {
-  write_file("/wizards/khojem/log/demi-dragon.log",
+  write_file("/d/khojem/log/demi-dragon.log",
     ">>> Demi-Dragon died \t\t\t"+ctime(time())+"\n");
    ::die();
 }

@@ -27,7 +27,7 @@ int extra_worn(){
       this_player());
     return 0;
   }
-  shadow=clone_object("/wizards/khojem/new/shadow/con5");
+  shadow=clone_object("/d/khojem/new/shadow/con5");
   shadow->start_shadow(this_player());
   message("info", "You feel the power of the belt fill your mortal body.",
     this_player());

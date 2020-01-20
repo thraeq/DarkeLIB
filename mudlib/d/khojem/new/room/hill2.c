@@ -16,7 +16,7 @@ void reset() {
 	::reset();
     if (!present("half-orc warrior" , this_object()) ) {
       if(random(2)) {
-        new("/wizards/khojem/new/mon/orc_warrior2")->move(this_object());
+        new("/d/khojem/new/mon/orc_warrior2")->move(this_object());
 	  }
 	}
 }
@@ -30,7 +30,7 @@ void create() {
       "the hill.  The forest bordering the clearing appears dense and "+
       "impassible.  In the center of the small clearing is a hole."
     );
-    add_exit("/wizards/khojem/new/room/hole","down");
+    add_exit("/d/khojem/new/room/hole","down");
     add_exit("hill1","west");
     set_pre_exit_functions(({"down"}),({"go_down"}));
     set_items(([
@@ -79,13 +79,13 @@ int go_down(){
   if(this_player()->query_flying()){
     write("Your flight capability allows you to escape from a fall.\n"+
       "You gently sail down to the cave floor.\n");
-    tell_room("/wizards/khojem/new/room/wood4",
+    tell_room("/d/khojem/new/room/wood4",
       this_player()->query_cap_name()+" gently sails down from the hole above you.\n");
     return 1;
   }
   this_player()->add_hp(-50);
   write("After a short fall you hit solid ground and land in a heap.\n");
-  tell_room("/wizards/khojem/new/room/hole",
+  tell_room("/d/khojem/new/room/hole",
     this_player()->query_cap_name()+" falls from above and "+
      "lands flat on his face just beside you.\n");
   return 1;

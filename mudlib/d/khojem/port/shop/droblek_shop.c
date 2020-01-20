@@ -22,13 +22,13 @@ void reset(){
   :: reset();
   set_open("storeroom door",0);
   set_locked("storeroom door",1);
-  "/wizards/khojem/port/shop/droblek_store"->set_open("storeroom door",0);
-  "/wizards/khojem/port/shop/droblek_store"->set_locked("storeroom door",1);
+  "/d/khojem/port/shop/droblek_store"->set_open("storeroom door",0);
+  "/d/khojem/port/shop/droblek_store"->set_locked("storeroom door",1);
   add_invis_exit("north");
-  "/wizards/khojem/port/shop/droblek_store"->add_invis_exit("south");
+  "/d/khojem/port/shop/droblek_store"->add_invis_exit("south");
    seteuid(getuid());
    if(!present("droblek") && open) {
-      new("/wizards/khojem/port/shop/droblek")->move(this_object());
+      new("/d/khojem/port/shop/droblek")->move(this_object());
    }
 }
 
@@ -54,10 +54,10 @@ void create() {
      ({ "south door" })   : "It is a large wooden door.",
      ({ "door" }) : "There is an south door and a storeroom door",
     ]));
-   add_exit("/wizards/khojem/port/room/s03", "south");
-   add_exit("/wizards/khojem/port/shop/droblek_store", "north");
+   add_exit("/d/khojem/port/room/s03", "south");
+   add_exit("/d/khojem/port/shop/droblek_store", "north");
    add_invis_exit("north");
-   set_door("storeroom door","/wizards/khojem/port/shop/droblek_store",
+   set_door("storeroom door","/d/khojem/port/shop/droblek_store",
      "north","droblek key");
    set_property("magic hold",70);
    set_lock_level("storeroom door", 29);
@@ -66,7 +66,7 @@ void create() {
    set_func("storeroom door","open","do_open");
    set_func("storeroom door","close","do_close");
    open = 1;
-   set_door("south door", "/wizards/khojem/port/room/s03", "south",
+   set_door("south door", "/d/khojem/port/room/s03", "south",
 	    "a non-existent key");
    set_open("south door", 1);
    set_locked("south door", 0);
@@ -92,9 +92,9 @@ int do_read(string str){
 void open_door() {
   set_locked("south door", 0);
   set_open("south door", 1);
-  call_other("/wizards/khojem/port/room/s03", "set_locked",
+  call_other("/d/khojem/port/room/s03", "set_locked",
 	"north door", 0);
-  call_other("/wizards/khojem/port/room/s03", "set_open",
+  call_other("/d/khojem/port/room/s03", "set_open",
 	"north door", 1);
   open = 1;
   this_object()->reset();
@@ -115,14 +115,14 @@ void close_door() {
   while(i--) {
     if(living(inv[i])) {
       message("info", "The shop is closing now.  You must leave now!", inv[i]);
-      inv[i]->move(find_object_or_load("/wizards/khojem/port/room/s03"));
+      inv[i]->move(find_object_or_load("/d/khojem/port/room/s03"));
     }
   }
   set_open("south door", 0);
   set_locked("south door", 1);
-  call_other("/wizards/khojem/port/room/s03", "set_open", 
+  call_other("/d/khojem/port/room/s03", "set_open", 
     "north door", 0);
-  call_other("/wizards/khojem/port/room/s03", "set_locked", 
+  call_other("/d/khojem/port/room/s03", "set_locked", 
     "north door", 1);
   open = 0;
 }
@@ -137,7 +137,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/port/shop/droblek_store"->remove_invis_exit("south");
+  "/d/khojem/port/shop/droblek_store"->remove_invis_exit("south");
   write("The storeroom door swings open.\n");
   say(this_player()->query_cap_name()+" opens a storeroom door on the north wall.\n");
   return 1;
@@ -145,7 +145,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/port/shop/droblek_store"->add_invis_exit("south");
+  "/d/khojem/port/shop/droblek_store"->add_invis_exit("south");
   write("A storeroom door is closed.\n");
   say(this_player()->query_cap_name()+" closes a storeroom door.\n");
   return 1;

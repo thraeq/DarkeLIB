@@ -24,7 +24,7 @@ void create() {
     obj=new("std/obj/coins");
     obj->set_money("gold",(random(100)+400));
     obj->move(this_object());
-    obj=new("/wizards/khojem/nomad/obj/sapphire");
+    obj=new("/d/khojem/nomad/obj/sapphire");
     obj->move(this_object());
     return;
 }

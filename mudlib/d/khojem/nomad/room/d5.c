@@ -9,7 +9,7 @@ inherit ROOM;
 void reset() {
     ::reset();
     if(!present("urchin")) {
-      new("/wizards/khojem/nomad/mon/sand_urchin")->move(this_object());
+      new("/d/khojem/nomad/mon/sand_urchin")->move(this_object());
     }
 }
 
@@ -33,10 +33,10 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/d4","north");
-    add_exit("/wizards/khojem/nomad/room/oasis","east");
-    add_exit("/wizards/khojem/nomad/room/d10","southeast");
-    add_exit("/wizards/khojem/nomad/room/d1","northwest");
+    add_exit("/d/khojem/nomad/room/d4","north");
+    add_exit("/d/khojem/nomad/room/oasis","east");
+    add_exit("/d/khojem/nomad/room/d10","southeast");
+    add_exit("/d/khojem/nomad/room/d1","northwest");
     set_items(([
      ({ "track","tracks" }) :
         "The tracks are footprints in the sand that have not been swept away.",

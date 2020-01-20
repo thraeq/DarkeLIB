@@ -33,7 +33,7 @@ void create() {
    set_lang_prof("drow",10);
    set_lang_prof("middle-english",7);
    set_lang_prof("mountainspeak",8);
-   set("storage room","/wizards/khojem/new/shop/barkfir_store");
+   set("storage room","/d/khojem/new/shop/barkfir_store");
    set("markup", 120);
    money=new("std/obj/coins");
    money->set_money("gold", 50);

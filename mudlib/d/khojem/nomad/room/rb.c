@@ -33,9 +33,9 @@ void create() {
       "To the north and south you can just make out where the rope-bridge "+
       "anchors to the both sides of the ravine."
     );
-    add_exit("/wizards/khojem/nomad/room/rv10","north");
-    add_exit("/wizards/khojem/nomad/room/rv1","south");
-    add_exit("/wizards/khojem/nomad/room/rv2","down");
+    add_exit("/d/khojem/nomad/room/rv10","north");
+    add_exit("/d/khojem/nomad/room/rv1","south");
+    add_exit("/d/khojem/nomad/room/rv2","down");
     add_invis_exit("down");
     set_pre_exit_functions(({"down"}),({"go_down"}));
     set_items(([
@@ -59,7 +59,7 @@ void create() {
 int go_down(){
   if(this_player()->query_flying()){
     write("You fly down into the deep ravine a ways.\n");
-    tell_room("/wizards/khojem/nomad/room/rv2",
+    tell_room("/d/khojem/nomad/room/rv2",
       this_player()->query_cap_name()+" gracefully flys down from above.\n");
     return 1;
     }

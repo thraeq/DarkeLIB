@@ -22,9 +22,9 @@ void create() {
   set_property("no summon", 1);
   set_property("no teleport", 1);
   set_property("storage room", 1);
-  add_exit("/wizards/khojem/port/shop/gedrak_shop", "east");
+  add_exit("/d/khojem/port/shop/gedrak_shop", "east");
   add_invis_exit("east");
-  set_door("storeroom door", "/wizards/khojem/port/shop/gedrak_shop", "east",
+  set_door("storeroom door", "/d/khojem/port/shop/gedrak_shop", "east",
 	   "a key that does not exist");
   set_open("storeroom door", 0);
   set_locked("storeroom door", 1);
@@ -109,7 +109,7 @@ void clone_once() {
       ob->move(this_object());
       ob = new("/wizards/shadowraith/obj/misc/lantern");
       ob->move(this_object());
-      ob = new("/wizards/khojem/new/obj/waterskin");
+      ob = new("/d/khojem/new/obj/waterskin");
       ob->move(this_object());
     }
   }
@@ -118,14 +118,14 @@ void clone_once() {
 
 int do_open() {
   remove_invis_exit("east");
-  "/wizards/khojem/port/shop/gedrak_shop"->remove_invis_exit("west");
+  "/d/khojem/port/shop/gedrak_shop"->remove_invis_exit("west");
   say(this_player()->query_cap_name()+" opens a storeroom door.\n");
   return 1;
 }
  
 int do_close() {
   add_invis_exit("east");
-  "/wizards/khojem/port/shop/gedrak_shop"->add_invis_exit("west");
+  "/d/khojem/port/shop/gedrak_shop"->add_invis_exit("west");
   say(this_player()->query_cap_name()+" slams a storeroom door shut.\n");
   return 1;
 }

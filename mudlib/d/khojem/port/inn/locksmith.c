@@ -10,7 +10,7 @@ void reset() {
    ::reset();
    seteuid(getuid());
    if (!present("ferret")) {
-      new("/wizards/khojem/port/inn/ferret")->move(this_object());
+      new("/d/khojem/port/inn/ferret")->move(this_object());
    }
    if(!present("key rack"))
       new("/d/damned/akkad/obj/misc/key_rack")->move(this_object());
@@ -20,7 +20,7 @@ void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",3);
-   add_exit("/wizards/khojem/port/inn/chest","up");
+   add_exit("/d/khojem/port/inn/chest","up");
    set("short","Locks 'R Us Shop");
    set("long",
      "This is the Locksmith Shop.  Here you may have locks and traps "

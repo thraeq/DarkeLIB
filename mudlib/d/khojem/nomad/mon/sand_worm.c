@@ -42,7 +42,7 @@ void create() {
     money=new("std/obj/coins");
     money->set_money("gold",((random(10))+35));
     money->move(this_object());
-    new("/wizards/khojem/nomad/obj/quest_sash")->move(this_object());
+    new("/d/khojem/nomad/obj/quest_sash")->move(this_object());
     force_me("wear sash");
 }
 

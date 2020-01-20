@@ -9,14 +9,14 @@ inherit ROOM;
 
 void reset() {
    ::reset();
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
-   new("/wizards/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
+   new("/d/khojem/zone/mon/plguard3")->move(this_object());
 }
 
 void create() {

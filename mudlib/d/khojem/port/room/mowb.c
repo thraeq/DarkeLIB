@@ -7,8 +7,8 @@ inherit ROOM;
 void reset() {
     ::reset();
   if(!present("sailor")) {
-    new("/wizards/khojem/port/mon/boatswain")->move(this_object());
-    new("/wizards/khojem/port/mon/captain")->move(this_object());
+    new("/d/khojem/port/mon/boatswain")->move(this_object());
+    new("/d/khojem/port/mon/captain")->move(this_object());
   }
 }    
 
@@ -23,7 +23,7 @@ void create() {
       "seen to the north.  A bunk is to the east and a small desk dominates "+
       "the room."
     );
-    add_exit("/wizards/khojem/port/room/mow","south");
+    add_exit("/d/khojem/port/room/mow","south");
     set_items(([
      ({ "doorway", "deck" }) :
         "A doorway leads south to the teakwood deck of the ship.",

@@ -27,9 +27,9 @@ create() {
     set_stats("intelligence", 50);
     set_stats("strength",100);
     set_wimpy(0);
-    new("/wizards/khojem/new/weapon/skillet")->move(this_object());
+    new("/d/khojem/new/weapon/skillet")->move(this_object());
     force_me("wield skillet in right hand");
-    new("/wizards/khojem/new/armor/apron")->move(this_object());
+    new("/d/khojem/new/armor/apron")->move(this_object());
     force_me("wear apron");
     set_alignment(-100);
     set("aggressive", (: call_other, this_object(), "no_other_monsters" :) );

@@ -14,9 +14,9 @@ void init() {
 void reset() {
   ::reset();
     if(!present("sparkey")) 
-      new("/wizards/khojem/port/shop/sparkey")->move(this_object());
+      new("/d/khojem/port/shop/sparkey")->move(this_object());
     if(!present("merchant"))
-      new("/wizards/khojem/port/shop/merchant")->move(this_object());
+      new("/d/khojem/port/shop/merchant")->move(this_object());
 }
 
 void create() {
@@ -47,7 +47,7 @@ void create() {
 	 ({ "harbor", "dock", "wharf" }) :
 	    "The harbor and dock are just to the east."
 	]));
-    add_exit("/wizards/khojem/port/room/s11","east");
+    add_exit("/d/khojem/port/room/s11","east");
     set_smell("default", "You smell the salt air from the harbor towards the east.");
 }
 

@@ -19,7 +19,7 @@ void create() {
   add_exit("/d/damned/guilds/arch-mage/gm-room","down");
   add_exit("/d/damned/virtual/room_35_16.world","north");
   add_exit("/d/damned/virtual/room_36_17.world","norteast");
-  add_exit("/wizards/khojem/port/room/s09","east");
+  add_exit("/d/khojem/port/room/s09","east");
   add_exit("/d/damned/virtual/room_35_18.world","west");
   add_exit("/d/damned/virtual/room_35_17.world","northwest");
   add_invis_exit("north");

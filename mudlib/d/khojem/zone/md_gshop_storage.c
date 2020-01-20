@@ -8,7 +8,7 @@ inherit ROOM;
 
  void reset() {
    ::reset();
-   new("/wizards/khojem/kho_sword")->move(this_object());
+   new("/d/khojem/kho_sword")->move(this_object());
     }
 
 

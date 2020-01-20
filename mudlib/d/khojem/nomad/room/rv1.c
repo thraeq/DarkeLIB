@@ -43,12 +43,12 @@ void create() {
       "that lead out to the dunes."
 
     );
-    add_exit("/wizards/khojem/nomad/room/n1","northeast");
-    add_exit("/wizards/khojem/nomad/room/d3","east");
-    add_exit("/wizards/khojem/nomad/room/d1","southeast");
-    add_exit("/wizards/khojem/nomad/room/d9","southeast");
-    add_exit("/wizards/khojem/nomad/room/rb","north");
-    add_exit("/wizards/khojem/nomad/room/rv2","down");
+    add_exit("/d/khojem/nomad/room/n1","northeast");
+    add_exit("/d/khojem/nomad/room/d3","east");
+    add_exit("/d/khojem/nomad/room/d1","southeast");
+    add_exit("/d/khojem/nomad/room/d9","southeast");
+    add_exit("/d/khojem/nomad/room/rb","north");
+    add_exit("/d/khojem/nomad/room/rv2","down");
     add_invis_exit("down");
     set_pre_exit_functions(({"down"}),({"go_down"}));
     set_items(([
@@ -73,7 +73,7 @@ void create() {
 int go_down(){
   if(this_player()->query_flying()){
     write("You fly down into the deep ravine a ways.\n");
-    tell_room("/wizards/khojem/nomad/room/rv2",
+    tell_room("/d/khojem/nomad/room/rv2",
       this_player()->query_cap_name()+" gracefully flys down from above.\n");
     return 1;
     }

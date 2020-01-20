@@ -10,9 +10,9 @@ void reset(){
   object mon;
   ::reset();
   if(!present("merchant")) 
-    new("/wizards/khojem/new/mon/elf_merchant")->move(this_object());
+    new("/d/khojem/new/mon/elf_merchant")->move(this_object());
   if(!present("rock"))
-    new("/wizards/khojem/new/obj/rock")->move(this_object());
+    new("/d/khojem/new/obj/rock")->move(this_object());
 }  
 
 void create() {
@@ -32,7 +32,7 @@ void create() {
       "side you see a few squirrels scampering about.  The trail "+
       "extents north from here.  A large rock is to the trail's side."
     ); 
-    add_exit("/wizards/khojem/new/room/path2","north");
+    add_exit("/d/khojem/new/room/path2","north");
     add_exit("/d/damned/virtual/room_13_16.world","out");
     set_items(([
      ({ "squirrel","squirrels" }) :

@@ -17,11 +17,11 @@ void init() {
 void reset() {
    ::reset();
   if(check_mobs()<1) {
-    new("/wizards/khojem/nomad/mon/rogue")->move(this_object());
+    new("/d/khojem/nomad/mon/rogue")->move(this_object());
   }
   if(check_peasant()<10) {
-    new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
-    new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
+    new("/d/khojem/nomad/mon/peasant")->move(this_object());
+    new("/d/khojem/nomad/mon/peasant")->move(this_object());
   }      
 }
 
@@ -42,8 +42,8 @@ void create() {
   set("night long","The torchlight sends odd, flickering shadows "
     "across the room.  "+desc
   );
-  add_exit("/wizards/khojem/nomad/camp/center","southeast");
-  add_exit("/wizards/khojem/nomad/camp/tent2","northwest");
+  add_exit("/d/khojem/nomad/camp/center","southeast");
+  add_exit("/d/khojem/nomad/camp/tent2","northwest");
   set_items(([
     ({ "tent" }) :  
       "The tent has a low-pitch roof and is trussed with some "
@@ -83,7 +83,7 @@ int check_peasant() {
 }
 
 int my_peasant_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/peasant")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/peasant")  
     return 1;                                        
   return 0;
 }                                      
@@ -97,7 +97,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/rogue")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/rogue")  
     return 1;                                        
   return 0;
 }                                      
@@ -129,11 +129,11 @@ void do_search() {
   if((random(100)<(skill-20)) && search_count==2){
     search_count++;
     if(random(100)==99){ 
-      obj = new("/wizards/khojem/nomad/obj/compass");
+      obj = new("/d/khojem/nomad/obj/compass");
       str = "compass";
     }
     else {
-      obj = new("/wizards/khojem/nomad/obj/glowstick");
+      obj = new("/d/khojem/nomad/obj/glowstick");
       str = "glowstick";
     }
     message("info","As you search the mess on the floor "

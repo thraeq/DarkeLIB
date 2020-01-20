@@ -46,7 +46,7 @@ create() {
       "dwarvish", "drow", "middle-english", "mountainspeak" }));
     set_lang_prof("common",10);
     set_class("fighter");
-    new("/wizards/khojem/port/weapon/blackjack")->move(this_object());
+    new("/d/khojem/port/weapon/blackjack")->move(this_object());
     force_me("use concentrate");
     force_me("wield blackjack in right hand");
 }

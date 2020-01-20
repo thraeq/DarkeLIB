@@ -16,8 +16,8 @@ void create() {
       "platform.  The trees grow "+
       "close around and cut off some of the light from above. "
     );
-    add_exit("/wizards/khojem/new/room/annex2","north");
-    add_exit("/wizards/khojem/new/room/walk5","ladder");
+    add_exit("/d/khojem/new/room/annex2","north");
+    add_exit("/d/khojem/new/room/walk5","ladder");
     set_items(([
      ({ "tree","trees", "woods", "branches" }) :
         "The trees are large, healthy trees filled with foliage.",

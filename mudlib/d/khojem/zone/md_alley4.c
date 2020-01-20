@@ -55,7 +55,7 @@ int secret_brick(string str) {
   while(i--) {
     if (living(inv[i])) {
       write("Suddenly the floor tilts to a sharp angle and you fall.");
-      inv[i]->move("/wizards/khojem/zone/md_hideout");
+      inv[i]->move("/d/khojem/zone/md_hideout");
     write("You fall into a heap in a dark hideout.");
   write("You suspect the owners will not like finding you here.");
     }

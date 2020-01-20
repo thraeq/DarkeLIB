@@ -13,7 +13,7 @@ void init() {
 void reset() {
     ::reset();
     if(!present("harghuul")){
-      new("/wizards/khojem/nomad/mon/harghuul")->move(this_object());
+      new("/d/khojem/nomad/mon/harghuul")->move(this_object());
     }
 }
 
@@ -37,8 +37,8 @@ void create() {
       "anchored at this side and spans a deep, dark ravine towards the south.  "+
       "The ravine is too deep and narrow to see down to its bottom.  "
     );
-    add_exit("/wizards/khojem/nomad/room/temple","north");
-    add_exit("/wizards/khojem/nomad/room/rb","south");
+    add_exit("/d/khojem/nomad/room/temple","north");
+    add_exit("/d/khojem/nomad/room/rb","south");
     set_pre_exit_functions(({"north"}),({"go_north"}));
     set_items(([
      ({ "sand","sand dunes","dunes" }) :

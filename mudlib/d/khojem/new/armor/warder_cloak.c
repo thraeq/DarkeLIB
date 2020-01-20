@@ -25,7 +25,7 @@ void create() {
 }
 
 int extra_worn(){
-  shadow=clone_object("/wizards/khojem/new/shadow/hide_shadow.c");
+  shadow=clone_object("/d/khojem/new/shadow/hide_shadow.c");
   shadow->start_shadow(this_player());
   return 1;
 }

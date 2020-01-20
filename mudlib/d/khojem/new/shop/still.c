@@ -14,7 +14,7 @@ void init() {
 void reset() {
   ::reset();
     if(!present("jakie")) 
-      new("/wizards/khojem/new/shop/jakie")->move(this_object());
+      new("/d/khojem/new/shop/jakie")->move(this_object());
 }
 
 void create() {
@@ -40,7 +40,7 @@ void create() {
 	    "A cold, unlit fireplace.  Looks like it hasn't been used in years.  "+
 	    "The bricks are cracked and missing in a few spots."
 	]));
-    add_exit("/wizards/khojem/new/room/annex5","west");
+    add_exit("/d/khojem/new/room/annex5","west");
     set_property("no castle", 1);
     set_property("no attack", 1);
     set_smell("default", "You smell stale beer and cigar smoke fills the room.");

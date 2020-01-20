@@ -21,14 +21,14 @@ void create() {
        "northwest you can see the towering precipice that overlooks the "+
        "entire town."
     );
-    add_exit("/wizards/khojem/port/room/l2","down");
-    add_exit("/wizards/khojem/port/room/s08","north");
-    add_exit("/wizards/khojem/port/room/s16","northeast");
-    add_exit("/wizards/khojem/port/room/s17","east");
-    add_exit("/wizards/khojem/port/room/s10","south");
-    add_exit("/wizards/khojem/port/room/s05","southwest");
-    add_exit("/wizards/khojem/port/room/s04","west");
-    add_exit("/wizards/khojem/port/room/s03","northwest");
+    add_exit("/d/khojem/port/room/l2","down");
+    add_exit("/d/khojem/port/room/s08","north");
+    add_exit("/d/khojem/port/room/s16","northeast");
+    add_exit("/d/khojem/port/room/s17","east");
+    add_exit("/d/khojem/port/room/s10","south");
+    add_exit("/d/khojem/port/room/s05","southwest");
+    add_exit("/d/khojem/port/room/s04","west");
+    add_exit("/d/khojem/port/room/s03","northwest");
     add_invis_exit("north");
     add_invis_exit("northeast");
     add_invis_exit("east");

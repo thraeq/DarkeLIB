@@ -22,7 +22,7 @@ void create() {
     set_possible_to_close(1);
     set_key("captains_key2");
     set_trap_level(10);
-    obj=new("/wizards/khojem/nomad/obj/diary");
+    obj=new("/d/khojem/nomad/obj/diary");
     obj->move(this_object());
     obj=new("std/obj/coins");
     obj->set_money("gold",(random(10)+5));

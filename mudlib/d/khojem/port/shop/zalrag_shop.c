@@ -15,7 +15,7 @@ void reset() {
    ::reset();
    seteuid(getuid());
    if (!present("zalrag") && open) {
-      new("/wizards/khojem/port/shop/zalrag")->move(this_object());
+      new("/d/khojem/port/shop/zalrag")->move(this_object());
    }
 }
 
@@ -23,14 +23,14 @@ void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",2);
-   add_exit("/wizards/khojem/port/room/t1", "west");
-   add_exit("/wizards/khojem/port/shop/zalrag_store", "south");
-   set_door("wooden door", "/wizards/khojem/port/shop/zalrag_store", "south",
+   add_exit("/d/khojem/port/room/t1", "west");
+   add_exit("/d/khojem/port/shop/zalrag_store", "south");
+   set_door("wooden door", "/d/khojem/port/shop/zalrag_store", "south",
 	    "a non-existent key");
    set_open("wooden door", 0);
    set_locked("wooden door", 1);
    open = 1;
-   set_door("west door", "/wizards/khojem/port/room/t1", "west",
+   set_door("west door", "/d/khojem/port/room/t1", "west",
 	    "a non-existent key");
    set_open("west door", 1);
    set_locked("west door", 0);
@@ -54,9 +54,9 @@ void create() {
 void open_door() {
   set_locked("west door", 0);
   set_open("west door", 1);
-  call_other("/wizards/khojem/port/room/t1", "set_locked",
+  call_other("/d/khojem/port/room/t1", "set_locked",
 	"east door", 0);
-  call_other("/wizards/khojem/port/room/t1", "set_open",
+  call_other("/d/khojem/port/room/t1", "set_open",
 	"east door", 1);
   open = 1;
   this_object()->reset();
@@ -84,14 +84,14 @@ void close_door() {
   while(i--) {
     if(living(inv[i])) {
       message("info", "The shop is closing now.  You gotta go!", inv[i]);
-      inv[i]->move(find_object_or_load("/wizards/khojem/port/room/t1"));
+      inv[i]->move(find_object_or_load("/d/khojem/port/room/t1"));
     }
   }
   set_open("west door", 0);
   set_locked("west door", 1);
-  call_other("/wizards/khojem/port/room/t1", "set_open", 
+  call_other("/d/khojem/port/room/t1", "set_open", 
     "east door", 0);
-  call_other("/wizards/khojem/port/room/t1", "set_locked", 
+  call_other("/d/khojem/port/room/t1", "set_locked", 
     "east door", 1);
   open = 0;
 }

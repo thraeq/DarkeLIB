@@ -9,7 +9,7 @@ inherit VAULT;
 void reset() {
    ::reset();
    if (!present("sentry")) {
-      new("/wizards/khojem/zone/mon/ksentry")->move(this_object());
+      new("/d/khojem/zone/mon/ksentry")->move(this_object());
    }
 }
 
@@ -32,7 +32,7 @@ void create() {
       ({ "gate", "gates", "stone gate", "stone gates" }) : 
         (: call_other, this_object(), "look_at_gate" :)
       ]));
-   set_door("gate","/wizards/khojem/zone/md_gdgate","north","sentry gate key");
+   set_door("gate","/d/khojem/zone/md_gdgate","north","sentry gate key");
    set_string("gate","open","You hear the gate's hinges creak as it opens.");
    set_smell("default", "A horrible, rotten smell permeates the air.");
    set_listen("default", "All around you are the sounds of slow dripping water.");

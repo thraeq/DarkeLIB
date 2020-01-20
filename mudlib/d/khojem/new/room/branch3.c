@@ -33,5 +33,5 @@ void create() {
     );
     set_listen("default", "The silence around you is deafening.  "+
       "Occasionally, you hear the sound of battle from a ways off.");
-    new("/wizards/khojem/new/mon/rogue")->move(this_object());
+    new("/d/khojem/new/mon/rogue")->move(this_object());
 }

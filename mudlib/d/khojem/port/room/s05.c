@@ -16,7 +16,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/peon")  
+  if(base_name(mob) == "/d/khojem/port/mon/peon")  
     return 1;                                        
   return 0;
 }
@@ -25,7 +25,7 @@ void reset(){
   ::reset();
   if(!present("peon")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/peon")->move(this_object());
+      new("/d/khojem/port/mon/peon")->move(this_object());
   }
 }
 
@@ -40,9 +40,9 @@ void create() {
       "Of course, with all rare items they come with a cost.  A tall tower is "+
       "to the northeast."  
     );
-    add_exit("/wizards/khojem/port/room/s04","north");
-    add_exit("/wizards/khojem/port/room/s10","east");
-    add_exit("/wizards/khojem/port/room/s09","northeast");
+    add_exit("/d/khojem/port/room/s04","north");
+    add_exit("/d/khojem/port/room/s10","east");
+    add_exit("/d/khojem/port/room/s09","northeast");
     set_items(([
      ({ "square","merchant square" }) :
         "Its a dusty opening in the center of town.",

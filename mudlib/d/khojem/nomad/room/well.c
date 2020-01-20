@@ -36,7 +36,7 @@ void create() {
       "Your feet and legs sink deep into the sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/d11","southwest");
+    add_exit("/d/khojem/nomad/room/d11","southwest");
     set_items(([
      ({ "track"  }) :
         "The tracks are footprints in the sand that have not been swept away.",
@@ -49,5 +49,5 @@ void create() {
     ]));
     set_smell("default", "The dry, arid air burns your nose.");
     set_listen("default", "The eerie sound of wavering wails fill the air.");
-    new("/wizards/khojem/nomad/obj/mono4")->move(this_object());
+    new("/d/khojem/nomad/obj/mono4")->move(this_object());
 }

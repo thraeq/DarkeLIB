@@ -40,7 +40,7 @@ create() {
     new("/d/damned/virtual/great-helm.armour")->
       move(this_object());
     force_me("wear helm");
-    new("/wizards/khojem/new/armor/leather_belt")->
+    new("/d/khojem/new/armor/leather_belt")->
       move(this_object());
     force_me("wear belt");
     money=new("std/obj/coins");

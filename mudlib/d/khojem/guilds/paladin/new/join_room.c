@@ -54,7 +54,7 @@ void create() {
        "it suffered during the occasional siege from an evil foe.", 
   ]));
 
-add_exit("/wizards/khojem/port/room/r1","northeast");
+add_exit("/d/khojem/port/room/r1","northeast");
 add_exit("/d/damned/guilds/paladin/meeting","southwest");
   
 //  The guildmaster is automatically cloned if no pc guildmaster is

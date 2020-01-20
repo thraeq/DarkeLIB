@@ -35,6 +35,6 @@ create() {
     money=new("std/obj/coins");
     money->set_money("gold",((random(20))+35));
     money->move(this_object());
-    new("/wizards/khojem/nomad/weapon/darkeblade")->move(this_object());
+    new("/d/khojem/nomad/weapon/darkeblade")->move(this_object());
     force_me("wield blade in right hand");
 }

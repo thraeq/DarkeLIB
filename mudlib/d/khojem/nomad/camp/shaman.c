@@ -12,7 +12,7 @@ void init() {
 
 void reset() {
     if(!present("cleric"))
-      new("/wizards/khojem/nomad/mon/nomad_cleric")->move(this_object());
+      new("/d/khojem/nomad/mon/nomad_cleric")->move(this_object());
     ::reset();
 }
 
@@ -34,7 +34,7 @@ void create() {
       "entered the tent of the war cleric.  Her power and might are felt as you "+
       "enter the tent.\n"
     );
-    add_exit("/wizards/khojem/nomad/camp/center","southwest");
+    add_exit("/d/khojem/nomad/camp/center","southwest");
     set_items(([
      ({ "tent"  }) :  
         "The tent is a small dome-like tent.",

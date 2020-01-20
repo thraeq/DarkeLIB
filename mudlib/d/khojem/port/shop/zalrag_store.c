@@ -20,8 +20,8 @@ void create() {
   set_property("no summon", 1);
   set_property("no scry", 1);
   set_property("storage room", 1);
-  add_exit("/wizards/khojem/port/shop/zalrag_shop", "north");
-  set_door("wooden door", "/wizards/khojem/port/shop/zalrag_shop", "north",
+  add_exit("/d/khojem/port/shop/zalrag_shop", "north");
+  set_door("wooden door", "/d/khojem/port/shop/zalrag_shop", "north",
 	   "a non-existent key");
   set_open("wooden door", 0);
   set_locked("wooden door", 1);
@@ -47,7 +47,7 @@ void reset() {
   inv = all_inventory(this_object());
   call_out("remove_all", 5, inv);
   bob = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/port/shop/zalrag_shop"));
+		find_object_or_load("/d/khojem/port/shop/zalrag_shop"));
   if(bob) {
     message("info", "Zalrag says in Common: Yeah, yeah, yeah!  I've got a "+
 	  "new shipment coming in...", environment(bob));

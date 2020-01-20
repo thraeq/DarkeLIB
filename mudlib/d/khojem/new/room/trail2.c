@@ -9,7 +9,7 @@ void reset() {
 	::reset();
     if (!present("half-orc warrior" , this_object()) ) {
       if(random(2)) {
-        new("/wizards/khojem/new/mon/orc_warrior2")->move(this_object());
+        new("/d/khojem/new/mon/orc_warrior2")->move(this_object());
 	  }
 	}
 }

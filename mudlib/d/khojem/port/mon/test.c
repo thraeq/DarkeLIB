@@ -35,7 +35,7 @@ create() {
     set_body_type("human");
     set_wimpy(0);
 	set_class("fighter");
-	new("/wizards/khojem/port/weapon/khojem_sword")->move(this_object());
+	new("/d/khojem/port/weapon/khojem_sword")->move(this_object());
 }
 
 void wield_sword() {

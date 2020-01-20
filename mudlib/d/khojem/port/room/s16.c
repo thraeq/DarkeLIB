@@ -15,9 +15,9 @@ void create() {
       "Of course, with all rare items they come with a cost.  A tall tower is "+
       "to the southwest."  
     );
-    add_exit("/wizards/khojem/port/room/s17","south");
-    add_exit("/wizards/khojem/port/room/s08","west");
-    add_exit("/wizards/khojem/port/room/s09","southwest");
+    add_exit("/d/khojem/port/room/s17","south");
+    add_exit("/d/khojem/port/room/s08","west");
+    add_exit("/d/khojem/port/room/s09","southwest");
     set_items(([
      ({ "sauare","merchant square" }) :
         "Its a dusty opening in the center of town.",

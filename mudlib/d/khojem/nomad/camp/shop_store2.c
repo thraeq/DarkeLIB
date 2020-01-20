@@ -28,7 +28,7 @@ void reset() {
   i = sizeof(inv);
   while(i--) if(!living(inv[i])) inv[i]->remove();
   coco = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/nomad/camp/shop"));
+		find_object_or_load("/d/khojem/nomad/camp/shop"));
   if(coco) {
     message("info", "Coco says in Common: Effendi! Don't buy from these other "+
 	    "swine.  My goods are rare and of the finest quality!  You will see..."+
@@ -58,7 +58,7 @@ void clone_ten() {
 
   ob = new("/std/obj/torch");
   ob->move(this_object());
-  ob = new("/wizards/khojem/nomad/obj/glowstick");
+  ob = new("/d/khojem/nomad/obj/glowstick");
   ob->move(this_object());
 }
 

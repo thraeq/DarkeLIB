@@ -23,7 +23,7 @@ void create() {
       "known world is finely inlaid in the marble floor at your feet.  An "+
       "ancient script can be seen on the west wall."
     );
-    add_exit("/wizards/khojem/port/room/s17","southwest");
+    add_exit("/d/khojem/port/room/s17","southwest");
     add_exit("/d/standard/square","portal");
     add_invis_exit("portal");
     set_pre_exit_functions(({"portal"}),({"go_venture"}));

@@ -32,7 +32,7 @@ void create() {
     add_exit("md_dung1","west");
     add_exit("md_dung2","east");
     add_exit("md_cell1","north");
-    set_door("door","/wizards/khojem/zone/md_cell1","north",0);
+    set_door("door","/d/khojem/zone/md_cell1","north",0);
     set_smell("default", "A horrible, rotten smell permeates the air.");
     set_listen("default", "You hear a rats clawed paws nearby.");
 }
@@ -46,6 +46,6 @@ void look_at_door() {
 void rest() {
   set_open("door",0);
   set_locked("door",0);
-  "/wizards/khojem/zone/md_cell1"->set_open("door",0);
-  "/wizards/khojem/zone/md_cell1"->set_locked("door",0);
+  "/d/khojem/zone/md_cell1"->set_open("door",0);
+  "/d/khojem/zone/md_cell1"->set_locked("door",0);
 }

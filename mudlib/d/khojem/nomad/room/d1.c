@@ -19,7 +19,7 @@ void reset() {
     ::reset();
     search_flag=0;
    if(check_mobs()<1) {
-      new("/wizards/khojem/nomad/mon/nutnux")->move(this_object());
+      new("/d/khojem/nomad/mon/nutnux")->move(this_object());
     }
 }
 
@@ -43,14 +43,14 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/wizards/khojem/nomad/room/d2","north");
-    add_exit("/wizards/khojem/nomad/room/d3","northeast");
-    add_exit("/wizards/khojem/nomad/room/d4","east");
-    add_exit("/wizards/khojem/nomad/room/d5","southeast");
-    add_exit("/wizards/khojem/nomad/room/d6","south");
-    add_exit("/wizards/khojem/nomad/room/d7","southwest");
-    add_exit("/wizards/khojem/nomad/room/d8","west");
-    add_exit("/wizards/khojem/nomad/room/d9","northwest");
+    add_exit("/d/khojem/nomad/room/d2","north");
+    add_exit("/d/khojem/nomad/room/d3","northeast");
+    add_exit("/d/khojem/nomad/room/d4","east");
+    add_exit("/d/khojem/nomad/room/d5","southeast");
+    add_exit("/d/khojem/nomad/room/d6","south");
+    add_exit("/d/khojem/nomad/room/d7","southwest");
+    add_exit("/d/khojem/nomad/room/d8","west");
+    add_exit("/d/khojem/nomad/room/d9","northwest");
     set_search("sand",(: call_other, this_object(),"do_search" :));
     set_items(([
      ({ "sand","sand dunes","dunes" }) :
@@ -71,7 +71,7 @@ void do_search() {
     search_flag=1;
     write("Your search is successful.\nYou discover a sand devil!");
     zplayer=(this_player()->query_cap_name());
-    ob=new("/wizards/khojem/nomad/mon/sand_devil");
+    ob=new("/d/khojem/nomad/mon/sand_devil");
     ob->move(this_object());
     ob->kill_ob(this_player(),0);
   }
@@ -89,7 +89,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/nutnux")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/nutnux")  
     return 1;                                        
   return 0;
 }

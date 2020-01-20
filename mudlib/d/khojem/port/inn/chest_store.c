@@ -21,8 +21,8 @@ void create() {
   set_property("no summon", 1);
   set_property("no teleport", 1);
   set_property("storage room", 1);
-  add_exit("/wizards/khojem/port/inn/chest", "east");
-  set_door("wooden door", "/wizards/khojem/port/inn/chest", "east",
+  add_exit("/d/khojem/port/inn/chest", "east");
+  set_door("wooden door", "/d/khojem/port/inn/chest", "east",
 	   "port_chest_store");
   set_open("wooden door", 0);
   set_locked("wooden door", 1);
@@ -48,7 +48,7 @@ void reset() {
   inv = all_inventory(this_object());
   call_out("remove_all", 5, inv);
   bob = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/port/inn/chest"));
+		find_object_or_load("/d/khojem/port/inn/chest"));
   if(bob) {
     message("info", "Dovan says in Common: Hang on a second.  I've got a new "+
 	    "shipment coming in...", environment(bob));

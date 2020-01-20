@@ -52,7 +52,7 @@ void create() {
 	set("aggressive", (: call_other, this_object(), "no_other_monsters" :) );
 	set_moving(1);
 	set_speed(40);              
-    new("/wizards/khojem/new/obj/dead_rose")->move(this_object());
+    new("/d/khojem/new/obj/dead_rose")->move(this_object());
 }
 
 int chk_my_mon() { return 1;}

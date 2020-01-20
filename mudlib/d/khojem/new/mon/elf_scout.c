@@ -30,7 +30,7 @@ create() {
     set_stats("strength",30);
     set_wimpy(0);
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/weapon/wooden_spear")->
+      case 0:new("/d/khojem/new/weapon/wooden_spear")->
                  move(this_object());
              force_me("wield spear in right hand and left hand");
              break;
@@ -42,7 +42,7 @@ create() {
                  move(this_object());
              force_me("wield staff in right hand and left hand");
              break;
-      case 3:new("/wizards/khojem/new/weapon/wooden_spear")->
+      case 3:new("/d/khojem/new/weapon/wooden_spear")->
                  move(this_object());
              force_me("wield spear in right hand and left hand");
              break;
@@ -60,7 +60,7 @@ create() {
                  move(this_object());
              force_me("wear pants");
              break;
-      case 3:new("/wizards/khojem/new/armor/slippers")->
+      case 3:new("/d/khojem/new/armor/slippers")->
                  move(this_object());
              force_me("wear slippers");
              break;

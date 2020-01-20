@@ -16,7 +16,7 @@ void create() {
     ob->set_id( ({ "board", "balance board" }) );
     ob->set_board_id("balance");
     ob->set_max_posts(30);
-    ob->set_location("/wizards/khojem/QC/balance");
+    ob->set_location("/d/khojem/QC/balance");
     ob->set("short", "the DarkeMud Balance Board");
     ob->set("long", "Used to communicate DarkeMud balance issues.\n");
 }

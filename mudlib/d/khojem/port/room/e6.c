@@ -9,8 +9,8 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("legionnaire"))
-    new("/wizards/khojem/port/mon/legion2")->move(this_object());
-    new("/wizards/khojem/port/mon/legion2")->move(this_object());
+    new("/d/khojem/port/mon/legion2")->move(this_object());
+    new("/d/khojem/port/mon/legion2")->move(this_object());
 }  
 
 void create() {
@@ -25,7 +25,7 @@ void create() {
       "are covered with posters of all known races with critical wound "+
       "points explicitly marked."
     );
-    add_exit("/wizards/khojem/port/room/e2","south");
+    add_exit("/d/khojem/port/room/e2","south");
     set_pre_exit_functions(({ "south"}),({"go_south"}));
     set_items(([
      ({ "dummies", "dummy", "straw dummies", "straw dummy" }) :

@@ -8,7 +8,7 @@ inherit VAULT;
 void reset(){
   ::reset();
   if(!present("assassin"))
-    new("/wizards/khojem/port/mon/assassin")->move(this_object());
+    new("/d/khojem/port/mon/assassin")->move(this_object());
 }  
 
 void create() {
@@ -22,9 +22,9 @@ void create() {
       "An iron staircase is on the other side of the room and it spirals "+
       "upward into the darkness."
     );
-    add_exit("/wizards/khojem/port/room/l2","up");
-    add_exit("/wizards/khojem/port/room/s09","southwest");
-    set_door("iron door","/wizards/khojem/port/room/s09","southwest",0);
+    add_exit("/d/khojem/port/room/l2","up");
+    add_exit("/d/khojem/port/room/s09","southwest");
+    set_door("iron door","/d/khojem/port/room/s09","southwest",0);
     set_func("iron door","open","do_open");
     set_func("iron door","close","do_close");
     set_items(([
@@ -45,13 +45,13 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("southwest");
-  "/wizards/khojem/port/room/s09"->remove_invis_exit("tower");
+  "/d/khojem/port/room/s09"->remove_invis_exit("tower");
   return 1;
 }
  
 int do_close() {
   add_invis_exit("southwest");
-  "/wizards/khojem/port/room/s09"->add_invis_exit("tower");
+  "/d/khojem/port/room/s09"->add_invis_exit("tower");
   return 1;
 }
 

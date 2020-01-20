@@ -16,7 +16,7 @@ void init() {
 void reset() {
     ::reset();
   if(!present("coffin")) {
-    obj=new("/wizards/khojem/port/obj/earl_desk_key");
+    obj=new("/d/khojem/port/obj/earl_desk_key");
     obj->set_name("coffin");
     obj->set_short("a wooden coffin (closed)");
     obj->set_long("A heavy wooden coffin rests here.  Its wood has petrified from "+
@@ -38,8 +38,8 @@ void create() {
       "light in the distance.  The walls are bare and "+
       "the old paint is beginning to peel and flake at numerous points."
     );
-    add_exit("/wizards/khojem/port/room/l1","down");
-    add_exit("/wizards/khojem/port/room/l3","up");
+    add_exit("/d/khojem/port/room/l1","down");
+    add_exit("/d/khojem/port/room/l3","up");
     set_items(([
      ({ "walls", "wall", "paint", "peel", "flake" }) :
         "The walls are of stone construction and surfaced in stucco.  At numerous "+
@@ -72,7 +72,7 @@ int do_open(string str) {
     open_count=1;
     write("A frightful wight springs forth from the open coffin!");
     say("A frightful wight springs up from the coffin!\n");
-    obj2 = new("/wizards/khojem/port/mon/wight");
+    obj2 = new("/d/khojem/port/mon/wight");
     obj2 ->move(this_object());
     obj2 ->kill_ob(this_player(),0);
   }

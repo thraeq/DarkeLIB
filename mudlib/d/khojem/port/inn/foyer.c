@@ -11,11 +11,11 @@ void create() {
         "This is the foyer of the inn.  You see hallways leading "+
         "to the north, east, and south.  To the southwest is the front "+
         "desk.  You see a staircase leading up.");
-    add_exit("/wizards/khojem/port/inn/main_room", "southwest");
-    add_exit("/wizards/khojem/port/inn/foyer2", "up");
-    add_exit("/wizards/khojem/port/inn/hall_10", "north");
-    add_exit("/wizards/khojem/port/inn/hall_11", "east");
-    add_exit("/wizards/khojem/port/inn/hall_12", "south");
+    add_exit("/d/khojem/port/inn/main_room", "southwest");
+    add_exit("/d/khojem/port/inn/foyer2", "up");
+    add_exit("/d/khojem/port/inn/hall_10", "north");
+    add_exit("/d/khojem/port/inn/hall_11", "east");
+    add_exit("/d/khojem/port/inn/hall_12", "south");
     return;
 }
 

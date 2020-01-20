@@ -15,7 +15,7 @@ void init() {
 void reset() {
    ::reset();
   if(check_peasant()<7)
-    new("/wizards/khojem/nomad/mon/peasant")->move(this_object());      
+    new("/d/khojem/nomad/mon/peasant")->move(this_object());      
 }
 
 void create() {
@@ -34,7 +34,7 @@ void create() {
   set("night long","The torchlight sends odd, flickering shadows "
     "across the room.  "+desc
   );
-  add_exit("/wizards/khojem/nomad/camp/tent1","southeast");
+  add_exit("/d/khojem/nomad/camp/tent1","southeast");
   set_items(([
     ({ "tent" }) :  
       "The tent has a low-pitch roof and is trussed with some "
@@ -74,7 +74,7 @@ int check_peasant() {
 }
 
 int my_peasant_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/peasant")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/peasant")  
     return 1;                                        
   return 0;
 }                                      
@@ -105,7 +105,7 @@ void do_search() {
   }
   if((random(100)<(skill-20)) && search_count==2){
     search_count++;
-    obj = new("/wizards/khojem/nomad/obj/glowstick");
+    obj = new("/d/khojem/nomad/obj/glowstick");
     str = "glowstick";
     message("info","As you search the mess on the floor "
       "you find a "+str+".  You quickly fetch it.\n",

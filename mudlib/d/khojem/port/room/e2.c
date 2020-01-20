@@ -15,8 +15,8 @@ void create() {
       "entrance to his mansion.  Many rare and exotic flora can be seen thriving "+
       "here.  The cinder pathway is lined with many shells from the nearby reef."
     );
-    add_exit("/wizards/khojem/port/room/e6","north");
-    add_exit("/wizards/khojem/port/room/e1","south");
+    add_exit("/d/khojem/port/room/e6","north");
+    add_exit("/d/khojem/port/room/e1","south");
     set_items(([
      ({ "flora", "plant", "plants" }) :
         "They look like the kind of things rich people spend their money on.",

@@ -18,8 +18,8 @@ void init() {
 void reset() {
     ::reset();
     if(!present("hyena")){
-      new("/wizards/khojem/nomad/mon/hyena")->move(this_object());
-      new("/wizards/khojem/nomad/mon/hyena")->move(this_object());
+      new("/d/khojem/nomad/mon/hyena")->move(this_object());
+      new("/d/khojem/nomad/mon/hyena")->move(this_object());
     }
 }
 
@@ -43,8 +43,8 @@ void create() {
       "you to avoid them as you walk.  The ravine's base is very dark and "+
       "you can only see a few feet ahead.  "
     );
-    add_exit("/wizards/khojem/nomad/room/rv4","east");
-    add_exit("/wizards/khojem/nomad/room/rv2","up");
+    add_exit("/d/khojem/nomad/room/rv4","east");
+    add_exit("/d/khojem/nomad/room/rv2","up");
     set_pre_exit_functions(({ "up" }),({ "go_up" }));
     set_items(([
      ({ "rocks", "rock" }) :
@@ -62,7 +62,7 @@ void create() {
 int go_up(){
   if(this_player()->query_flying()){
     write("You fly up the face of the deep ravine a ways.\n");
-    tell_room("/wizards/khojem/nomad/room/rv2",
+    tell_room("/d/khojem/nomad/room/rv2",
       this_player()->query_cap_name()+" gracefully flys up from below.\n");
     return 1;
     }

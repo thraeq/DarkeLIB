@@ -39,8 +39,8 @@ void create() {
       "much of the road.  Rolling sand dunes can be seen on both sides "+
       "of the road.\n"
     );
-    add_exit("/wizards/khojem/nomad/room/r1","east");
-    add_exit("/d/damned/virtual/room_50_25.world","west");
+    add_exit("/d/khojem/nomad/room/r1","east");
+    add_exit("/d/damned/virtual/room_50_52.world","west");
     set_items(([
         "road" : "Coarse gravel stones allow wheeled carts to travel this "+
           "sandy terrain.  But, you see it has fallen into disrepair.\n",
@@ -49,5 +49,5 @@ void create() {
     ]));
     set_smell("default", "The dry, arid air burns your nose.");
     set_listen("default", "The silence is interrupted only by your footsteps.");
-    new("/wizards/khojem/nomad/obj/mono1")->move(this_object());
+    new("/d/khojem/nomad/obj/mono1")->move(this_object());
 }

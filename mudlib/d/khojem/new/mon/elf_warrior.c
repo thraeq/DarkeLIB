@@ -37,7 +37,7 @@ create() {
     set_alignment(10);
     zlevel = random(4);
     switch(zlevel){
-      case 0:new("/wizards/khojem/new/weapon/wooden_spear")->
+      case 0:new("/d/khojem/new/weapon/wooden_spear")->
                  move(this_object());
              force_me("wield spear in right hand and left hand");
              break;
@@ -72,7 +72,7 @@ create() {
                  move(this_object());
              force_me("wear pants");
              break;
-      case 3:new("/wizards/khojem/new/armor/wooden_shield")->
+      case 3:new("/d/khojem/new/armor/wooden_shield")->
                  move(this_object());
              force_me("wear shield on left hand");
              break;

@@ -31,7 +31,7 @@ create() {
     set_stats("strength",40);
     set_wimpy(0);
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/weapon/wooden_club")->
+      case 0:new("/d/khojem/new/weapon/wooden_club")->
                  move(this_object());
              force_me("wield club in right hand");
              break;
@@ -49,19 +49,19 @@ create() {
              break;
     }
     switch(random(4)){
-      case 0:new("/wizards/khojem/new/armor/rag_shirt")->
+      case 0:new("/d/khojem/new/armor/rag_shirt")->
                  move(this_object());
              force_me("wear shirt");
              break;
-      case 1:new("/wizards/khojem/new/armor/leather_mittens")->
+      case 1:new("/d/khojem/new/armor/leather_mittens")->
                  move(this_object());
              force_me("wear mittens on right hand");
              break;
-      case 2:new("/wizards/khojem/new/armor/rag_pants")->
+      case 2:new("/d/khojem/new/armor/rag_pants")->
                  move(this_object());
              force_me("wear pants");
              break;
-      case 3:new("/wizards/khojem/new/armor/rag_boots")->
+      case 3:new("/d/khojem/new/armor/rag_boots")->
                  move(this_object());
              force_me("wear boots");
              break;

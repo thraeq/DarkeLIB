@@ -36,11 +36,11 @@ create() {
 	  "A hareem girl beams you a smile.",
 	  "A hareem girl winks suggestively at you."
 	}),0);
-	new("/wizards/khojem/nomad/armor/veil")->move(this_object());
+	new("/d/khojem/nomad/armor/veil")->move(this_object());
 	force_me("wear veil");
-	new("/wizards/khojem/nomad/armor/pantaloons")->move(this_object());
+	new("/d/khojem/nomad/armor/pantaloons")->move(this_object());
 	force_me("wear pantaloons");
-	new("/wizards/khojem/nomad/armor/bodice")->move(this_object());
+	new("/d/khojem/nomad/armor/bodice")->move(this_object());
 	force_me("wear bodice");
 }
 

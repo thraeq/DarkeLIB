@@ -7,7 +7,7 @@ inherit ROOM;
 void reset(){
   :: reset();
   if(!present("wolf"))
-    new("/wizards/khojem/port/mon/wolf")->move(this_object());
+    new("/d/khojem/port/mon/wolf")->move(this_object());
 }
 
 void create() {
@@ -22,8 +22,8 @@ void create() {
       "darkened landing.  You perceive that the tower has greatly narrowed its "+
       "diameter at this level compared with that at the tower's base."
     );
-    add_exit("/wizards/khojem/port/room/t1","down");
-    add_exit("/wizards/khojem/port/room/t3","up");
+    add_exit("/d/khojem/port/room/t1","down");
+    add_exit("/d/khojem/port/room/t3","up");
     set_pre_exit_functions(({"up"}),({"go_up"}));
     set_items(([
      ({ "stone tower", "tower" }) :

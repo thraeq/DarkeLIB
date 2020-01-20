@@ -20,11 +20,11 @@ void reset() {
     ::reset();
    stick_count = 3;
    if(!present("moped")) {
-      new("/wizards/khojem/nomad/mon/moped")->move(this_object());
+      new("/d/khojem/nomad/mon/moped")->move(this_object());
    }
    if(!present("guard")) {
-      new("/wizards/khojem/nomad/mon/guard2")->move(this_object());
-      new("/wizards/khojem/nomad/mon/guard2")->move(this_object());
+      new("/d/khojem/nomad/mon/guard2")->move(this_object());
+      new("/d/khojem/nomad/mon/guard2")->move(this_object());
    }
 }
 
@@ -47,7 +47,7 @@ void create() {
       "Smoke from the fire slowly drifts up through two holes in the large tent.  "+
       "Soft sand forms the floor of the tent."
     );
-    add_exit("/wizards/khojem/nomad/camp/center","west");
+    add_exit("/d/khojem/nomad/camp/center","west");
     set_items(([
      ({ "tent"  }) :  
         "The tent has a low-pitch roof and trussed with some timber bracing along "+
@@ -72,7 +72,7 @@ void create() {
     ]));
     set_smell("default", "A musty smell fills the tent.");
     set_listen("default", "The clamour from the rest of the camp is far to the south.");
-    obj=new("/wizards/khojem/nomad/obj/vault");
+    obj=new("/d/khojem/nomad/obj/vault");
     obj->move(this_object());
     obj->toggle_closed();
     obj->set_lock("locked");
@@ -102,7 +102,7 @@ int get_glowstick(string str) {
       (b=="fire" || b=="fires" || b=="flame")){ 
       if(stick_count>0){
         stick_count--;
-        ob=new("/wizards/khojem/nomad/obj/glowstick");
+        ob=new("/d/khojem/nomad/obj/glowstick");
         ob->move(this_player());
         write("You fetch a glowstick from the fire.\n");
         return 1;

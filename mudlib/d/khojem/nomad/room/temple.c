@@ -37,7 +37,7 @@ void create() {
       "huge, steep sand dunes form a circle around the structure on this side "+
       "of the ravine.  Passage up the slopes of the dunes appears impossible."
     );
-    add_exit("/wizards/khojem/nomad/room/rv10","south");
+    add_exit("/d/khojem/nomad/room/rv10","south");
     set_items(([
      ({ "structure","ancient structure" }) :
         "The structure appears it may have been a temple at one time.  Sculptured "+
@@ -60,5 +60,5 @@ void create() {
     ]));
     set_smell("default", "The dry, arid air burns your nose.");
     set_listen("default", "The desert wind howls down the steep dune slopes.");
-    new("/wizards/khojem/nomad/obj/mono3")->move(this_object());
+    new("/d/khojem/nomad/obj/mono3")->move(this_object());
 }

@@ -21,9 +21,9 @@ void create() {
       "items they come with a cost.  A tall tower is "
       "to the southwest."  
     );
-    add_exit("/wizards/khojem/port/room/s17","south");
-    add_exit("/wizards/khojem/port/room/s08","west");
-    add_exit("/wizards/khojem/port/room/s09","southwest");
+    add_exit("/d/khojem/port/room/s17","south");
+    add_exit("/d/khojem/port/room/s08","west");
+    add_exit("/d/khojem/port/room/s09","southwest");
     set_items(([
      ({ "sauare","merchant square" }) :
         "Its a dusty opening in the center of town.",
@@ -36,7 +36,7 @@ void create() {
 
 int do_button(string str){
  if(str != "button" { return 0; }
- find_object_or_load("/wizards/khojem/port/inn/main_room");
- this_player()->move_player("/wizards/khojem/port/inn/main_room");
+ find_object_or_load("/d/khojem/port/inn/main_room");
+ this_player()->move_player("/d/khojem/port/inn/main_room");
  return 1;
 }

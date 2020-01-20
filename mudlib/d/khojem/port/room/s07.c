@@ -16,7 +16,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/citizen")  
+  if(base_name(mob) == "/d/khojem/port/mon/citizen")  
     return 1;                                        
   return 0;
 }
@@ -25,7 +25,7 @@ void reset(){
   ::reset();
   if(!present("citizen")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/citizen")->move(this_object());
+      new("/d/khojem/port/mon/citizen")->move(this_object());
   }
 }
 
@@ -40,8 +40,8 @@ void create() {
       "footstep.  A tower of some sort and a large square can be seen to "+
       "the south."
     );
-    add_exit("/wizards/khojem/port/room/s06","north");
-    add_exit("/wizards/khojem/port/room/s08","south");
+    add_exit("/d/khojem/port/room/s06","north");
+    add_exit("/d/khojem/port/room/s08","south");
     set_items(([
      ({ "street","dirt street","Wharf Street","wharf street" }) :
         "Its a dusty little road.",

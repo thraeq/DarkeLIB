@@ -21,15 +21,15 @@ void create() {
       ]));
    add_exit("md_entry","north");
    add_exit("md_gdroom","south");
-   set_door("gate","/wizards/khojem/zone/md_gdroom","south","sentry gate key");
+   set_door("gate","/d/khojem/zone/md_gdroom","south","sentry gate key");
    set_pre_exit_functions(({ "south" }),({ "go_south" }));
    set_smell("default", "A horrible, rotten smell permeates the air.");
    set_listen("default", "All around you are the sounds of slow dripping water.");
-   new("/wizards/khojem/zone/mon/ksentry")->move(this_object());
+   new("/d/khojem/zone/mon/ksentry")->move(this_object());
    set_open("gate",0);
    set_locked("gate",1);
-   "/wizards/khojem/zone/md_gdroom"->set_open("gate",0);
-   "/wizards/khojem/zone/md_gdroom"->set_locked("gate",1);
+   "/d/khojem/zone/md_gdroom"->set_open("gate",0);
+   "/d/khojem/zone/md_gdroom"->set_locked("gate",1);
 }
 
 void look_at_gate() {

@@ -7,11 +7,11 @@ inherit ROOM;
 void reset() {
     ::reset();
   if(!present("sailor")) {
-    new("/wizards/khojem/port/mon/sailor1")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor1")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor1")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor1")->move(this_object());
-    new("/wizards/khojem/port/mon/sailor1")->move(this_object());
+    new("/d/khojem/port/mon/sailor1")->move(this_object());
+    new("/d/khojem/port/mon/sailor1")->move(this_object());
+    new("/d/khojem/port/mon/sailor1")->move(this_object());
+    new("/d/khojem/port/mon/sailor1")->move(this_object());
+    new("/d/khojem/port/mon/sailor1")->move(this_object());
   }
 }    
 
@@ -29,8 +29,8 @@ void create() {
       "A wooden ladder descends "+
       "down into the hull of the craft."
     );
-    add_exit("/wizards/khojem/port/room/s24","plank");
-    add_exit("/wizards/khojem/port/room/ship1a","down");
+    add_exit("/d/khojem/port/room/s24","plank");
+    add_exit("/d/khojem/port/room/ship1a","down");
     set_items(([
      ({ "deck" }) :
         "The teakwood deck has seen years of exposure to the sea's elements.  "+

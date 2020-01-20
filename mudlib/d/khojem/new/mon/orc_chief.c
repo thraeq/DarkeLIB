@@ -37,7 +37,7 @@ create() {
     new("/d/damned/virtual/war-hammer_6.weapon")->
       move(this_object());
     force_me("wield hammer in right hand");
-    new("/wizards/khojem/new/obj/chieftain_key")->
+    new("/d/khojem/new/obj/chieftain_key")->
       move(this_object());
     set_emotes(1, ({
 	  "The orc smiles a toothless smile.",

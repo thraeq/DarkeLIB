@@ -54,9 +54,9 @@ void create() {
     set_smell("default", "The smell of rotting corpses is very strong.");
     set_listen("default", "You hear a battle raging.");
     set_search("default",(: this_object(),"do_search" :));
-    new("/wizards/khojem/new/mon/elf_warrior")->move(this_object());
-    new("/wizards/khojem/new/mon/orc_warrior")->move(this_object());
-    new("/wizards/khojem/new/obj/sign")->move(this_object());
+    new("/d/khojem/new/mon/elf_warrior")->move(this_object());
+    new("/d/khojem/new/mon/orc_warrior")->move(this_object());
+    new("/d/khojem/new/obj/sign")->move(this_object());
 }
 
 int read_sign(string str){

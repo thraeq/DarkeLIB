@@ -14,11 +14,11 @@ void init() {
 void reset() {
   ::reset();
     if(!present("beltar")) 
-      new("/wizards/khojem/port/shop/beltar")->move(this_object());
+      new("/d/khojem/port/shop/beltar")->move(this_object());
     if(!present("bertha")) 
-      new("/wizards/khojem/port/shop/bertha")->move(this_object());
+      new("/d/khojem/port/shop/bertha")->move(this_object());
     if(!present("drunk")) 
-      new("/wizards/khojem/port/shop/drunk")->move(this_object());
+      new("/d/khojem/port/shop/drunk")->move(this_object());
 }
 
 void create() {
@@ -52,7 +52,7 @@ void create() {
 	    "the cracks.  Through the cracks in the floor you can see water.  This "+
 	    "pub was built on a set of pilings above the water."
 	]));
-    add_exit("/wizards/khojem/port/room/s24","south");
+    add_exit("/d/khojem/port/room/s24","south");
     set_smell("default", "You smell stale beer and cigar tobacco.");
 }
 

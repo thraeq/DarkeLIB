@@ -32,7 +32,7 @@ void create() {
     add_exit("md_dung2","west");
     add_exit("md_dung4","east");
     add_exit("md_cell2","south");
-    set_door("door","/wizards/khojem/zone/md_cell1","north","steel cell key");
+    set_door("door","/d/khojem/zone/md_cell1","north","steel cell key");
     set_smell("default", "A horrible, rotten smell permeates the air.");
     set_listen("default", "You hear snoring to the south.");
 }
@@ -46,7 +46,7 @@ void look_at_door() {
 void rest() {
   set_open("door",0);
   set_locked("door",1);
-  "/wizards/khojem/zone/md_cell2"->set_open("door",0);
-  "/wizards/khojem/zone/md_cell2"->set_locked("door",1);
+  "/d/khojem/zone/md_cell2"->set_open("door",0);
+  "/d/khojem/zone/md_cell2"->set_locked("door",1);
 }
 

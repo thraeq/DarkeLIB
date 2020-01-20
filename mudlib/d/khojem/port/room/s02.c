@@ -17,10 +17,10 @@ void init() {
 void reset(){
   set_open("green door",0);
   set_locked("green door",0);
-  "/wizards/khojem/port/room/hou3"->set_open("green door",0);
-  "/wizards/khojem/port/room/hou3"->set_locked("green door",0);
+  "/d/khojem/port/room/hou3"->set_open("green door",0);
+  "/d/khojem/port/room/hou3"->set_locked("green door",0);
   add_invis_exit("south");
-  "/wizards/khojem/port/room/hou3"->add_invis_exit("north");
+  "/d/khojem/port/room/hou3"->add_invis_exit("north");
 }
 
 void create() {
@@ -34,11 +34,11 @@ void create() {
       "the north and a shabby house is to the south.  The street opens to a "+
       "large square to the east."
     );
-    add_exit("/wizards/khojem/port/room/s01","west");
-    add_exit("/wizards/khojem/port/room/s04","east");
-    add_exit("/wizards/khojem/port/room/hou3","south");
+    add_exit("/d/khojem/port/room/s01","west");
+    add_exit("/d/khojem/port/room/s04","east");
+    add_exit("/d/khojem/port/room/hou3","south");
     add_invis_exit("south");
-    set_door("green door","/wizards/khojem/port/room/hou3","south",0);
+    set_door("green door","/d/khojem/port/room/hou3","south",0);
     set_open("green door",0);
     set_locked("green door",0);
     set_func("green door","open","do_green_open");
@@ -63,7 +63,7 @@ void look_at_green_door() {
 
 int do_green_open() {
   remove_invis_exit("south");
-  "/wizards/khojem/port/room/hou3"->remove_invis_exit("north");
+  "/d/khojem/port/room/hou3"->remove_invis_exit("north");
   write("The green door easily swings open.\n");
   say(this_player()->query_cap_name()+" opens a green door to the south.\n");
   return 1;
@@ -71,7 +71,7 @@ int do_green_open() {
  
 int do_green_close() {
   add_invis_exit("south");
-  "/wizards/khojem/port/room/hou3"->add_invis_exit("north");
+  "/d/khojem/port/room/hou3"->add_invis_exit("north");
   write("A green door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a green door shut.\n");
   return 1;

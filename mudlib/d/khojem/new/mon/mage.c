@@ -59,7 +59,7 @@ create() {
 	new("/d/damned/virtual/cloak.armour")->
 	  move(this_object());
 	force_me("wear cloak");
-	new("/wizards/khojem/new/armor/slippers")->
+	new("/d/khojem/new/armor/slippers")->
       move(this_object());
     force_me("wear slippers");
 }

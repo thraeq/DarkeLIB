@@ -9,11 +9,11 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("child")) 
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
 }  
 
 void create() {
@@ -25,7 +25,7 @@ void create() {
       "The hut is well maintained and several small chairs and desks "+
       "are arranged here."
     );
-    add_exit("/wizards/khojem/new/room/annex6","north");
+    add_exit("/d/khojem/new/room/annex6","north");
     set_items(([
      ({ "hut","room", "nursery" }) :
         "The nursery is a small hut with clean floors.  Large windows allow  "+

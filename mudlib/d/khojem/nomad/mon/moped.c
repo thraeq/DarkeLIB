@@ -42,9 +42,9 @@ create() {
 	  "Moped puts two fingers down his throat and pukes up some food."
 	}),0);
 	set_class("arch-mage");
-	new("/wizards/khojem/nomad/weapon/scepter2")->move(this_object());
+	new("/d/khojem/nomad/weapon/scepter2")->move(this_object());
 	force_me("wield scepter in right hand");
-	new("/wizards/khojem/nomad/armor/moped_key")->move(this_object());
+	new("/d/khojem/nomad/armor/moped_key")->move(this_object());
 	force_me("wear key");
 }
 

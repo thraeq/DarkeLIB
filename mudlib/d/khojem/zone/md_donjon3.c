@@ -25,7 +25,7 @@ void create() {
     add_exit("md_donjon2","down");
     add_exit("md_donjon4","up");
     add_exit("md_captain","west");
-    set_door("door","/wizards/khojem/zone/md_captain","west",0);
+    set_door("door","/d/khojem/zone/md_captain","west",0);
     set_smell("default", "A horrible, rotten smell permeates the air.");
     set_listen("default", "You hear the wind blowing down the stairway "+
       "from above the landing.");
@@ -40,6 +40,6 @@ void look_at_door() {
 void rest() {
   set_open("door",0);
   set_locked("door",0);
-  "/wizards/khojem/zone/md_captain"->set_open("door",0);
-  "/wizards/khojem/zone/md_captain"->set_locked("door",0);
+  "/d/khojem/zone/md_captain"->set_open("door",0);
+  "/d/khojem/zone/md_captain"->set_locked("door",0);
 }

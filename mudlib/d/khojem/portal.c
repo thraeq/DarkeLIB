@@ -8,7 +8,7 @@
 	"/d/damned/guilds/join_rooms/thief_join",\
 	"/wizards/excelsior/rooms/ent_shack",\
 	"/d/damned/virtual/room_28_34.world",\
-	"/wizards/khojem/new/room/orc6",\
+	"/d/khojem/new/room/orc6",\
 	"/d/damned/virtual/room_3_25.world",\
 	"/d/damned/virtual/room_1_1.world",\
 	"/d/damned/virtual/room_39_39.world",\

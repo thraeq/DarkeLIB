@@ -7,10 +7,10 @@ inherit VAULT;
 
 void reset(){
   if(!present("mage")) {
-    new("/wizards/khojem/port/mon/mage")->move(this_object());
+    new("/d/khojem/port/mon/mage")->move(this_object());
   }
   if(!present("dervish")) {
-    new("/wizards/khojem/port/mon/dervish")->move(this_object());
+    new("/d/khojem/port/mon/dervish")->move(this_object());
   }
 }
 
@@ -26,8 +26,8 @@ void create() {
       "compass.  The stone floor is filled with discarded parchments and "+
       "dust.  Several books lay open on a few rustic tabletops."
     );
-    add_exit("/wizards/khojem/port/room/t3","down");
-    set_door("iron trapdoor","/wizards/khojem/port/room/t3","down",0);
+    add_exit("/d/khojem/port/room/t3","down");
+    set_door("iron trapdoor","/d/khojem/port/room/t3","down",0);
     set_open("iron trapdoor",0);
     set_locked("iron trapdoor",0);
     set_func("iron trapdoor","open","do_open");
@@ -68,7 +68,7 @@ int do_open() {
       "the room, passes over the iron trapdoor, and violently slams it shut!\n");
     say(this_player()->query_cap_name()+" attempts to open the iron trapdoor, "+
       "but the dervish whirled across the trapdoor and slammed it shut!\n");
-    tell_room("/wizards/khojem/port/room/t3","The iron trapdoor opens partially "+
+    tell_room("/d/khojem/port/room/t3","The iron trapdoor opens partially "+
       "before it is slammed shut!\n");
     return 0;
   }

@@ -20,16 +20,16 @@ create() {
     return;
   }
   for(i = rn*10; i < (rn*10+10); i++) {
-    add_exit(sprintf("/wizards/khojem/port/virtual/inn_%d.inn", i),
+    add_exit(sprintf("/d/khojem/port/virtual/inn_%d.inn", i),
              sprintf("room%d", i));
     set_door(sprintf("door %d", i), 
-      sprintf("/wizards/khojem/port/virtual/inn_%d.inn", i),
+      sprintf("/d/khojem/port/virtual/inn_%d.inn", i),
              sprintf("room%d", i), sprintf("bl_key %d", i));
     set_open(sprintf("door %d", i), 0);
     set_locked(sprintf("door %d", i), 1);
     set_lock_level(sprintf("door %d", i), 18);
   }
-  add_exit("/wizards/khojem/port/inn/foyer", "north");
+  add_exit("/d/khojem/port/inn/foyer", "north");
   return;
 }
 

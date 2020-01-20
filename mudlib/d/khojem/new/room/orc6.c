@@ -9,7 +9,7 @@ inherit ROOM;
 void reset() {
 	::reset();
     if (!present("half-orc shaman" , this_object()) ) {
-      new("/wizards/khojem/new/mon/orc_shaman")->move(this_object());
+      new("/d/khojem/new/mon/orc_shaman")->move(this_object());
     }
 }
 

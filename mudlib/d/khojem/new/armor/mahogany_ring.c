@@ -22,7 +22,7 @@ void create() {
 }
 
 int extra_worn(){
-  shadow=clone_object("/wizards/khojem/new/shadow/strength2");
+  shadow=clone_object("/d/khojem/new/shadow/strength2");
   shadow->start_shadow(this_player());
   return 1;
 }

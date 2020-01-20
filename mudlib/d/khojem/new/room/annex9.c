@@ -14,7 +14,7 @@ void init() {
 void reset(){
   ::reset();
   if(!present("scout") && random(4)) 
-    new("/wizards/khojem/new/mon/elf_scout")->move(this_object());
+    new("/d/khojem/new/mon/elf_scout")->move(this_object());
 }  
 
 void create() {
@@ -25,9 +25,9 @@ void create() {
     set("long", "You are on a path.  The trees grow "+
       "close around and cut off some of the light from above. "
     );
-    add_exit("/wizards/khojem/new/room/annex10","southeast");
-    add_exit("/wizards/khojem/new/room/annex8","northwest");
-    add_exit("/wizards/khojem/new/room/annex11","stream");
+    add_exit("/d/khojem/new/room/annex10","southeast");
+    add_exit("/d/khojem/new/room/annex8","northwest");
+    add_exit("/d/khojem/new/room/annex11","stream");
     add_invis_exit("stream");
     set_items(([
      ({ "tree","trees", "woods" }) :
@@ -39,7 +39,7 @@ void create() {
      ]));
     set_smell("default", "The smell of growth and decaying wood is everywhere.");
     set_listen("default", "You hear the occasional sound of birds singing.");
-    new("/wizards/khojem/new/obj/stream")->move(this_object());
+    new("/d/khojem/new/obj/stream")->move(this_object());
 }
 
 

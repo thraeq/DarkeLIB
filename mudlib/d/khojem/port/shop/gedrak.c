@@ -23,7 +23,7 @@ void create() {
    set_languages(({"common", "stormspeak", "elvish", "serra", "yin",
      "dwarvish", "drow", "pix", "treefolk", "vr'krr", "middle-english",
      "gnollish", "catfolk", "hisaaa", "ogryn" }));
-   set("storage room","/wizards/khojem/port/shop/gedrak_store");
+   set("storage room","/d/khojem/port/shop/gedrak_store");
    set("markup", 50);
    set_skill("elementalism", 75);
    set_spell_level("elemental storm", 6);

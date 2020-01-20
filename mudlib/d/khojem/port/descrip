@@ -15,9 +15,9 @@ Description:         Port city with space for one to two guilds and possibly
                      wight, respectively, both located in lighthouse - 
                      l1.c and l2.c).  Other aggressives are behind locked
                      doors in mansion.
-Pathname:            /wizards/khojem/port
+Pathname:            /d/khojem/port
 World Map Location:  /d/damned/virtual/room_36_18.world
-Area Entry:          /wizards/khojem/port/room   wgate.c & ngate.c
+Area Entry:          /d/khojem/port/room   wgate.c & ngate.c
                      /d/damned/virtual/room_36_18.world should read:
                        "A west gate to a city is here."  and
                        "A north gate to a city is here."

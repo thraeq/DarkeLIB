@@ -25,7 +25,7 @@ void init() {
 void reset() {
    ::reset();
   if(!present("basket")) {
-    ob = new("/wizards/khojem/nomad/obj/sand_key");
+    ob = new("/d/khojem/nomad/obj/sand_key");
     ob->set_name("basket");
     ob->set_short("a straw basket (closed)");
     ob->set_long("A large round basket made from the reeds that grow "
@@ -38,8 +38,8 @@ void reset() {
   zopen = 0;
   zflag = 0;   
   if(check_peasant()<10) {
-    new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
-    new("/wizards/khojem/nomad/mon/peasant")->move(this_object());
+    new("/d/khojem/nomad/mon/peasant")->move(this_object());
+    new("/d/khojem/nomad/mon/peasant")->move(this_object());
   }    
 }
 
@@ -63,14 +63,14 @@ void create() {
       "is littered with tents of various size.  Small dogs run loose "+
       "between the tents.  Several of the tents are lit by torchlight.\n"
     );
-    add_exit("/wizards/khojem/nomad/camp/entry","west");
-    add_exit("/wizards/khojem/nomad/camp/chief_tent","east");
-    add_exit("/wizards/khojem/nomad/camp/shaman","northeast");
-    add_exit("/wizards/khojem/nomad/camp/warrior_tent","north");
-    add_exit("/wizards/khojem/nomad/camp/tent1","northwest");
-    add_exit("/wizards/khojem/nomad/camp/stable","southwest");
-    add_exit("/wizards/khojem/nomad/camp/shop","south");
-    add_exit("/wizards/khojem/nomad/camp/hareem1","southeast");   
+    add_exit("/d/khojem/nomad/camp/entry","west");
+    add_exit("/d/khojem/nomad/camp/chief_tent","east");
+    add_exit("/d/khojem/nomad/camp/shaman","northeast");
+    add_exit("/d/khojem/nomad/camp/warrior_tent","north");
+    add_exit("/d/khojem/nomad/camp/tent1","northwest");
+    add_exit("/d/khojem/nomad/camp/stable","southwest");
+    add_exit("/d/khojem/nomad/camp/shop","south");
+    add_exit("/d/khojem/nomad/camp/hareem1","southeast");   
     set_items(([
      ({ "camp" , "nomad camp" }) :
         "The camp is a sprawl of canvas tents with low-sloped roofs.  "+
@@ -106,7 +106,7 @@ int check_peasant() {
 }
 
 int my_peasant_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/nomad/mon/peasant")  
+  if(base_name(mob) == "/d/khojem/nomad/mon/peasant")  
     return 1;                                        
   return 0;
 }                            
@@ -148,12 +148,12 @@ int do_open(string str) {
     message("info",this_player()->query_cap_name()+" retrieves a "
       "compass from the bottom of the basket.",this_object(),
       this_player());
-    obj=new("/wizards/khojem/nomad/obj/compass");
+    obj=new("/d/khojem/nomad/obj/compass");
     obj->move(this_player());
     return 1;
   }
   if(num>5 && num<11) {
-    obj=new("/wizards/khojem/nomad/armor/sunvisor");
+    obj=new("/d/khojem/nomad/armor/sunvisor");
     obj->move(this_player());
     write("You find a handy sunvisor and grab it from the basket.");
     message("info",this_player()->query_cap_name()+" grabs a sunvisor "
@@ -165,7 +165,7 @@ int do_open(string str) {
     message("info","As "+this_player()->query_cap_name()+" opens the straw "
       "basket.  A big cobra spring out and attacks "+this_player()->query_cap_name()+
       ".\n",this_object(),this_player());
-    obj=new("/wizards/khojem/nomad/mon/cobra");
+    obj=new("/d/khojem/nomad/mon/cobra");
     obj->move(this_object());
     return 1; 
   }

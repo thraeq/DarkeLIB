@@ -18,7 +18,7 @@ void init() {
 void reset(){
   ::reset();
   if(!present("guard") && random(2))
-    new("/wizards/khojem/new/mon/elf_guard")->move(this_object());
+    new("/d/khojem/new/mon/elf_guard")->move(this_object());
 }  
 
 void create() {
@@ -30,9 +30,9 @@ void create() {
       "A ladder rest against the platform's edge.  The forest floor is "+
       "far below."
     );
-    add_exit("/wizards/khojem/new/room/walk1","east");
-    add_exit("/wizards/khojem/new/room/walk9","west");
-    add_exit("/wizards/khojem/new/room/ladder1","ladder");
+    add_exit("/d/khojem/new/room/walk1","east");
+    add_exit("/d/khojem/new/room/walk9","west");
+    add_exit("/d/khojem/new/room/ladder1","ladder");
     set_items(([
      ({ "tree","trees", "woods", "branches" }) :
         "The trees are large, healthy trees filled with foliage.",

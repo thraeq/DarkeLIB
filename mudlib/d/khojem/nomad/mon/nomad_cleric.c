@@ -55,7 +55,7 @@ create() {
 	set_property("magic resistance",60);
 	set_property("enhance criticals",-1);
 	set_fingers(5);
-	new("/wizards/khojem/nomad/weapon/nomad_staff")->
+	new("/d/khojem/nomad/weapon/nomad_staff")->
 	  move(this_object());
 	force_me("wield staff in right hand and left hand");
 }

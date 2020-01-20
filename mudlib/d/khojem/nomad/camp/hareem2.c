@@ -13,13 +13,13 @@ void init() {
 void reset() {
     ::reset();
     if(!present("matron"))
-      new("/wizards/khojem/nomad/mon/matron")->move(this_object());
+      new("/d/khojem/nomad/mon/matron")->move(this_object());
     if(!present("hareem girl")) {
-      new("/wizards/khojem/nomad/mon/hareem_girl")->move(this_object());
-      new("/wizards/khojem/nomad/mon/hareem_girl")->move(this_object());
-      new("/wizards/khojem/nomad/mon/hareem_girl")->move(this_object());
-      new("/wizards/khojem/nomad/mon/hareem_girl")->move(this_object());
-      new("/wizards/khojem/nomad/mon/hareem_girl")->move(this_object());
+      new("/d/khojem/nomad/mon/hareem_girl")->move(this_object());
+      new("/d/khojem/nomad/mon/hareem_girl")->move(this_object());
+      new("/d/khojem/nomad/mon/hareem_girl")->move(this_object());
+      new("/d/khojem/nomad/mon/hareem_girl")->move(this_object());
+      new("/d/khojem/nomad/mon/hareem_girl")->move(this_object());
     }
 }
 
@@ -41,7 +41,7 @@ void create() {
     set("night long",
       "The chill night air is warmed by the many lit torches.  "+desc
     );
-    add_exit("/wizards/khojem/nomad/camp/hareem1","north");
+    add_exit("/d/khojem/nomad/camp/hareem1","north");
     set_items(([
      ({ "tent", "ceiling" }) :
         "It looks like a clean well maintained canvas tent.",

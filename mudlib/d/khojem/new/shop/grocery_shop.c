@@ -14,7 +14,7 @@ void init(){
 void reset() {
    ::reset();
    if(!present("barkfir")) {
-      new("/wizards/khojem/new/shop/barkfir")->move(this_object());
+      new("/d/khojem/new/shop/barkfir")->move(this_object());
    }
 }
 
@@ -22,7 +22,7 @@ void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",3);
-   add_exit("/wizards/khojem/new/room/plat5", "south");
+   add_exit("/d/khojem/new/room/plat5", "south");
    set("short","Barkfir's Fresh Grocery & Goods");
    set("long",
      "This must be the market for Fir'nvillee's elves.  The racks are "+

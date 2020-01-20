@@ -12,9 +12,9 @@ void reset(){
   coin_flip=random(2);
   if(!present("scout"))
     if(coin_flip) 
-      new("/wizards/khojem/new/mon/elf_scout")->move(this_object());
+      new("/d/khojem/new/mon/elf_scout")->move(this_object());
     else
-      new("/wizards/khojem/new/mon/orc_scout")->move(this_object());
+      new("/d/khojem/new/mon/orc_scout")->move(this_object());
 }  
 
 void create() {

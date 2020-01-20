@@ -9,7 +9,7 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("guard") && random(2))
-    new("/wizards/khojem/new/mon/elf_guard")->move(this_object());
+    new("/d/khojem/new/mon/elf_guard")->move(this_object());
 }
 
 void create() {
@@ -22,7 +22,7 @@ void create() {
       "The forest floor is far below."
     );
     add_exit("walk7","north");
-    add_exit("/wizards/khojem/new/shop/pub","south");
+    add_exit("/d/khojem/new/shop/pub","south");
     add_exit("walk8","east");
     set_items(([
         "sign" : 

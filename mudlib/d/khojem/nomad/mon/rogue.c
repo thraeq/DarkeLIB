@@ -68,7 +68,7 @@ void create() {
     money=new("std/obj/coins");
     money->set_money("silver",((random(20))+80));
     money->move(this_object());
-    new("/wizards/khojem/nomad/weapon/viper_fangs")->move(this_object());
+    new("/d/khojem/nomad/weapon/viper_fangs")->move(this_object());
     force_me("wield sword in right hand");
     force_me("use invisibility art");
 }

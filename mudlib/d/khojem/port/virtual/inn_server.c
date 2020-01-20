@@ -4,7 +4,7 @@
 #include <std.h>
 #include <security.h>
 #include <daemons.h>
-#define INN_ROOM "/wizards/khojem/port/inn/main_room"
+#define INN_ROOM "/d/khojem/port/inn/main_room"
 
 inherit "/std/vault_locker_room";
 inherit "/std/virtual/compile";
@@ -61,11 +61,11 @@ void virtual_setup(string arg) {
     return;
   }
   owner =(string)INN_ROOM->
-    query_owner(sprintf("/wizards/khojem/port/virtual/inn_%d.inn",room_num));
+    query_owner(sprintf("/d/khojem/port/virtual/inn_%d.inn",room_num));
   seteuid(getuid());
   if(owner && file_exists(file = ("/open/inn_descs/bl/"+owner)))
     set("long", read_file(file));
-  hall_exit = sprintf("/wizards/khojem/port/inn/hall_%d", (room_num / 10));
+  hall_exit = sprintf("/d/khojem/port/inn/hall_%d", (room_num / 10));
   set_door("door "+room, hall_exit, "out", "bl_key "+room);
   set_lock_level("door "+room, 18);
   add_exit(hall_exit,"out");

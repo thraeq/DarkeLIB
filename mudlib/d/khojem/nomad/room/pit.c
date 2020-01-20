@@ -15,7 +15,7 @@ void init() {
 void reset() {
     ::reset();
     if(!present("worm")) {
-      new("/wizards/khojem/nomad/mon/sand_worm")->move(this_object());
+      new("/d/khojem/nomad/mon/sand_worm")->move(this_object());
     }
 }
 
@@ -29,8 +29,8 @@ void create() {
       "Above you the chamber's ceiling rises upward to the center.  A trapdoor "+
       "can be seen above."
     );
-    add_exit("/wizards/khojem/nomad/room/tomb","up");
-    set_door("trapdoor","/wizards/khojem/nomad/room/tomb","up",0);
+    add_exit("/d/khojem/nomad/room/tomb","up");
+    set_door("trapdoor","/d/khojem/nomad/room/tomb","up",0);
     set_func("trapdoor","open","do_trap_open");
     set_func("trapdoor","close","do_trap_close");
     set_items(([
@@ -107,7 +107,7 @@ void look_at_trapdoor() {
 
 int do_trap_open() {
   remove_invis_exit("up");
-  "/wizards/khojem/nomad/room/tomb"->remove_invis_exit("down");
+  "/d/khojem/nomad/room/tomb"->remove_invis_exit("down");
   write("The trapdoor's rusty hinges creak as you open it.\n");
   say(this_player()->query_cap_name()+" stretches up and opens the "+
     "trapdoor.  Its rusty hinges creak and moan.\n");
@@ -116,7 +116,7 @@ int do_trap_open() {
  
 int do_trap_close() {
   add_invis_exit("up");
-  "/wizards/khojem/nomad/room/tomb"->add_invis_exit("down");
+  "/d/khojem/nomad/room/tomb"->add_invis_exit("down");
   write("The trapdoor's rusty hinges creak as you close it.\n");
   say(this_player()->query_cap_name()+" stretches up and closes the "+
     "trapdoor.  Its rusty hinges creak and moan.\n");

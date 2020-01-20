@@ -14,7 +14,7 @@ void init(){
 
 void reset(){
   if(!present("spider")) {
-    new("/wizards/khojem/nomad/mon/king_spider")->move(this_object());
+    new("/d/khojem/nomad/mon/king_spider")->move(this_object());
   }
   if(exit_found){
     remove_invis_exit("north");
@@ -24,10 +24,10 @@ void reset(){
   if(query_open("sandstone door")) {
     set_open("sandstone door",0);
     set_locked("sandstone door",1);
-    "/wizards/khojem/nomad/room/tomb"->set_open("sandstone door",0);
-    "/wizards/khojem/nomad/room/tomb"->set_locked("sandstone door",1);
+    "/d/khojem/nomad/room/tomb"->set_open("sandstone door",0);
+    "/d/khojem/nomad/room/tomb"->set_locked("sandstone door",1);
     add_invis_exit("east");
-    "/wizards/khojem/nomad/room/tomb"->add_invis_exit("west");
+    "/d/khojem/nomad/room/tomb"->add_invis_exit("west");
   }   
 }
 
@@ -42,10 +42,10 @@ void create() {
       "dangle from it just above your head.  The sand floor muffles your "+
       "footsteps but any noise you make echos off the sandstone walls."
    );
-    add_exit("/wizards/khojem/nomad/room/sp2","south");
-    add_exit("/wizards/khojem/nomad/room/tomb","east");
+    add_exit("/d/khojem/nomad/room/sp2","south");
+    add_exit("/d/khojem/nomad/room/tomb","east");
     add_invis_exit("east");
-    set_door("sandstone door","/wizards/khojem/nomad/room/tomb","east",
+    set_door("sandstone door","/d/khojem/nomad/room/tomb","east",
       "sand key");
     set_open("sandstone door",0);
     set_locked("sandstone door",1);
@@ -65,7 +65,7 @@ void create() {
     set_listen("default", "You hear the sound of some small animals skirting about "+
       "on the sandy floor.");
     set_search("default",(: call_other, this_object(),"do_search" :));
-    obj=new("/wizards/khojem/nomad/obj/spider_chest");
+    obj=new("/d/khojem/nomad/obj/spider_chest");
     obj->move(this_object());
     obj->toggle_closed();
     obj->set_lock("locked");
@@ -84,7 +84,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("east");
-  "/wizards/khojem/nomad/room/tomb"->remove_invis_exit("west");
+  "/d/khojem/nomad/room/tomb"->remove_invis_exit("west");
   write("The sandstone door makes a grinding noise as it opens.\n"+
     "Sand falls from the door's sill and dusts you in sand.\n");
   say(this_player()->query_cap_name()+" slowly opens the sandstone door to "+
@@ -94,7 +94,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("east");
-  "/wizards/khojem/nomad/room/tomb"->add_invis_exit("west");
+  "/d/khojem/nomad/room/tomb"->add_invis_exit("west");
   write("The sandstone door makes a grinding sound as it closes shut.\n");
   say(this_player()->query_cap_name()+" closes the sandstone door.  It makes "+
     "a grinding sound as it closes.\n");
@@ -108,7 +108,7 @@ void do_search() {
   if(random(100)<skill){
     write("Your search is successful.\n"+
       "You discover a secret exit in the north wall!");
-    add_exit("/wizards/khojem/nomad/room/rv4","north");
+    add_exit("/d/khojem/nomad/room/rv4","north");
     add_invis_exit("north");
     exit_found=1;
   }

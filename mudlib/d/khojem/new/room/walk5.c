@@ -29,7 +29,7 @@ void create() {
     );
     add_exit("walk4","east");
     add_exit("plat4","west");
-    add_exit("/wizards/khojem/new/room/annex1","ladder");
+    add_exit("/d/khojem/new/room/annex1","ladder");
     add_pre_exit_function("ladder","go_ladder");
     set_items(([
         "village" : "Many small huts are built into the trees around you.",
@@ -55,7 +55,7 @@ them.",
 everywhere.");
     set_listen("default", "You hear the occasional sound of birds
 singing.");
-    new("/wizards/khojem/new/obj/sign")->move(this_object());
+    new("/d/khojem/new/obj/sign")->move(this_object());
 }
 
 int go_ladder() {

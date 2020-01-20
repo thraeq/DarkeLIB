@@ -18,7 +18,7 @@ void init() {
 void reset() {
     ::reset();
    if(!present("mage"))
-      new("/wizards/khojem/new/mon/mage")->move(this_object());
+      new("/d/khojem/new/mon/mage")->move(this_object());
 }
 
 void create() {

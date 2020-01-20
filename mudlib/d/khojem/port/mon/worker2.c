@@ -44,7 +44,7 @@ create() {
     money=new("std/obj/coins");
     money->set_money("silver",(random(20)+(10*zlevel)));
     money->move(this_object());
-    carry=new("/wizards/khojem/port/obj/acontainer");
+    carry=new("/d/khojem/port/obj/acontainer");
     qual = 2 + random(5);
     flag = random(51);
     if(flag == 0) {

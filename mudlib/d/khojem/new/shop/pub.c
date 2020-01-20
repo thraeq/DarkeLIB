@@ -14,11 +14,11 @@ void init() {
 void reset() {
   ::reset();
     if(!present("barfir")) 
-      new("/wizards/khojem/new/shop/barfir")->move(this_object());
+      new("/d/khojem/new/shop/barfir")->move(this_object());
     if(!present("lackey"))
-      new("/wizards/khojem/new/shop/lackey")->move(this_object());
+      new("/d/khojem/new/shop/lackey")->move(this_object());
     if(!present("vixen"))
-      new("/wizards/khojem/new/shop/roxfir")->move(this_object());
+      new("/d/khojem/new/shop/roxfir")->move(this_object());
 }
 
 void create() {
@@ -50,12 +50,12 @@ void create() {
 	 ({ "fire", "fireplace", "stone hearth", "hearth" }) :
 	    "A fire burns a large log in a stone hearth."
 	]));
-    add_exit("/wizards/khojem/new/room/plat6","north");
+    add_exit("/d/khojem/new/room/plat6","north");
     set_property("no castle", 1);
     set_property("no attack", 1);
     set_smell("default", "You smell stale beer and pipe tobacco.");
     set_listen("default", "You hear the din of a merry pub.");
-//    new("/wizards/khojem/new/obj/slot_machine")->move(this_object());
+//    new("/d/khojem/new/obj/slot_machine")->move(this_object());
 }
 
   int read(string str) {

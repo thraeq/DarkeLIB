@@ -27,12 +27,12 @@ void create() {
       "and supported above the harbor's water by timbers. "+
       "A ladder is here that leads down to the water's surface."  
     );
-    add_exit("/wizards/khojem/port/room/s09","north");
-    add_exit("/wizards/khojem/port/room/s05","west");
-    add_exit("/wizards/khojem/port/room/s11","south");
-    add_exit("/wizards/khojem/port/room/s11","south");
-    add_exit("/wizards/khojem/port/room/s04","northwest");
-    add_exit("/wizards/khojem/port/room/h1","down");
+    add_exit("/d/khojem/port/room/s09","north");
+    add_exit("/d/khojem/port/room/s05","west");
+    add_exit("/d/khojem/port/room/s11","south");
+    add_exit("/d/khojem/port/room/s11","south");
+    add_exit("/d/khojem/port/room/s04","northwest");
+    add_exit("/d/khojem/port/room/h1","down");
     set_pre_exit_functions(({"down"}),({"go_down"}));
     set_items(([
      ({ "ladder" }) :

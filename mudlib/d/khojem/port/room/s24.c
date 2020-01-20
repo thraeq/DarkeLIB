@@ -27,10 +27,10 @@ void create() {
       "The wooden boards beneath your feet creak with every footstep.  "+
       "Loud laughter emits from a shop to the north."
     );
-    add_exit("/wizards/khojem/port/shop/pub","north");
-    add_exit("/wizards/khojem/port/room/s23","west");
-    add_exit("/wizards/khojem/port/room/s25","east");
-    add_exit("/wizards/khojem/port/room/ship1","plank");
+    add_exit("/d/khojem/port/shop/pub","north");
+    add_exit("/d/khojem/port/room/s23","west");
+    add_exit("/d/khojem/port/room/s25","east");
+    add_exit("/d/khojem/port/room/ship1","plank");
     set_items(([
      ({ "sign" }) :
         "It is an old, weather-beaten sign.  Try reading it.",

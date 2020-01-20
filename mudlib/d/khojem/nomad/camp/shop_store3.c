@@ -28,7 +28,7 @@ void reset() {
   i = sizeof(inv);
   while(i--) if(!living(inv[i])) inv[i]->remove();
   merz = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/nomad/camp/shop"));
+		find_object_or_load("/d/khojem/nomad/camp/shop"));
   if(merz) {
     message("info", "Merz says in Common: Ahh!  Effendi, I have some goods "+
 	    "just for you.  One moment while I fetch them!", environment(merz));
@@ -53,9 +53,9 @@ void finish_deliver(object merz) {
 void clone_ten() {
   object ob;
 
-  ob = new("/wizards/khojem/nomad/armor/sunvisor");
+  ob = new("/d/khojem/nomad/armor/sunvisor");
   ob->move(this_object());
-  ob = new("/wizards/khojem/nomad/obj/bag");
+  ob = new("/d/khojem/nomad/obj/bag");
   ob->move(this_object());
 }
 

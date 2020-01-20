@@ -9,7 +9,7 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("warrior") && random(2)) 
-    new("/wizards/khojem/new/mon/elf_warrior1")->move(this_object());
+    new("/d/khojem/new/mon/elf_warrior1")->move(this_object());
 }  
 
 void create() {

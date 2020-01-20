@@ -28,7 +28,7 @@ void reset() {
   i = sizeof(inv);
   while(i--) if(!living(inv[i])) inv[i]->remove();
   akmed = present("shopkeeper", 
-		find_object_or_load("/wizards/khojem/nomad/camp/shop"));
+		find_object_or_load("/d/khojem/nomad/camp/shop"));
   if(akmed) {
     message("info", "Akmed says in Common:  Effendi... Effendi, I have the best goods "+
 	    "for you.  I will get them for you!", environment(akmed));
@@ -60,7 +60,7 @@ void clone_ten() {
 void clone_four() {
   object ob;
 
-  ob = new("/wizards/khojem/nomad/obj/compass");
+  ob = new("/d/khojem/nomad/obj/compass");
   ob->move(this_object());
   ob = new("/d/damned/virtual/scimitar_5.weapon");
   ob->move(this_object());

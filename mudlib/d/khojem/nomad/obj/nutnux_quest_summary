@@ -1,4 +1,4 @@
-/wizards/khojem/nomad/room/d1.c
+/d/khojem/nomad/room/d1.c
   Do directed tells to the Nutnux and include either 
   of these target strings:  "sash"  or "quest"
   example:  say nutnux, I hear you have a quest for me?

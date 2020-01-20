@@ -18,7 +18,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/peon")  
+  if(base_name(mob) == "/d/khojem/port/mon/peon")  
     return 1;                                        
   return 0;
 }
@@ -26,7 +26,7 @@ int my_mob_filter(object mob) {
 void reset(){
   if(!present("peon")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/peon")->move(this_object());
+      new("/d/khojem/port/mon/peon")->move(this_object());
   }
 }
 
@@ -50,9 +50,9 @@ void create() {
       "The wooden boards beneath your feet creak with every footstep.  "+
       "Some sort of shop is to the west.  A sign is above the open doorway."
     );
-    add_exit("/wizards/khojem/port/shop/shipwright","west");
-    add_exit("/wizards/khojem/port/room/s11","north");
-    add_exit("/wizards/khojem/port/room/s13","south");
+    add_exit("/d/khojem/port/shop/shipwright","west");
+    add_exit("/d/khojem/port/room/s11","north");
+    add_exit("/d/khojem/port/room/s13","south");
     set_items(([
      ({ "shop","doorway" }) :
         "A broad doorway serves as an entrance to a place of business.  "+

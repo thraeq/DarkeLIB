@@ -15,20 +15,20 @@ void init() {
 void reset() {
   ::reset();
   if(!present("babba")) {
-    new("/wizards/khojem/nomad/mon/babba")->move(this_object());
+    new("/d/khojem/nomad/mon/babba")->move(this_object());
   }
   if(!present("bouncer")) {
-    new("/wizards/khojem/nomad/mon/bouncer")->move(this_object());
-    new("/wizards/khojem/nomad/mon/bouncer")->move(this_object());
-    new("/wizards/khojem/nomad/mon/bouncer")->move(this_object());
+    new("/d/khojem/nomad/mon/bouncer")->move(this_object());
+    new("/d/khojem/nomad/mon/bouncer")->move(this_object());
+    new("/d/khojem/nomad/mon/bouncer")->move(this_object());
   }
   if(query_open("curtain")) {
     set_open("curtain",0);
     set_locked("curtain",0);
-    "/wizards/khojem/nomad/camp/backroom"->set_open("tent flap",0);
-    "/wizards/khojem/nomad/camp/backroom"->set_locked("tent flap",0);
+    "/d/khojem/nomad/camp/backroom"->set_open("tent flap",0);
+    "/d/khojem/nomad/camp/backroom"->set_locked("tent flap",0);
     add_invis_exit("southwest");
-    "/wizards/khojem/nomad/camp/backroom"->add_invis_exit("northeast");
+    "/d/khojem/nomad/camp/backroom"->add_invis_exit("northeast");
   }   
 }
 
@@ -72,17 +72,17 @@ void create() {
 	 ({ "fire", "fireplace", "stone hearth", "hearth" }) :
 	    "A fire burns a large log in a stone hearth."
 	]));
-    add_exit("/wizards/khojem/nomad/camp/shop","north");
-    add_exit("/wizards/khojem/nomad/camp/backroom","southwest");
+    add_exit("/d/khojem/nomad/camp/shop","north");
+    add_exit("/d/khojem/nomad/camp/backroom","southwest");
     add_invis_exit("southwest");
-    set_door("curtain","/wizards/khojem/nomad/camp/backroom","southwest",0);
+    set_door("curtain","/d/khojem/nomad/camp/backroom","southwest",0);
     set_open("curtain",0);
     set_locked("curtain",0);
     set_func("curtain","open","do_open");
     set_func("curtain","close","do_close");
     set_smell("default", "The fragrant smell of hashish smoke fills the room.");
     set_listen("default", "You hear a lively band playing for the dancer.");
-    new("/wizards/khojem/nomad/mon/belly_dancer")->move(this_object());
+    new("/d/khojem/nomad/mon/belly_dancer")->move(this_object());
 }
 
 int do_look(string str) {
@@ -105,7 +105,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("southwest");
-  "/wizards/khojem/nomad/camp/backroom"->remove_invis_exit("northeast");
+  "/d/khojem/nomad/camp/backroom"->remove_invis_exit("northeast");
   write("You pull the curtain aside.");
   say(this_player()->query_cap_name()+" opens a curtain.\n");
   return 1;
@@ -113,7 +113,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("southwest");
-  "/wizards/khojem/nomad/camp/backroom"->add_invis_exit("northeast");
+  "/d/khojem/nomad/camp/backroom"->add_invis_exit("northeast");
   write("The curtain is released and if falls closed.");
   say(this_player()->query_cap_name()+" closes a curtain.\n");
   return 1;

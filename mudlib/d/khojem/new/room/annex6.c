@@ -9,7 +9,7 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("scout") && random(4)) 
-    new("/wizards/khojem/new/mon/elf_scout")->move(this_object());
+    new("/d/khojem/new/mon/elf_scout")->move(this_object());
 }  
 
 void create() {
@@ -21,9 +21,9 @@ void create() {
       "close around and cut off some of the light from above.  "+
       "South of here you spot a small hut with a thatched roof."
     );
-    add_exit("/wizards/khojem/new/room/annex4","east");
-    add_exit("/wizards/khojem/new/room/annex7","north");
-    add_exit("/wizards/khojem/new/room/nursery","south");
+    add_exit("/d/khojem/new/room/annex4","east");
+    add_exit("/d/khojem/new/room/annex7","north");
+    add_exit("/d/khojem/new/room/nursery","south");
     set_items(([
      ({ "tree","trees", "woods" }) :
         "The trees are large, healthy trees filled with foliage.",

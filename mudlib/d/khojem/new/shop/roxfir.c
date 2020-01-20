@@ -48,9 +48,9 @@ void create() {
     set_lang_prof("elvish",10);
     set_lang_prof("drow",8);
     set_lang_prof("middle-english",8);
-    new("/wizards/khojem/new/armor/thong")->move(this_object());
+    new("/d/khojem/new/armor/thong")->move(this_object());
     force_me("wear thong");
-    new("/wizards/khojem/new/armor/chemise")->move(this_object());
+    new("/d/khojem/new/armor/chemise")->move(this_object());
     force_me("wear chemise");
     set_emotes(1, ({
 	  "The vixen looks longingly at you.",

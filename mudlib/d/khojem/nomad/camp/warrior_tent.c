@@ -20,10 +20,10 @@ void reset() {
   if(query_open("tent flap")) {
     set_open("tent flap",0);
     set_locked("tent flap",0);
-    "/wizards/khojem/nomad/camp/captain_tent"->set_open("tent flap",0);
-    "/wizards/khojem/nomad/camp/captain_tent"->set_locked("tent flap",0);
+    "/d/khojem/nomad/camp/captain_tent"->set_open("tent flap",0);
+    "/d/khojem/nomad/camp/captain_tent"->set_locked("tent flap",0);
     add_invis_exit("north");
-    "/wizards/khojem/nomad/camp/captain_tent"->add_invis_exit("south");
+    "/d/khojem/nomad/camp/captain_tent"->add_invis_exit("south");
   }   
 }
 
@@ -52,10 +52,10 @@ void create() {
       "but it is strange you haven't seen any in camp.  Maybe they are off on "+
       "maneuvers or some other military-type activity."
     );
-    add_exit("/wizards/khojem/nomad/camp/center","south");
-    add_exit("/wizards/khojem/nomad/camp/captain_tent","north");
+    add_exit("/d/khojem/nomad/camp/center","south");
+    add_exit("/d/khojem/nomad/camp/captain_tent","north");
     add_invis_exit("north");
-    set_door("tent flap","/wizards/khojem/nomad/camp/captain_tent","north",0);
+    set_door("tent flap","/d/khojem/nomad/camp/captain_tent","north",0);
     set_open("tent flap",0);
     set_locked("tent flap",0);
     set_func("tent flap","open","do_open");
@@ -78,7 +78,7 @@ void create() {
     ]));
     set_smell("default", "A musty smell fills the tent.");
     set_listen("default", "It is quieter here than out in the camp's center.");
-    obj=new("/wizards/khojem/nomad/obj/warrior_locker");
+    obj=new("/d/khojem/nomad/obj/warrior_locker");
     obj->move(this_object());
 }
 
@@ -92,7 +92,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/nomad/camp/captain_tent"->remove_invis_exit("south");
+  "/d/khojem/nomad/camp/captain_tent"->remove_invis_exit("south");
   write("The canvas tent flap folds away as you open it.\n");
   say(this_player()->query_cap_name()+" opens the tent flap on "+
     "the north wall.\n");
@@ -101,7 +101,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/nomad/camp/captain_tent"->add_invis_exit("south");
+  "/d/khojem/nomad/camp/captain_tent"->add_invis_exit("south");
   write("The tent flap falls limpy to the floor.\n");
   say(this_player()->query_cap_name()+" closes a tent flap on the north wall.\n");
   return 1;

@@ -17,8 +17,8 @@ void create() {
       "from over the brass railing of the balcony.  An archway leads south to "+
       "an adjoining room."
     );
-    add_exit("/wizards/khojem/port/room/e1","down");
-    add_exit("/wizards/khojem/port/room/e5","south");
+    add_exit("/d/khojem/port/room/e1","down");
+    add_exit("/d/khojem/port/room/e5","south");
     set_items(([
      ({ "brass railing", "brass rail", "railing", "rail" }) :
         "A highly-polished, exquisitely crafted rail borders the balcony.",

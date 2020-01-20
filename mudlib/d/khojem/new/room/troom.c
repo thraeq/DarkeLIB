@@ -20,7 +20,7 @@ void create() {
       "across the stone floor."
     );
     add_exit("orc7","south");
-    set_door("stone door","/wizards/khojem/new/room/orc7","south","chieftain's key");
+    set_door("stone door","/d/khojem/new/room/orc7","south","chieftain's key");
     set_func("stone door","open","do_open");
     set_func("stone door","close","do_close");
     set_property("magic hold",30);
@@ -61,7 +61,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("south");
-  "/wizards/khojem/new/room/orc7"->remove_invis_exit("north");
+  "/d/khojem/new/room/orc7"->remove_invis_exit("north");
   write("With considerable effort you manage to open the door.\n"+
     "The stone door's hinges moan and creak as the door opens.\n"+
     "Even the stale air from the hallway seems fresh compared to\n"+
@@ -73,7 +73,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("south");
-  "/wizards/khojem/new/room/orc7"->add_invis_exit("north");
+  "/d/khojem/new/room/orc7"->add_invis_exit("north");
   write("The weight of the stone door makes it difficult to close.\n"+
     "It creaks and moans but finally slams shut with a hollow rumble.\n"+
     "You are sealed up in this tomb-like cavern.\n");

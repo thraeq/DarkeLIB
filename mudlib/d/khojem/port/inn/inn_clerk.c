@@ -94,7 +94,7 @@ void directed_message(object who, string str) {
     if(member_array((string)who->query_name(), 
       (string *)environment()->query_all_owners()) > -1) {
         environment()->new_owner((string)who->query_name(),
-          sprintf("/wizards/khojem/port/virtual/inn_%d.inn",
+          sprintf("/d/khojem/port/virtual/inn_%d.inn",
             (int)environment()->query_room_num((string)who->
               query_name())),sec + (int)environment()->
                 query_time_left((string)who->query_name()));
@@ -122,8 +122,8 @@ void directed_message(object who, string str) {
     ob->set_property("no save", 1);
     ob->move(who);
     environment()->new_owner((string)who->query_name(),
-      sprintf("/wizards/khojem/port/virtual/inn_%d.inn",room_num),sec);
-    room_obj = find_object(sprintf("/wizards/khojem/port/virtual/inn_%d.inn",
+      sprintf("/d/khojem/port/virtual/inn_%d.inn",room_num),sec);
+    room_obj = find_object(sprintf("/d/khojem/port/virtual/inn_%d.inn",
        room_num));
     if(room_obj)
       room_obj->virtual_setup(sprintf("inn_%d", room_num));

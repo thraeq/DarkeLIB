@@ -30,8 +30,8 @@ void create() {
       "severely and gaining a firm grip and maintaining your foothold "+
       "is getting more difficult."
     );
-    add_exit("/wizards/khojem/nomad/room/rv1","up");
-    add_exit("/wizards/khojem/nomad/room/rv3","down");
+    add_exit("/d/khojem/nomad/room/rv1","up");
+    add_exit("/d/khojem/nomad/room/rv3","down");
     set_pre_exit_functions(({ "down", "up" }),
       ({ "go_down", "go_up" }));
     set_items(([
@@ -53,7 +53,7 @@ void create() {
 int go_down(){
   if(this_player()->query_flying()){
     write("You fly down into the deep ravine a ways.\n");
-    tell_room("/wizards/khojem/nomad/room/rv3",
+    tell_room("/d/khojem/nomad/room/rv3",
       this_player()->query_cap_name()+" gracefully flys down from above.\n");
     return 1;
     }
@@ -69,7 +69,7 @@ int go_down(){
 int go_up(){
   if(this_player()->query_flying()){
     write("You fly up the face of the deep ravine a ways.\n");
-    tell_room("/wizards/khojem/nomad/room/rv1",
+    tell_room("/d/khojem/nomad/room/rv1",
       this_player()->query_cap_name()+" gracefully flys up from "+
         "the ravine below.\n");
     return 1;
