@@ -11,10 +11,10 @@ void create() {
     set_property("indoors", 1);
 //Basic mapping added by Tiny 1/19/2020
     set("short", "   0\n   u \n   @--0\n     \n    \nMage's Keep");
-    set("long", "   0\n   u \n   @--0\n     \n    \nThis is the base of a large, circular stone tower.  A lighted "+
+    set("long", "This is the base of a large, circular stone tower.  A lighted "+
       "shop is to the east.  A dark"
       "spiral, stone staircase leads upwards.  The arched gateway to the city "+
-      "is just towards the north."
+      "is just towards the north.\n   0\n   u \n   @--0\n     \n    \n"
     );
     add_exit("/d/khojem/port/room/t2","up");
     add_exit("/d/khojem/port/room/wgate","north");

@@ -7,8 +7,8 @@ void create() {
     set_property("night light", 2);
     add_exit("/d/damned/akkad/ak_slum1", "north");
     add_exit("/d/damned/guilds/thief/thief","manhole");
-    set("short","Deeper inside the Slums");
-    set("long","You are deeper inside the slums now.  You see some beggars "
+    set("short","   0\n   | \n   @   \n     \n   \nDeeper inside the Slums");
+    set("long","   0\n   | \n   @   \n     \n   \nYou are deeper inside the slums now.  You see some beggars "
 	"lying by the side of the street. There are other people here "
 	"that look like beggars, but there is something wrong "+
 "about them. They are eyeing you suspiciously\n" 

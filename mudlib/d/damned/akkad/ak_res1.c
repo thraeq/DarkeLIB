@@ -8,9 +8,9 @@ void create() {
     add_exit("/d/damned/guilds/join_rooms/arch-mage_join", "south");
     add_exit("/d/damned/akkad/ak_res2", "north");
     add_exit("/d/damned/guilds/join_rooms/enchanter_join", "east");
-    set("short","South end of Research Parkway");
+    set("short","   0\n   | \n   @--0\n   | \n   0\nSouth end of Research Parkway");
     set("long","You are on the southern end of Research Parkway.  " +
 	"The Enchanters Guild is here to the east and the Arch-Mages Guild "+
-	"is south ");
+	"is south \n   0\n   | \n   @--0\n   | \n   0\n");
     
 }

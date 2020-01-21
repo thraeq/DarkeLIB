@@ -10,5 +10,5 @@ void create() {
     add_exit("/d/damned/guilds/join_rooms/paladin_join.c","south");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   G\n   | \n   @--0\n   | \n   G\nBlessing Way");
-    set("long","   G\n   | \n   @--0\n   | \n   G\nBlessing Way runs east through Daybreak Ridge");
+    set("long","Blessing Way runs east through Daybreak Ridge\n   G\n   | \n   @--0\n   | \n   G\n");
 }

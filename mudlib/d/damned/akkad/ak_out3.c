@@ -13,12 +13,12 @@ void create() {
      set_property("night light", 2);
      add_exit("/d/damned/akkad/ak_egate", "west");
      add_exit("/d/damned/virtual/room_5_9.world","plains");
-     set("short","Outside the eastern gate of Akkad");
+     set("short","   \n    \n0--@  p\n    \n   \n Outside the eastern gate of Akkad");
      set("long","You are standing just outside the eastern gate of Akkad."+
 	 "The town looks very inviting to the weary traveler.  You hear " +
 	 "faint laughter coming from the cozy taverns inside the town." +
 	 "As you look away from the town, you see the plains stretch " +
-	 "endlessly before you.");
+	 "endlessly before you.\n   \n    \n0--@  p\n    \n   \n ");
 
 }
 void init() {

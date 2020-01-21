@@ -11,11 +11,11 @@ void create() {
     add_exit("/d/damned/akkad/ak_shop4", "south");
 set_property("no attack", 1);
 set_property("no spell", 1);
-    set("short","Southwest corner of Market Square");
+    set("short","   0\n   | \n0--@--0\n   | \n   0\nSouthwest corner of Market Square");
     set("long","You are standing on the southwest corner of Market Square. "+
 	"There are shops to the south and west of you.  The noisy salesmen "+
 	"are promising you special deals.  Yeah, I got your special deals " +
-	"RIGHT HERE! \n" +
+	"RIGHT HERE! \n   0\n   | \n0--@--0\n   | \n   0\n\n" +
 	"There are two signs here. ");
     add_item("sign 2", "This sign points west.\n\n"
 "******************\n"

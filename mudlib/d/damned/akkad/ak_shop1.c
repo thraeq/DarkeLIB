@@ -34,12 +34,12 @@ void create() {
    set_open("west door", 1);
    set_locked("west door", 0);
    set_lock_level("vault door", 27);
-   set("short","The Money Changer");
+   set("short","   0\n   | \n   @--0\n     \n    \nThe Money Changer");
    set("long",
 "This is the office of the Money Changer.  A thin, pensive-looking "
 "half-elf eyes you from behind a desk laiden with parchments.  "
 "There is a large sign on the west wall, and a huge vault door "
-"crafted of fine metal is seen to the north.");
+"crafted of fine metal is seen to the north.\n   0\n   | \n   @--0\n     \n    \n");
    set_items( (["sign": (: call_other, this_object(), "money_rates" :),
               "vault door" : "It looks almost impregnable."]) );
    set_open_function("open_door", "2:00:00");

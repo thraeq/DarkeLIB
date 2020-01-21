@@ -10,13 +10,14 @@ void create() {
     set_property("indoors", 1);
     set_property("no attack", 1);
     set_property("no summon", 1);
-    set("short", "The Adventurer's Guild");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n     \n   @--0\n   | \n   0\nThe Adventurer's Guild");
     set("long",
       "This is the foyer to the Adventurer's Guild.  Here, in "
       "exchange for the favor of the DemiUrge, all of the guilds have "
       "donated knowledge and manpower for the use of the general populace.  "
       "To the south are the vast training rooms which are legend throughout "
-      "the land.\nThere is a sign on the west wall.");
+      "the land.\nThere is a sign on the west wall.\n   \n     \n   @--0\n   | \n   0\n");
     /*
       set_items(([ "sign" : (: call_other, this_object(), "read_sign" :) ]));
     */

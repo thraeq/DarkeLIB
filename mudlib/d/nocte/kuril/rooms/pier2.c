@@ -62,8 +62,8 @@ void create(){
 	]) );
 	set_exits( ([
 		"east": ROOMS+"merchant_road4",
-                "sea": "/d/damned/virtual/room_24_20.world",
-                "out": "/d/damned/virtual/room_24_21.world"
+                "sea": "/d/damned/virtual/room_8_12.world",
+                "out": "/d/damned/virtual/room_8_12.world"
 	]) );
 	set_smell("default", "The scent of the ocean fills the air.");
 	set_listen("default", "Ocean waves spray up clouds of mist as they break upon the pier.");

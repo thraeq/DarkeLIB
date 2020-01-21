@@ -19,14 +19,15 @@ void create() {
     add_exit("/d/damned/akkad/ak_victory4", "south");
     add_exit("/d/damned/akkad/ak_victory5", "north");
     add_exit("/d/damned/akkad/ak_tower", "tower");
-    set("short","Tranquility Square");
+//Basic mapping added by Tiny 1/20/2020
+    set("short","   0\n   t \n0--@--0\n   | \n   0\nTranquility Square");
     set("long","This is Tranquility Square, the center of Akkad.  It is a place "+
 	"commemorating the end of the Great War between the Ancient  "+
 	"Races.  Justice Tower is here. There is a statue of Dranaxar, "+
 	"protector of this " +
    "city and the first archmage, here.  You sense that this " +
 	"is a great place of Peace.  You notice a "+
-   "glowing %^YELLOW%^plaque%^RESET%^ at the base of the statue.\n");
+   "glowing %^YELLOW%^plaque%^RESET%^ at the base of the statue.\n   0\n   t \n0--@--0\n   | \n   0\n\n");
    add_item("tower","The Tower of Justice reaches into the sky here.  It "+
        "is constructed from white marble and polished so that climbing it "+
        "would seem nearly impossible.  It is rumored that the Council of "+

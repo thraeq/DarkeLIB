@@ -16,7 +16,7 @@ void create() {
     //add_exit("/d/damned/guilds/join_rooms/mercenary_join","east");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   0\n   | \n   @   \n   | \n   0\nCommerce Court");
-    set("long","   0\n   | \n   @   \n   | \n   0\nCommerce Court runs north-south through Daybreak Ridge.");
+    set("long","Commerce Court runs north-south through Daybreak Ridge.\n   0\n   | \n   @   \n   | \n   0\n");
 }
 
 int no_east(string str) {

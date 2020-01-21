@@ -35,7 +35,8 @@ void create() {
     ::create();
     set_property("light", 3);
     set_property("indoors", 1);
-    set("short", "The constabulary");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "\n   \n     \n0--@   \n    \n   \nThe constabulary");
     set("long",
       "The quiet port town of Vo'Sangor can thank the members of the constabulary "+
       "for their contribution in keeping this a peaceful haven in a world of "+
@@ -43,7 +44,7 @@ void create() {
       "prevention and justice system that is unrivaled anywhere in the lands "+
       "of DarkeMud.  Its cells are always empty because criminals far and wide "+
       "know of this constabulary's legend of tracking down and punishing those "+
-      "who transgress the laws of Vo'Sangor. "
+      "who transgress the laws of Vo'Sangor.\n   \n     \n0--@   \n    \n   \n "
    );
     add_exit("/d/khojem/port/room/ngate","west");
     set_smell("default", "The smell of the sea fills the air.");

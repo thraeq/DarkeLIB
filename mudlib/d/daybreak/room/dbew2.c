@@ -11,5 +11,5 @@ void create() {
     add_exit(ROOMS+"dblw1","south");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   0\n   | \n0--@--0\n   | \n   0\nMain Street");
-    set("long","   0\n   | \n0--@--0\n   | \n   0\nMain Street runs east-west through Daybreak Ridge.  Commerce court runs in a northerly direction from here, Luminous Way runs in a southerly direction from here.  ");
+    set("long","Main Street runs east-west through Daybreak Ridge.  Commerce court runs in a northerly direction from here, Luminous Way runs in a southerly direction from here.\n   0\n   | \n0--@--0\n   | \n   0\n  ");
 }

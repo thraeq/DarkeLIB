@@ -10,5 +10,5 @@ void create() {
     add_exit("/d/standard/square","north");
     add_exit(ROOMS+"dbew7","south");
     set("short","   C\n   | \n0--@--0\n   | \n   0\nBlessing Way");
-    set("long","   C\n   | \n0--@--0\n   | \n   0\nBlessing Way runs east-west through Daybreak Ridge");
+    set("long","Blessing Way runs east-west through Daybreak Ridge\n   C\n   | \n0--@--0\n   | \n   0\n");
 }

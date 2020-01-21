@@ -25,12 +25,13 @@ void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",3);
-   set("short","Vo'Sangor Shipwright");
+//Basic mapping added by Tiny 1/20/2020
+   set("short","   \n    \n   @--0\n    \n   \n Vo'Sangor Shipwright");
    set("long",
      "This is the shop of the Vo'Sangor Shipwright.  Here many fine vessels "+
      "are crafted and their keels layed down.   The interior of this room is hugh.  "
      "Its ceiling is vaulted and the room reaches back quite a ways.  A shipwright "+
-     "must need alot of space to do his work.  Above the counter is a sign."
+     "must need alot of space to do his work.  Above the counter is a sign.\n   \n    \n   @--0\n    \n   \n "
    );
    set_items( ([
      ({ "storeroom door" }) : 

@@ -62,7 +62,7 @@
 #
 # (wizard) group: Contains the complete list of all low ranking immortals
 # that have yet to distinguish or prove themselves in extraordinary ways
-(wizard): noone zephlen geire dreadnought nual felice tailwind hellbringer xavier trisk
+(wizard): noone zephlen geire dreadnought nual felice tailwind hellbringer xavier trisk huma
 #
 # (ambassador) group: Unused at this time (BUT REQUIRED FOR NOW)
 (ambassador): noone

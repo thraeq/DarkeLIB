@@ -9,11 +9,11 @@ void create() {
     add_exit("/d/damned/akkad/ak_egate", "south");
     add_exit("/wizards/thrace/shop/ingot_shop", "east");
     add_exit("/d/damned/guilds/join_rooms/tinker_join", "west");
-    set("short","Iron Trail north of the East Gate");
+    set("short","   0\n   | \n0--@--0\n   | \n   0\nIron Trail north of the East Gate");
     set("long","This is the Iron Trail where the fighting guilds reside.  " +
 	"The entrance to the Tinkers Guild to the west.  The eastern gate " +
 	"of the city is south of you.  The Chaotic Lords reside at the north " +
-	"end of the street.");
+	"end of the street.\n   0\n   | \n0--@--0\n   | \n   0\n");
 
     
 }

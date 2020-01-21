@@ -10,5 +10,5 @@ void create() {
     add_exit(ROOMS+"shop/tavern", "east");
     add_exit("/d/damned/guilds/join_rooms/fighter_join", "west");
     set("short","   0\n   | \nG--@--S\n   | \n   0\nVictory Lane");
-    set("long","   0\n   | \nG--@--S\n   | \n   0\nVictory Lane runs north-south through Daybreak Ridge");
+    set("long","Victory Lane runs north-south through Daybreak Ridge.\n   0\n   | \nG--@--S\n   | \n   0\n");
 }

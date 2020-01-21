@@ -10,5 +10,5 @@ void create() {
     add_exit(ROOMS+"dbcc7","west");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   \n    \n0--@--0\n    \n   \nCommerce Court");
-    set("long","   \n    \n0--@--0\n    \n   \nCommerce Court runs east-west through Daybreak Ridge.");
+    set("long","Commerce Court runs east-west through Daybreak Ridge.\n   \n    \n0--@--0\n    \n   \n");
 }

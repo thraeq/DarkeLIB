@@ -9,5 +9,5 @@ void create() {
     add_exit(ROOMS+"dbvl3", "west");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   \n    \n0--@--0\n    \n   \n Victory Lane");
-    set("long","   \n    \n0--@--0\n    \n   \n Victory Lane runs north and east through Daybreak Ridge");
+    set("long","Victory Lane runs north and east through Daybreak Ridge.\n   \n    \n0--@--0\n    \n   \n ");
 }

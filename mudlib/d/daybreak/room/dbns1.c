@@ -9,9 +9,9 @@ void create() {
      add_exit("/d/damned/virtual/room_8_9.world","mountains");
 //Basic mapping added by Tiny 1/19/2020
      set("short","   0\n   | \n   @   \n    \n   M\nOutside the southern gate of Daybreak Ridge");
-     set("long","   0\n   | \n   @   \n    \n   M\nYou are standing just outside the southern gate of Daybreak Ridge.\n"+
+     set("long","You are standing just outside the southern gate of Daybreak Ridge.\n"+
          "The town looks very inviting to the weary traveler.  You hear " +
          "faint laughter coming from the cozy taverns inside the town." +
          "As you look away from the town, you see the mountains stretch " +
-         "endlessly before you.");
+         "endlessly before you.\n   0\n   | \n   @   \n    \n   M\n");
 }

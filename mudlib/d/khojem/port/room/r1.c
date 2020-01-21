@@ -46,11 +46,11 @@ void create() {
     set_property("indoors", 0);
 //Basic mapping added by Tiny 1/19/202
     set("short", "  \n     \n   @--0\n    \n   \nBox Canyon");
-    set("long", "  \n     \n   @--0\n    \n   \nNoble Street terminates here at a small box-like canyon.  "+
+    set("long", "Noble Street terminates here at a small box-like canyon.  "+
       "The ground is dry dirt that sends up small swirls of dust with every "+
       "footstep.  The great north and west walls of Vo'Sangor connects to a massive "+
       "escarpment.  The escarpment towers above you.  "+
-      "Its sheer face makes climbing it very difficult."
+      "Its sheer face makes climbing it very difficult.\n  \n     \n   @--0\n    \n   \n"
     );
     add_exit("/d/khojem/port/room/r2","up");
     add_invis_exit("up");

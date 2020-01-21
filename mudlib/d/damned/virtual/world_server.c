@@ -142,6 +142,8 @@ add_exit("/d/damned/arena/booths_room", "arena");
       }
     }
   }
+
+/* Removed and placed in proper location to reference /d/damned/data/world_items.db
 //City of VO Tiny
 if(x == 11 && y == 9) {
 set("night long", (string)query("night long") + "%^BOLD%^"
@@ -159,7 +161,7 @@ set("day long", (string)query("day long") + "%^BOLD%^"
 "The City of Akkad.%^RESET%^");
 add_exit("/d/damned/akkad/ak_out4", "city");
 }
-
+*/
 
   items_file = get_dir("/d/damned/data/");
   i = sizeof(items_file);

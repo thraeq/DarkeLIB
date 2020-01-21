@@ -26,11 +26,11 @@ void create() {
      add_exit("/d/damned/akkad/ak_ngate", "south");
      add_exit("/d/damned/virtual/room_5_9.world","plains");
     //add_exit("/d/damned/guilds/necromancer/front_gate", "north");
-     set("short","Outside the northern gate of Akkad");
+     set("short","   p\n     \n   @   \n   | \n   0\nOutside the northern gate of Akkad");
      set("long","You are standing just outside the northern gate of Akkad."+
 	 "The town looks very inviting to the weary traveler.  You hear " +
 	 "faint laughter coming from the cozy taverns inside the town." +
          "  As you look away from the town, you see the plains stretch "+
-         "endlessly before you.  The city graveyard is north of here.");
+         "endlessly before you.  The city graveyard is north of here.\n   p\n     \n   @   \n   | \n   0\n");
 
 }

@@ -9,10 +9,10 @@ void create() {
     add_exit("/d/damned/akkad/ak_shop6", "east");
     add_exit("/d/damned/akkad/ak_haven5", "north"); 
     add_exit("/d/damned/akkad/ak_shop5", "south");
-    set("short","Southeast corner of Market Square");
+    set("short","   0\n   | \n0--@--0\n   | \n   0\nSoutheast corner of Market Square");
     set("long","You are standing on the southeast corner of Market Square. "+
 	"There are shops to the south and east of you.  The salesmen are "+
-	"surprisingly quiet here.  Possibly the mark of quality establishments?\n " +
+	"surprisingly quiet here.  Possibly the mark of quality establishments?\n   0\n   | \n0--@--0\n   | \n   0\n\n " +
 	"There are two signs here. ");
     add_item("sign 1", "This sign points south.\n"
     "*************************\n"

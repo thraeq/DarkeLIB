@@ -31,10 +31,10 @@ void create() {
 //Basic mapping added by Tiny 1/19/2020
     set("short", "   \n   W \n   @--0\n   | \n   0\nThe north gate");
     set("day long",
-      "   \n   W \n   @--0\n   | \n   0\nAn arched gateway, made from roughly-hewned stone, forms a small "+
+      "An arched gateway, made from roughly-hewned stone, forms a small "+
       "alcove that protects the town's gatekeepers during their long duty "+
       "tour.  A dirt road extends to the south and the rest of the port town "+
-      "of Vo'Sangor can be seen.  A brass sign is securely fastened to the wall."
+      "of Vo'Sangor can be seen.  A brass sign is securely fastened to the wall.\n   \n   W \n   @--0\n   | \n   0\n"
    );
     set("night long",
       "An arched gateway, made from roughly-hewned stone, forms a small "+

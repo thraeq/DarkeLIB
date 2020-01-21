@@ -23,7 +23,8 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "Sparkey's Sailor's Pleasure");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n    \n   @--0\n    \n   \nSparkey's Sailor's Pleasure");
     set("long",
 	"This is One-eyed Sparkey's Sailor's Pleasure Tavern.  It is world renown "+
 	"for its fine drinks and food.  Sparkey keeps a fine establishment.  His "+
@@ -31,7 +32,7 @@ void create() {
 	"The service bar is made from finely crafted teak.   The tables and chairs "+
 	"made of oak and neatly arranged for your seating pleasure.  Many seafarers "+
 	"and local residents can be seen dining here.  A sign above the bar lists "+
-	"the menu."
+	"the menu.\n   \n    \n   @--0\n    \n   \n"
 	);
     set_items(([
      ({ "pub", "alehouse", "bar", "tavern", "sparkey's" }) :

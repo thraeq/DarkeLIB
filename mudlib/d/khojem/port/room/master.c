@@ -16,11 +16,12 @@ void create() {
     set_property("light", 2);
     set_property("night light",1);
     set_property("indoors", 1);
-    set("short", "Harbor Masters");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n     \n   @   \n   | \n   0\nHarbor Masters");
     set("long","This is the small shaby office of the harbor master.  "+
       "Here the Harbor Master coordinates the berthing of merchant "+
       "vessels at the wharfs of Vo'Sangor.  Given the worn rundown "+
-      "look of the office you figure it must not pay well."
+      "look of the office you figure it must not pay well.\n   \n     \n   @   \n   | \n   0\n"
     );
     add_exit("/d/khojem/port/room/s19","south");
     set_items(([

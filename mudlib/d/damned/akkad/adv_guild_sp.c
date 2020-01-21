@@ -19,11 +19,12 @@ void create() {
   ::create();
     set_property("indoors", 1);
     set_property("light", 2);
-    set("short", "The Adventurer's Guild spell Room");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n    \n   @--0\n    \n   \n The Adventurer's Guild spell Room");
     set("long",
 "This is perhaps the largest library you have ever seen.  "
 "It is dim, hushed, and absolutely immense.  Robed figures "
-"walk about or sit quietly studying tomes by candle light.\n"
+"walk about or sit quietly studying tomes by candle light.\n   \n    \n   @--0\n    \n   \n \n"
 "\n"
 "    Type 'help list' for information on listing spells.\n"
 "    Type 'train <spell>' to train a spell.\n");

@@ -12,14 +12,14 @@ void create() {
   set_property("light", 2);
   set_property("indoors", 1);
   add_exit("/d/damned/akkad/ak_tavern2", "west");
-  set_short("The gold Lion Tavern");
+  set_short("   \n    \n0--@   \n    \n   \nThe Silver Lion Tavern");
   set("long",
   "The Silver Lion Tavern is a large room with several "
   "benches and tables and a bar at the back of the room.  "
   "The room is lit by a few lanterns which hang from the "
   "walls.  Several patrons mill about, enjoying the various "
   "distilled and brewed spirits available here.  There is a "
-  "menu on the wall.");
+  "menu on the wall.\n   \n    \n0--@   \n    \n   \n");
     set_items(
         (["benches":"They are sturdy and are fashioned of wood.",
 "menu":(: call_other, this_object(), "read", "menu" :),

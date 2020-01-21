@@ -15,8 +15,8 @@ void create() {
     set_property("light",3);
     set_property("night light", 2);
     add_exit("/d/damned/akkad/ak_sgate", "west");
-    set("short","City Guard training grounds");
+    set("short","   \n    \n0--@   \n    \n   \nCity Guard training grounds");
     set("long","The city guards train here.  The city guards watch the " +
-	"entrance to Akkad and prevent monsters from entering the city. ");
+	"entrance to Akkad and prevent monsters from entering the city.\n   \n    \n0--@   \n    \n   \n ");
     
 }

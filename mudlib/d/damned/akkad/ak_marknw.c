@@ -18,10 +18,10 @@ void create() {
 	  set_open_function("open_door", "2:00:00");
     set_close_function("close_door", "18:00:00");
     add_exit("/d/damned/akkad/ak_haven4", "south");
-    set("short","Northwest corner of Market Square");
+    set("short","   \n    \n0--@--0\n   | \n   0\nNorthwest corner of Market Square");
     set("long","You are standing on the northwest corner of Market Square. "+
 	"There are shops to the north and west of you.  The noisy salesmen "+
-	"are pestering you to come inside and take a look.\n " +
+	"are pestering you to come inside and take a look.\n   \n    \n0--@--0\n   | \n   0\n\n " +
 	"There are two signs here. ");
 //    add_item("sign 1", "This sign points north.\n\n"
 //"General Store has moved to the southwest corner.");

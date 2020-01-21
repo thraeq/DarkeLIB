@@ -25,14 +25,15 @@ void create() {
     ::create();
     set_property("light", 0);
     set_property("indoors", 1);
-    set("short", "Beltar's Pub");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n     \n   @   \n   | \n   0\nBeltar's Pub");
     set("long",
 	"Beltar's Pub is a dirty hole-in-the-wall that is constructed above the "+
 	"harbor's water along the dock.  The chairs and stools are in disrepair.  "+
 	"The floor is filthy and never mopped.  The tables are filled with empty "+
 	"bottles and ashes.  On the north wall a wood bar constructed of a plank "+
 	"and a few barrels can be seen.  Above the bar is a crude sign listing "+
-	"drink prices."
+	"drink prices.\n   \n     \n   @   \n   | \n   0\n"
 	);
     set_items(([
      ({ "pub", "alehouse", "bar" }) :

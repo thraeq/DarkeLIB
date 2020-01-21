@@ -9,5 +9,5 @@ void create() {
     add_exit(ROOMS+"db_square","west");
 //Basic mapping added by Tiny 1/19/2020 
     set("short","   \n    \nT--@--0\n    \n   \nMain Street");
-    set("long","   \n    \nT--@--0\n    \n   \nMain Street runs east-west through Daybreak Ridge");
+    set("long","Main Street runs east-west through Daybreak Ridge.\n   \n    \nT--@--0\n    \n   \n");
 }

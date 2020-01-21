@@ -20,14 +20,15 @@ void create() {
     set_property("no attack", 1);
     set_property("no magic", 1);
     set_property("light", 2);
-    set("short", "The Adventurer's Guild Skill Room");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   0\n   | \n0--@   \n     \n    \nThe Adventurer's Guild Skill Room");
     set("long",
 "This room is absolutely immense and divided into several sections.  "
 "A gymnasium takes a large portion, and several students engage in "
 "trials of combat and dexterity there.  In the distance, separated "
 "from the rest of the room by wooden partitions, are study areas, "
 "where robed individuals study great tomes which have been donated "
-"by the various guilds.\n"
+"by the various guilds.\n   0\n   | \n0--@   \n     \n    \n\n"
 "\n"
 "    Type 'help list' for information on listing skills.\n"
 "    Type 'train <skill>' to train a skill.\n");

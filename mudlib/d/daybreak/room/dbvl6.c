@@ -9,5 +9,5 @@ void create() {
     add_exit(ROOMS+"shop/weaponsmith", "east");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   \n    \n0--@--S\n    \n   \nVictory Lane");
-    set("long","   \n    \n0--@--S\n    \n   \nVictory Lane runs west through Daybreak Ridge");
+    set("long","Victory Lane runs west through Daybreak Ridge\n   \n    \n0--@--S\n    \n   \n");
 }

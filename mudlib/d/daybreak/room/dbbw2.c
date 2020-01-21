@@ -9,5 +9,5 @@ void create() {
     add_exit(ROOMS+"dbbw3","west");
 //Basic mapping added by Tiny 1/19/2020
     set("short","   \n    \n0--@--0\n    \n   \nBlessing Way");
-    set("long","   \n    \n0--@--0\n    \n   \nBlessing Way runs east-west through Daybreak Ridge");
+    set("long","Blessing Way runs east-west through Daybreak Ridge\n   \n    \n0--@--0\n    \n   \n");
 }

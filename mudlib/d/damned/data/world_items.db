@@ -1,6 +1,6 @@
 10_10:/d/newbieville/rooms/sgates:village:Newbie Village
 25_15:/d/zortek/canyon/room/entry:canyon:The entrance to Devil's Canyon
-24_21:/d/nocte/kuril/rooms/pier2:city:The gates of Kuril
+8_12:/d/nocte/kuril/rooms/pier2:city:The gates of Kuril
 70_70:/d/camps/ruins/rooms/ruins1:city:The Ancient City Ruins
 70_13:/d/mines/underzone/dmc:cave:A mining cave
 5_13:/d/camps/kobold/rooms/trail01:trail:A winding trail
@@ -13,3 +13,5 @@
 71_13:/d/illuminarae/mansion/rooms/trail1:trail:A dark trail
 50_25:/d/khojem/nomad/room/entry:road:A road to Bir'Barrutt
 6_35:/d/areas/walled_city/rooms/forestpath1:forest:A darke forest path
+5_9:/d/damned/akkad/ak_out4:city:The City of Akkad
+11_9:/d/khojem/port/room/wgate:city:The City of Vo

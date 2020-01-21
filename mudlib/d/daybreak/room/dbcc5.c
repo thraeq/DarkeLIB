@@ -11,5 +11,5 @@ void create() {
 //      add_exit("/wizards/thrace/shop/ingot_shop", "east"); // yea whatever thrace laf
 //Basic mapping added by Tiny 1/19/2020
     set("short","   S\n   | \n0--@   \n   | \n   0\nCommerce Court");
-    set("long","   S\n   | \n0--@   \n   | \n   0\nCommerce Court runs north and west through Daybreak Ridge.");
+    set("long","Commerce Court runs north and west through Daybreak Ridge.\n   S\n   | \n0--@   \n   | \n   0\n");
 }
