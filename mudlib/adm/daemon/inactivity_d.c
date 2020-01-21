@@ -25,7 +25,7 @@ void create() {
     remove_info = ([ "max player time" : MONTH * 3,
 		   "max wiz time" : MONTH * 6,
 		   "who protected" : ({}),
-		   "positions protected" : ({ "superuser", "assist" }) ]);
+		   "positions protected" : ({ "superuser", "assist, wizard, admin" }) ]);
   if(!event_pending(this_object())) {
     check_inactivity();
     event("check_inactivity",DAY*4,0,1);

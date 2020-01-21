@@ -3,9 +3,9 @@
 //      a daemon to handle currenciy inflation
 //      created by Descartes of Borg 931114
 
-#include "/adm/include/security.h"
-#include "/adm/include/save.h"
-#include "/adm/include/clock.h"
+#include <security.h>
+#include <save.h>
+#include <clock.h>
 
 private mapping Currencies;
 int LastInflation;
@@ -58,8 +58,6 @@ void change_currency(string type, string key, float x) {
     seteuid(getuid());
 }
 
-float __Query(string type, string key) {
-    return Currencies[type][key]; 
-}
+float __Query(string type, string key) { return Currencies[type][key]; }
 
 string *__QueryCurrencies() { return keys(Currencies); }
