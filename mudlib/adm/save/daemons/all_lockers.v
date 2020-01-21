@@ -1,0 +1,1 @@
+(["/d/damned/guilds/enchanter/e_treas":(["rune_1":"/std/diewarzau/obj/misc/h_rune",]),])

@@ -1,0 +1,3 @@
+#/daemon/events_d.c
+__RebootInterval 12
+__Events (["/adm/daemon/inactivity_d":(["regular":64000,"args":({}),"time":1579705364,"function":"check_inactivity",]),"/adm/daemon/wizchar_d":(["regular":32400,"args":({}),"time":1579676302,"function":"output_log",]),"/daemon/events_d":(["regular":0,"args":({}),"time":1579648001,"function":"change_sky",]),"/daemon/castle_d":(["regular":86400,"args":({}),"time":1579725829,"function":"check_upkeep",]),])
