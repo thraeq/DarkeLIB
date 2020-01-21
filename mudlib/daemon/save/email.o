@@ -1,2 +1,2 @@
 #/daemon/email_d.c
-email (["davidbieda.db@outlook.com":"huma","test@gmail.com":"test","xavallan@gmail.com":"xavier","mlau025@gmail.com":"trent","jschoolh@gmail.com":"tiny",])
+email (["test@gmail.com":"test","davidbieda.db@outlook.com":"huma","xavallan@gmail.com":"xavier","jschoolh@gmail.com":"tiny","mlau025@gmail.com":"trent","Test@test.com":"tinyboo",])
