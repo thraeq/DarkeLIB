@@ -31,7 +31,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   \n    \n0--@--0\n   | \n   0\nNobleman's Lane");
 	set("long",
 		"Once glorious towers line the road as you walk past a large "
 		"pub to the south.  Even from here you can see wealthy "
@@ -40,7 +40,7 @@ void create(){
 		"Although the upper levels of the city's "
 		"many towers have been allowed to fall into ruin, the lower "
 		"levels are still occupied." 
-		"  To the east you can see an arch at the end of the road."
+		"  To the east you can see an arch at the end of the road.\n   \n    \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"towers": "Falling into ruin and decay, they are still used "

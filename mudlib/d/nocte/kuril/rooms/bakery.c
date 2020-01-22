@@ -15,7 +15,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Rebecca's Bakery");
+	set("short", "    \n     \n   @   \n   | \n   0\nRebecca's Bakery");
 	set("long",
 		"Fine white powder floats around in the air and covers "
 		"everything in the room...AAACHHOO!!!!!  Bless you!  "
@@ -24,7 +24,7 @@ void create(){
 		"to herself...or perhaps at you.  Oh boy, don't you just love "
 		"it when you start drooling all over yourself?  After "
 		"wiping all the drool from your face you notice that a sign "
-		"has been placed on the back wall."
+		"has been placed on the back wall.\n    \n     \n   @   \n   | \n   0\n"
 	);
 	set_smell("default", "The wonderful scent of cookies, breads, and "
 		"pastries fill the air.");

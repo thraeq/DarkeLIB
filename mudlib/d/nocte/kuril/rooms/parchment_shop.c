@@ -16,7 +16,7 @@ void create() {
 	set_property("light", 2);
 	set_property("night light", 0);
 	set_property("no castle", 1);
-	set("short", "Llendov's Parchment Shop");
+	set("short", "   0\n   | \n   @   \n     \n    \nLlendov's Parchment Shop");
 	set("long",
 		"Pieces of work lay about the shop like leafs under a tree.  "
 		"Being the only master limner of Kuril, Llendov is hired "
@@ -29,7 +29,7 @@ void create() {
 		"which catches your attention because of the beautiful "
 		"script used to write it.  On the far wall is a wonderful "
 		"map of the known world, complete with fantastical monsters "
-		"and fine bordering."
+		"and fine bordering.\n   0\n   | \n   @   \n     \n    \n"
 	);
 	set_items( ([
 		"paper": "It reads: 'say Llendov, help' for assistance",

@@ -15,14 +15,14 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Book Binder's Shop");
+	set("short", "    \n     \n   @   \n   | \n   0\nBook Binder's Shop");
 	set("long",
 		"Half completed books lay atop a small work table in the "
 		"corner of this small shop.  Right above the table is a "
 		"small sign.  Catering to the mages of Kuril, Rety's "
 		"books have found homes in the libraries of some of the "
 		"city's most prominent mages.  On display in a case are "
-		"tomes of history and lore."
+		"tomes of history and lore.\n    \n     \n   @   \n   | \n   0\n"
 	);
 	set("night long",
 		"Pieces of unfinished work have been left to sit for the "

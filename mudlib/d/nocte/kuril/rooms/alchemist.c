@@ -18,7 +18,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Alchemist Shop");
+	set("short", "   \n    \n0--@   \n    \n   \nAlchemist Shop");
 	set("long",
 		"Vials, bottles, jars, flasks, beakers, powders, herbs, and "
 		"other assorted glassware line the walls and floor of the "
@@ -28,7 +28,7 @@ void create(){
 		"have an item...he can find it for you...at the right price, "
 		"of course.  Along the east wall is a rune inscripted door "
 		"leading most likely to the storeroom.  A sign sits upon "
-		"the counter top for all customers to read."
+		"the counter top for all customers to read.\n   \n    \n0--@   \n    \n   \n"
 	);
 	set_items( ([
 		({"vials", "bottles", "jars", "flasks", "beakers", "glassware"})

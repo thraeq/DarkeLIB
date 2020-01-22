@@ -7,7 +7,7 @@ void create() {
 	set_property("indoors", 1);
 	set_property("light", 1);
 	set_property("no castle", 1);
-	set("short", "Foyer of the School of Necromancy");
+	set("short", "   0\n   | \n   @   \n   | \n   0\nFoyer of the School of Necromancy");
 	set("long",
 		"Fine rugs and finishings line the foyer with an air of "
 		"incredible affluence and power.  You take care to clean "
@@ -17,7 +17,7 @@ void create() {
 		"contrast to the pale glow emmanating from the walls.  A "
 		"passageway southwards leads further into the School of "
 		"Necromancy.  Rugs line the passageway while fine paintings "
-		"and tapestries decorate the walls."
+		"and tapestries decorate the walls.\n   0\n   | \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		({ "rugs", "finishings" }): "They are from distant lands "
@@ -45,8 +45,8 @@ void create() {
 	]) );
 	set_exits( ([
 		"north": ROOMS+"guardmans_road4",
-		"south": "/d/damned/guilds/join_rooms/necromancer_join",
-        "west": "/d/daybreak/room/dbns10"                
+		"south": "/d/damned/guilds/join_rooms/necromancer_join"
+                       
 	]) );
 
 	set_listen("walls", "You swear you can hear the voices of people "

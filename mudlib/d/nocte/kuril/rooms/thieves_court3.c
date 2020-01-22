@@ -33,12 +33,12 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Thieves' Court");
+	set("short", "   \n    \n0--@--0\n   | \n   0\nThieves' Court");
 	set("long",
 		"You are standing near the end of Thieves' Court.  To the west "
 		"is the butcher shop while to the south you can see an arch of "
 		"some type.  As far as you can tell, to the south is also "
-		"the end of the court."
+		"the end of the court.\n   \n    \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"store": "You can hardly see inside because of the boards on "

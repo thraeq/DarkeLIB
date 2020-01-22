@@ -38,7 +38,7 @@ void create(){
 	set_property("light", 2);
 	set_property("light night", -5);
 	set_property("no castle", 1);
-	set("short", "Temple Plaza");
+	set("short", "   \n    \n0--@--0\n   | \n   0\nTemple Plaza");
 	set("long",
 		"A foul sense of evil and unholy corruption swirls around you. "
 		" You are almost brought to your knees by a feeling of "
@@ -52,7 +52,7 @@ void create(){
 		"their flesh.  You notice that nobody can be seen walking "
 		"the streets around the temple.  Perhaps you had better hurry "
 		"along before you end up like one of the ornaments hanging "
-		"from the temple walls."
+		"from the temple walls.\n   \n    \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"temple": "Glowing runes cover the temple like a web of power.",

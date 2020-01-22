@@ -27,7 +27,7 @@ void create(){
 	set_property("light", 0);
 	set_property("night light", -5);
 	set_property("no castle", 1);
-	set("short", "Guardman's Road");
+	set("short", "   0\n   | \n   @   \n   | \n   0\nGuardman's Road");
 	set("long",
 		"As you approach the Kurilian School of Necromancy to the "
 		"south, you can feel something drawing toward it.  As if "
@@ -40,7 +40,7 @@ void create(){
 		"you move in for a closer look you notice that it begins to "
 		"move...closer...closer...as if seeking your life....  An "
 		"unnatural darkness surrounds the school making it difficult "
-		"so see."
+		"so see.\n   0\n   | \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"school": "The main part of the school is formed my three "

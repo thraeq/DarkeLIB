@@ -34,17 +34,17 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", 0);
 	set_property("no castle", 1);
-	set("short", "Marketplace");
+	set("short", "   0\n   | \n0--@   \n   | \n   0\nMarketplace");
 	set("long",
 		"Knee deep in the dregs of Kuril, the foul smells coming "
 		"from all around you almost make you keel over and see your "
 		"breakfast again.  The marketplace continues to the north and "
-		"west.  To the south is an inn."
+		"west.  To the south is an inn.\n   0\n   | \n0--@   \n   | \n   0\n"
 	);
 	set("night long",
 		"A light in the doorway to the south offers some solace in "
 		"this dark city.  Through a small window you can see that "
-		"you have found an inn."
+		"you have found an inn.\n   0\n   | \n0--@   \n   | \n   0\n"
 	);
 	set_items( ([
 		"dregs": "Awful ain't it?",

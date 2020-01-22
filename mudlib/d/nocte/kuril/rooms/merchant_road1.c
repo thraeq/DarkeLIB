@@ -37,7 +37,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Merchant Road");
+	set("short", "   \n     \n   @--0\n   | \n   0\nMerchant Road");
 	set("long",
 		"Rotting dead bodies lay in a pile heaped into a corner.  "
 		"'What a waste!' you shout.  Perfectly good corpses going "
@@ -51,7 +51,7 @@ void create(){
 		"you see that is it completely empty.  What could that shop be"
 		" for?  "
 		"A road continues southward while to the east is "
-		"a marketplace." 
+		"a marketplace.\n   \n     \n   @--0\n   | \n   0\n" 
 	);
 	set_items( ([
 		({"dead bodies", "bodies"}): "You feel something rising in your "

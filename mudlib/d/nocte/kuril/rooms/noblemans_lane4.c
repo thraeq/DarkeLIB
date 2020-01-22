@@ -30,7 +30,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   \n    \n0--@--0\n    \n   \nNobleman's Lane");
 	set("long",
 		"A small shop to the north has a sign posted in the window.  "
 		"It appears that this area of town although in far better "
@@ -38,7 +38,7 @@ void create(){
 		"well.  To the east can be seen a tavern of sorts.  The "
 		"smoke emmanating from its chimney fire swirls and twists "
 		"until ripped apart by the ocean breeze.  To the west can "
-		"be seen a bakery."
+		"be seen a bakery.\n   \n    \n0--@--0\n    \n   \n"
 	);
 	set_items( ([
 		"shop": "Quaint yet spacious enough for any type of business "

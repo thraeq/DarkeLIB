@@ -16,14 +16,14 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Kerchesh's Fish Shop");
+	set("short", "   0\n   | \n   @   \n     \n    \nKerchesh's Fish Shop");
 	set("long",
 		"Lying upon large blocks of ice, fish of various types are "
 		"sitting on display for purchase.  BIG ones, little ones, "
 		"blue ones, red ones.  On the floor a pool of chilly water "
 		"has begun to collect from the melting ice.  A sign has been "
 		"placed on the wall behind the ice blocks.  Greeting each "
-		"visitor to his shop is Kerchesh, the local fish seller."
+		"visitor to his shop is Kerchesh, the local fish seller.\n   0\n   | \n   @   \n     \n    \n"
 	);
 	set("night long",
 		"All of the store's fish and other seafood items have been "

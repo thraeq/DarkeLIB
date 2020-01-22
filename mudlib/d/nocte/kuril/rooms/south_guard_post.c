@@ -7,7 +7,7 @@ void create(){
 	set_property("indoors", 1);
 	set_property("light", 2);
 	set_property("no castle", 1);
-	set("short", "South City Guard Post");
+	set("short", "   \n    \n0--@   \n    \n   \nSouth City Guard Post");
 	set("long",
 		"Tables and chairs have been thrown carelessly into the "
 		"corner in order to leave space for make shift beds in the "
@@ -17,7 +17,7 @@ void create(){
 		"has become lazy and inefficient.  Especially with the "
 		"elite watchman patrolling the streets, the guard has been "
 		"left with little to do except gamble, drink, and cause "
-		"trouble."
+		"trouble.\n   \n    \n0--@   \n    \n   \n"
 	);
 	set_items( ([
 		({"tables", "chairs"}): "From the look of them, they're in "

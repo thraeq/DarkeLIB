@@ -27,14 +27,14 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Merchant Road");
+	set("short", "   0\n   | \n   @--0\n   | \n   0\nMerchant Road");
 	set("long",
 		"Sailors and dockhands walk to and fro going about their "
 		"business.  Wealthy merchant traders and poor beggars "
 		"fill the streets near the Kurilian Port.  To the east is "
 		"a large warehouse on the bottom floor of a large building."
 		"Have you ever seen such a large collection of filth and "
-		"decay in your life?"
+		"decay in your life?\n   0\n   | \n   @--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"sailors": "One mutters under his foul breath: 'Uljan will pay "

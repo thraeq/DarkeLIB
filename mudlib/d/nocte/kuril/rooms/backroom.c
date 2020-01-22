@@ -11,13 +11,13 @@ void create() {
 	set_property("no magic", 1);
 	set_property("no attack", 1);
 	set_property("no steal", 1);
-	set("short", "Back room of the Siren's Song");
+	set("short", "   \n    \n0--@   \n    \n   \nBack room of the Siren's Song");
 	set("long",
 		"Dim candle light illuminates the back room of the Siren's "
 		"Song.  Whispering voices can be heard in the corners of the "
 		"room while glowing night eyes gaze at you from the depths "
 		"of the many shadows within...  Along the back wall is a "
-		"plaque surrounded by a shimmering border."
+		"plaque surrounded by a shimmering border.\n   \n    \n0--@   \n    \n   \n"
 	);
 	set_items( ([
 		"candles": "They sputter softly while forming long trails "

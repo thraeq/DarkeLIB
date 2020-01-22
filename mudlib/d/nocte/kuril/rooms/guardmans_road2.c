@@ -17,13 +17,13 @@ void create() {
 	set_property("light", 1);
 	set_property("night light", -4);
 	set_property("no castle", 1);
-	set("short", "Guardman's Road");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nGuardman's Road");
 	set("long",
 		"You pass beneath a large building above you.  Two roads "
 		"extend "
 		"to the north, east, south, and west.  You can see shops "
 		"in all directions.  To the south is the Kurilian School of "
-		"Necromancy.  Darkness surrounds the structure."  
+		"Necromancy.  Darkness surrounds the structure.\n   0\n   | \n0--@--0\n   | \n   0\n"  
 	);
 	set_items( ([
 		"building": "It is connected to the buildings to the west.",

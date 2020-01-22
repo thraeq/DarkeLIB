@@ -36,13 +36,13 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Thieve's Court");
+	set("short", "\n   0\n   | \n0--@   \n   | \n   0\nThieve's Court");
 	set("long",
 		"To the south is the city's Parchment Shop.  An abandoned "
 		"grydan wanders about looking for something to eat.  "
 		"To the east is a large stone structure.  The walls of which "
 		"are covered with runes and sigils.  To the north is "
-		"Merchant's Road." 
+		"Merchant's Road.\n   0\n   | \n0--@   \n   | \n   0\n" 
 	);
 	set_items( ([
 		({"runes", "sigils"}): (: call_other, this_object(), 

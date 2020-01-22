@@ -38,7 +38,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Marketplace");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nMarketplace");
 	set("long",
 		"Kurilian citizens and merchants trade, barter, and sell "
 		"items from all around the world.  "
@@ -46,12 +46,12 @@ void create(){
 		"number of people is just astounding.  From the many different "
 		"faces you can see that most are not from Kuril.  In fact, "
 		"most come during the day but make sure they are gone by "
-		"nightfall....  To the north is a small candle shop.  "
+		"nightfall....  To the north is a small candle shop. \n   0\n   | \n0--@--0\n   | \n   0\n "
 	);
 	set("night long",
 		"A heavy fog rolls around you, in an all to eerie way, the "
 		"billowing clouds of fog engulf you into darkness.  You can "
-		"hear voices far to the east."
+		"hear voices far to the east.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"shop": "Well, why don't you go and take a look for " +

@@ -17,7 +17,7 @@ void create() {
 	set_property("no magic", 1);
 	set_property("no attack", 1);
 	set_property("no steal", 1);
-	set("short", "The Siren's Song");
+	set("short", "   \n    \n0--@--0\n    \n   \nThe Siren's Song");
 	set("long",
 		"Located in the seedier side of town, the Siren's Song has "
 		"been known to attract all sorts of beings to its doors.  "
@@ -26,7 +26,7 @@ void create() {
 		"table agreements took place here.  The back room is to the "
 		"east offering those who dare to enter a place for private "
 		"discussion and verbal exchange....  A menu has been posted "
-		"on the wall."
+		"on the wall.\n   \n    \n0--@--0\n    \n   \n"
 	);
 	set_items( ([
 		({"room", "back room"}):  "It is to the east from the main "

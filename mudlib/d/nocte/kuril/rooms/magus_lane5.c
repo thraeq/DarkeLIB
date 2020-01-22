@@ -30,7 +30,7 @@ void create() {
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "South City Gate");
+	set("short", "   0\n   | \n   @   \n     \n    \nSouth City Gate");
 	set("long",
 		"The burnt remains of a bridge that once crossed the ravine "
 		"and river below are here.  They mark the desperate measures "
@@ -38,7 +38,7 @@ void create() {
 		"from capturing this city.  Unfortunately, their efforts did "
 		"not succeed.  A large hole in the ground creates a haunting "
 		"sound as the ocean breeze blows across it.  Runes of some "
-		"sort form a ring around the hole."
+		"sort form a ring around the hole.\n   0\n   | \n   @   \n     \n    \n"
 	);
 	set_items( ([
 		"ravine": "Tall ravine walls now defend this city from "

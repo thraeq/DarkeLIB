@@ -38,18 +38,18 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Marketplace");
+	set("short", "   0\n   | \n0--@--0\n    \n   \nMarketplace");
 	set("long",
 		"Almost slipping on the slick stones, you manage to regain "
 		"your balance by grabbing onto the nearest person...which "
 		"just happens to be a necromancer.  You have best move along.  "
 		"Vigilent watchman maintain a constant watch over the "
-		"marketplace waiting for anyone to cause trouble."
+		"marketplace waiting for anyone to cause trouble.\n   0\n   | \n0--@--0\n    \n   \n"
 	);
 	set("night long",
 		"The slick stones beneath your feet offer very poor footing.  "
 		"To the west you can hear the ocean's waves slamming into the "
-		"piers."
+		"piers.\n   0\n   | \n0--@--0\n    \n   \n"
 	);
 	set_items( ([
 		"stones": "The stones are covered with gore and half dried "

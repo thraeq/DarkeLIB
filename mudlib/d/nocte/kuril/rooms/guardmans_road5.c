@@ -29,14 +29,14 @@ void create() {
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "North City Gate");
+	set("short", "   0\n   | \n   @--0\n   | \n   0\nNorth City Gate");
 	set("long",
 		"Directly to the north is the end of Guardman's Road while "
 		"to the east is what was once the Northern Guard Post.  "
 		"From disuse and time, it has fallen into a state of near "
 		"total ruin.  A make shift barrier has been erected and placed "
 		"in the doorway.  Made of cast off pieces of wood and metal, "
-		"it covers the entryway."
+		"it covers the entryway.\n   0\n   | \n   @--0\n   | \n   0\n"
 	);
 	set_items( ([
 		({"guard post", "post"}): "Do you dare even enter suck a "

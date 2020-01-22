@@ -7,13 +7,13 @@ void create(){
 	set_property("indoors", 1);
 	set_property("light", 2);
 	set_property("no castle", 1);
-	set("short", "City Guard Post");
+	set("short", "   \n    \n   @--0\n    \n   \nCity Guard Post");
 	set("long",
 		"Chairs are scattered about this messy room.  An old wooden "
 		"table sits in the center of the room.  Old food, cups, mugs, "
 		"and plates sit molding upon its top.  A few make shift beds "
 		"have been erected on the far wall to allow some to sleep.  "
-		"Upon your entrance filthy looking wenches glance over at you."
+		"Upon your entrance filthy looking wenches glance over at you.\n   \n    \n   @--0\n    \n   \n"
 	);
 	set_items( ([
 		"chairs": "Old and barely standing, they are about to fall "

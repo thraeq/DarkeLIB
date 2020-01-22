@@ -26,7 +26,7 @@ void create(){
 	set_property("light", 0);
 	set_property("night light", -5);
 	set_property("no castle", 1);
-	set("short", "Magus Lane");
+	set("short", "   0\n   | \n   @   \n   | \n   0\nMagus Lane");
 	set("long",
 		"You shiver as you pass by the School of Necromancy "
 		"to the east.  Something drops upon your shoulder...something "
@@ -37,7 +37,7 @@ void create(){
 		"continue living...sufering...never to find rest.  A blackish "
 		"rain has begun to fall soiling your clothes and filling the "
 		"streets with dirty water.  To the east is an old abandoned "
-		"shop."
+		"shop.\n   0\n   | \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"school": "You see some type of movement along the walls...",

@@ -28,7 +28,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "North City Gateway");
+	set("short", "    \n     \n   @   \n   | \n   0\nNorth City Gateway");
 	set("long",
 		"Just like those ancient city builders to construct another "
 		"road that leads nowhere.  Except for that large gapping hole "
@@ -37,7 +37,7 @@ void create(){
 		"that the hole is surrounded by runes.  "
 		"Surrounding you is a shear drop to "
 		"an untimely death.  Below you is a large river, pouring "
-		"vast quantities of water into the ocean. "
+		"vast quantities of water into the ocean.\n    \n     \n   @   \n   | \n   0\n "
 	);
 	set_items( ([
 		"road": "It continues southward passing right next to the "

@@ -28,7 +28,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Magus Lane");
+	set("short", "    \n     \n   @   \n   | \n   0\nMagus Lane");
 	set("long",
 		"You are at the northern most part of Magus Lane.  A collapsed "
 		"bridge is all that remains of a bridge that once extended "
@@ -37,7 +37,7 @@ void create(){
 		"swiftly past the city on its way to the ocean.  Ravine walls "
 		"surround the river in walls on stone.  To the south you can "
 		"see Magus Lane extending all the way past the School of "
-		"Necromancy."
+		"Necromancy.\n    \n     \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"ravine": "Cut by the river itself over millenia, the ravine "

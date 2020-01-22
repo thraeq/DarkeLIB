@@ -20,14 +20,14 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   \n     \n   @--0\n   | \n   0\nNobleman's Lane");
 	set("long",
 		"With the seedier elements of the city kept at bay by the "
 		"city watchmen, the wealthy are able to enjoy life in the "
 		"Noble Ward.  If fact, it's almost another city in itself "
 		"from the conditions around you.  Clean buildings, swept "
 		"streets, and not a ruffian to be seen!  Far to the east you "
-		"can see an archway at the end of the lane."
+		"can see an archway at the end of the lane.\n   \n     \n   @--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"ruffian": "Where!?!?!  Quick!  Call the watch!",

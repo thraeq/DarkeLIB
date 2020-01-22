@@ -15,7 +15,7 @@ void create(){
 	set_property("light", 2);
 	set_property("light night", -3);
 	set_property("no castle", 1);
-	set("short", "Dnerr's Adventurers Shop");
+	set("short", "    \n     \n   @   \n   | \n   0\nDnerr's Adventurers Shop");
 	set("long",
 		"Goods that any well prepared adventurer should have "
 		"line the walls of Dnerr's Adventurers Shop.  "
@@ -25,7 +25,7 @@ void create(){
 		"insight now provides would be adventurers with the tools "
 		"and equipment necessary for their profession.  A wooden "
 		"sign greets new visitors by almost smacking them in their "
-		"forehead as they enter the shop."
+		"forehead as they enter the shop.\n    \n     \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"sign": "Try 'read'ing it.",

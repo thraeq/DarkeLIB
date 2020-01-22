@@ -17,7 +17,7 @@ void create(){
 	set_property("no magic", 1);
 	set_property("no attack", 1);
 	set_property("no steal", 1);
-	set("short", "Golden Beers");
+	set("short", "   0\n   | \n   @   \n     \n    \nGolden Beers");
 	set("long",
 		"The wealthy clientele do their best to avoid staring at you.  "
 		"It's not often that visitors come to this city...more "
@@ -29,7 +29,7 @@ void create(){
 		"conduct their 'business'.  Given to taking quick insults "
 		"and equally fast with the blade, you had better watch "
 		"yourself around here if you want to avoid leaving feet "
-		"first.  There is a menu posted on the wall."
+		"first.  There is a menu posted on the wall.\n   0\n   | \n   @   \n     \n    \n"
 	);
 	set_listen("default", (: call_other, this_object(), "listen_default" :));
 	set_items( ([

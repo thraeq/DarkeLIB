@@ -40,7 +40,7 @@ void create(){
 	set_property("light", 1);
 	set_property("night light", -4);
 	set_property("no castle", 1);
-	set("short", "Magus Lane");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nMagus Lane");
 	set("long",
 		"Just west of the south guard post, you can see the end of "
 		"Magus Lane to the south.  Each night the South Ward Gate is "
@@ -53,7 +53,7 @@ void create(){
 		"corpses hanging from the walls of the temple.  A pillar of "
 		"dark smoke rises from the collapsed dome of the temple.  "
 		"The combination of smoke and the shadow of the looming school "
-		"of magic to the east makes for a very gloomy street."
+		"of magic to the east makes for a very gloomy street.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		({"post", "guard post"}): "From the condition of the exterior "

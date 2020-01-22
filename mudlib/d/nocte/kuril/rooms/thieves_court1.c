@@ -28,7 +28,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Thieve's Court");
+	set("short", "   0\n   | \n   @   \n   | \n   0\nThieve's Court");
 	set("long",
 		"Standing before the dark temple, you feel insignificant "
 		"next to the seething evil residing within.  A ball of "
@@ -40,7 +40,7 @@ void create(){
 		"scorched by searing heat, they are now black and pitted. "
 		"Runes of power have been litteraly carved into the stone. "
 		"A faint red glow can be seen in each cut.  The courtyard "
-		"in which you are standing continues southward."
+		"in which you are standing continues southward.\n   0\n   | \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"rock": "You have no idea what it is made of...perhaps it's "

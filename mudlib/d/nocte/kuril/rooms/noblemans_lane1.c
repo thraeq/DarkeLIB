@@ -40,7 +40,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   0\n   | \n0--@--0\n    \n   \n Nobleman's Lane");
 	set("long",
 		"Upon entering the heart of the Noble Ward you can see that "
 		"this area of Kuril is well kept.  The streets have been "
@@ -49,7 +49,7 @@ void create(){
 		"A cool breeze blows in from the sea.  "
 		"The cool air swirls around you bringing the scents of the "
 		"ocean with it.  Ah, refreshing.  A building right above you "
-		"shelters you from the elements."
+		"shelters you from the elements.\n   0\n   | \n0--@--0\n    \n   \n "
 	);
 	set_items( ([
 		"streets": "From the looks of things, this area is very "

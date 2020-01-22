@@ -16,7 +16,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", 0);
 	set_property("no castle", 1);
-	set("short", "Lupo's Butcher Shop");
+	set("short", "   \n    \n   @--0\n    \n   \nLupo's Butcher Shop");
 	set("long",
 		"A large chopping board sits in the middle of the room "
 		"while an aproned man raises his cleaver...CHOOM!  With "
@@ -25,7 +25,7 @@ void create(){
 		"to kick the piece of meat around the room all the while "
 		"yelling expletives too foul to repeat.  Hmm, I guess being "
 		"the only butcher shop in Kuril has allowed Lupo some "
-		"luxuries in his salesmanship technique."
+		"luxuries in his salesmanship technique.\n   \n    \n   @--0\n    \n   \n"
 	);
 	set("night long",
 		"While the shop is closed, the rats and mice come in to "

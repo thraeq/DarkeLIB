@@ -35,7 +35,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Merchant Road");
+	set("short", "   0\n   | \n   @--0\n   | \n   0\nMerchant Road");
 	set("long",
 		"The Lower Ward of Kuril is filled with the castouts and "
 		"'undesireables' of Kuril.  During the day, the watchmen keep "
@@ -45,7 +45,7 @@ void create(){
 		"safety.  So the south you can see a small fish market while."
 		"  You quickly make a mental note to be very careful next time "
 		"you are in the area at night." 
-		"  To the east you can see a large temple structure."
+		"  To the east you can see a large temple structure.\n   0\n   | \n   @--0\n   | \n   0\n"
 	);
 	set_items( ([
 		({"fish market", "market"}): "The fish market is to the " +

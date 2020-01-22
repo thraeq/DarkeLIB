@@ -37,7 +37,7 @@ void create() {
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Merchant Road");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nMerchant Road");
 	set("long",
 		"Welcome to Kuril, city of darkness, city of chaos.  "
 		"Here the dead out number the living.  Once "
@@ -56,7 +56,7 @@ void create() {
 		"is the local watering hole, the Siren's Song.  Serving "
 		"Kuril's waterfront clientelle, the Siren's Song is known "
 		"for it's strong ale and delicious stew...to name a few "
-		"things."
+		"things.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"tavern": "There is a large sign that reads:  The Siren's Song",

@@ -29,7 +29,7 @@ void create(){
 	set_property("light", 0);
 	set_property("night light", -5);
 	set_property("no castle", 1);
-	set("short", "Magus Lane");
+	set("short", "   0\n   | \n0--@   \n   | \n   0\nMagus Lane");
 	set("long",
 		"You are located on Magus Lane, the slick stones under "
 		"your feet provide little purchase.  To the east is the "
@@ -40,7 +40,7 @@ void create(){
 		"square foot of the school.  To the west is the city's "
 		"Magic Shop.  A shadow hangs over the School of Necromancy "
 		"making vision difficult at best.  "
-		"Magus Lane continues to the north and south."
+		"Magus Lane continues to the north and south.\n   0\n   | \n0--@   \n   | \n   0\n"
 	);
 	set_items( ([
 		"stones": "They are covered with a thin coat of slime.  From "

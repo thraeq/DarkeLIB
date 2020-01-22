@@ -24,7 +24,7 @@ void create(){
 	set_property("light", 0);
 	set_property("night light", -5);
 	set_property("no castle", 1);
-	set("short", "Fountain Square");
+	set("short", "   0\n   | \n0--@   \n   | \n   0\nFountain Square");
 	set("long",
 		"You notice runes carved in intricate patterns on the "
 		"ground.  Time, weather, and abuse has made them barely "
@@ -38,7 +38,7 @@ void create(){
 		"of the poor souls that will die tonight in some grisly "
 		"magical experiment.  Then again, their souls will "
 		"most likely live on....  A cloud of darkness blocks the "
-		"sun's light.  To the west is a guard post."
+		"sun's light.  To the west is a guard post.\n   0\n   | \n0--@   \n   | \n   0\n"
 	);
 	set_items( ([
 		({"spires", "school"}): "You notice that there are no "

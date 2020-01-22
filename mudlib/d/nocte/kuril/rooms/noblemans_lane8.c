@@ -30,7 +30,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   \n    \n0--@   \n    \n   \nNobleman's Lane");
 	set("long",
 		"Far below you a waterfall pours its waters into two rivers.  "
 		"The two rivers pour "
@@ -46,7 +46,7 @@ void create(){
 		"been traveling.  It's graceful designs and delicate carvings "
 		"mark it as elven in origin.  It seems like a very strange "
 		"place to place an arch, for if you tried to walk through it "
-		"you would fall to your peril to the rivers below."
+		"you would fall to your peril to the rivers below.\n   \n    \n0--@   \n    \n   \n"
 	);
 	set_items( ([
 		({"river", "rivers"}): "The curl around the city and flow into "

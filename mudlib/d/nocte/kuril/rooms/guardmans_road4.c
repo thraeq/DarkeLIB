@@ -40,7 +40,7 @@ void create(){
 	set_property("light", 0);
 	set_property("night light", -5);
 	set_property("no castle", 1);
-	set("short", "Guardman's Road");
+	set("short", "   0\n   | \n   @--0\n   | \n   0\nGuardman's Road");
 	set("long",
 		"You are now at the southern end of Guardman's Road.  To "
 		"the east is the Alchemist shop while to the south is the "
@@ -49,7 +49,7 @@ void create(){
 		"unseen wind.  A gloom seems to fill the air surrounding "
 		"the school.  A dried up fountain is located in this "
 		"courtyard.  Having gone dry centuries ago, a large tree has "
-		"begun to grow from inside the fountain."
+		"begun to grow from inside the fountain.\n   0\n   | \n   @--0\n   | \n   0\n"
 	);
 	set_items( ([
 		({"shop","alchemist shop"}): "You can see tons of bottles "

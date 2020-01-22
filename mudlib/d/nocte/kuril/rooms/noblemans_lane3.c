@@ -25,13 +25,13 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   \n     \n   @--0\n   | \n   0\nNobleman's Lane");
 	set("long",
 		"Nobleman's Lane takes a turn to the east as it passes "
 		"right next to the bakery to the west.  Fine houses, "
 		"towers, and mansions line the lane.  Obviously the houses "
 		"of the wealthy, they all have walls to keep the unwelcome "
-		"out..."
+		"out...\n   \n     \n   @--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"bakery": "You wonder what wondrous pastries and breads can "

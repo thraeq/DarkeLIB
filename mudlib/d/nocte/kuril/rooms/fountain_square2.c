@@ -32,7 +32,7 @@ void create(){
 	set_property("light", 0);
 	set_property("night light", -5);
 	set_property("no castle", 1);
-	set("short", "Fountain Square");
+	set("short", "   0\n   | \n0--@--0\n    \n   \n Fountain Square");
 	set("long",
 		"Passing beneath a building, you see a store to the north.  "
 		"On the ground you notice some runes connecting themselves "
@@ -44,7 +44,7 @@ void create(){
 		"It appears that at one time almost all of the buildings "
 		"in this city were all connected together.  Directly to the "
 		"south is the Kurilian School of Necromancy.  A pall of "
-		"darkness surrounds the building like a cloak."
+		"darkness surrounds the building like a cloak.\n   0\n   | \n0--@--0\n    \n   \n "
 	);
 	set_items( ([
 		"shop": "Fine leather goods for sale of course.",

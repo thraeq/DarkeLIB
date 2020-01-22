@@ -23,7 +23,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Nobleman's Lane");
+	set("short", "   0\n   | \n0--@   \n     \n    \nNobleman's Lane");
 	set("long",
 		"A large tavern can be seen immediately to the east.  Mutli-"
 		"coloured windows cast shades of colour onto the lane.  "
@@ -31,7 +31,7 @@ void create(){
 		"something you do not want to know about.  Not known for "
 		"its virtuousness, Kuril is still the home to many who will "
 		"go to any means to make a fortune or carve a piece of power "
-		"for themselves."
+		"for themselves.\n   0\n   | \n0--@   \n     \n    \n"
 	);
 	set_items( ([
 		"tavern": "Peering through the windows, you can see many "

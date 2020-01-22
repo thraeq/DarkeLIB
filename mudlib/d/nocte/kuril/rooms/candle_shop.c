@@ -16,7 +16,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Candlemaker's Shop");
+	set("short", "    \n     \n   @   \n   | \n   0\nCandlemaker's Shop");
 	set("long",
 		"Long rows of candles line the walls of Lydia's Candleshop.  "
 		"A small but quaint shop, Lydia specializes in candles and "
@@ -25,7 +25,7 @@ void create(){
 		"homes and castles.  "
 		"A soft glow fills the room from behind the counter.  "
 		"On top of a side table is a stack of torches and lanterns.  "
-		"Placed upon the counter is a small sign."
+		"Placed upon the counter is a small sign.\n    \n     \n   @   \n   | \n   0\n"
 	);
 	set("night long",
 		"The store has been left unattended for the evening."

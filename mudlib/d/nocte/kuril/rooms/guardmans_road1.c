@@ -18,7 +18,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Guardman's Road");
+	set("short", "   0\n   | \n   @   \n   | \n   0\nGuardman's Road");
 	set("long",
 		"Far to the north is the end of Guardman's Road.  Strange "
 		"that you can see no gate.  How on earth do they maintain "
@@ -26,7 +26,7 @@ void create(){
 		"the city bakery.  Directly above you is a building supported "
 		"by the surrounding structures.  To the south you can see "
 		"what appears to be a large hole in the underpart of the "
-		"supported building."
+		"supported building.\n   0\n   | \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"bakery": "You can only imagine what delicious goods must be "

@@ -20,7 +20,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Fountain Square");
+	set("short", "   0\n   | \n   @   \n   | \n   0\nFountain Square");
 	set("long",
 		"Passing beneath a building, you notice some runes connecting "
 		"themselves to the fountain to the south.  Citizens meander "
@@ -30,7 +30,7 @@ void create(){
 		"the riff-raff out of the Upper Ward.  Now how did you "
 		"sneak in?  To the south is the School of Necromancy.  "
 		"It appears that at one time almost all of the buildings "
-		"in this city were all connected together."
+		"in this city were all connected together.\n   0\n   | \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"runes": "The connect to the fountain to the south."

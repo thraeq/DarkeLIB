@@ -39,7 +39,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Merchant Road");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nMerchant Road");
 	set("long",
 		"Being the waterside district of Kuril, you see a long "
 		"pier to the west jutting out into the ocean.  Cracked, "
@@ -48,7 +48,7 @@ void create(){
 		"what that is.  It is along this road that the merchants and "
 		"citizens of Kuril ply and purchase goods and services.  "
 		"To the east is a marketplace while to the southeast is a "
-		"large multistoried building."
+		"large multistoried building.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 //		"pier": (: call_other, this_object(), "look_pier" :)

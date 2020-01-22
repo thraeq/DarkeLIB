@@ -42,7 +42,7 @@ void create() {
 	set_property("light", 1);
 	set_property("night light", -4);
 	set_property("no castle", -3);
-	set("short", "Fountain Square");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nFountain Square");
 	set("long",
 		"A large pool of water sits in the middle of a courtyard.  "
 		"Above you is the open sky.  The road continues in each "
@@ -65,14 +65,14 @@ void create() {
 		"keep the undesireables from the Lower Ward out during "
 		"the late evening hours.  To the south is the School of "
 		"Necromancy, even during the day darkness exudes from the "
-		"building."
+		"building.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set("night long", 
 		"Emerging from beneath a dark building, you find a "
 		"fountain with a jet of water emerging from its clear "
 		"surface.  A ward gate has been placed to the west to "
 		"keep the undead of the night out of the Upper Ward.  "
-		"A cry in the night stirs the peace of this place."
+		"A cry in the night stirs the peace of this place.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"building": "Wouldn't it just be the perfect place for your "

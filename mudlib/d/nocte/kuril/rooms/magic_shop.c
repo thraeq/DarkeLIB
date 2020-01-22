@@ -11,14 +11,14 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", 1);
 	set_property("no castle", 1);
-	set("short", "Magic Shop");
+	set("short", "   \n    \n   @--0\n    \n   \nMagic Shop");
 	set("long",
 		"Small globes cast a soft light in the Magic Shop.  Animals "
 		"from all over the world are being kept in small magic "
 		"stasis orbs.  Potions, elixers, and droughts can be "
 		"purchased here as well.  Magical reagents and spell "
 		"components from the common to the incredibly rare line the "
-		"shelves of this crowded shop."
+		"shelves of this crowded shop.\n   \n    \n   @--0\n    \n   \n"
 	);
 	set_items( ([
 		"sign": "The reads: 'say Tendra, help' for assistance",

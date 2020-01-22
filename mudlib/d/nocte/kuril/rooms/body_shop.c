@@ -14,12 +14,12 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", 2);
 	set_property("no castle", 1);
-	set("short", "Body Shop");
+	set("short", "    \n     \n   @   \n   | \n   0\nBody Shop");
 	set("long",
 		"Specializing in the purchase of dead bodies and corpses, "
 		"this shop buys any bodies.  These bodies are used by the "
 		"many necromancers in town for experiments and their foul "
-		"magic."
+		"magic.\n    \n     \n   @   \n   | \n   0\n"
 	);
 	set_items( ([
 		"sign": "The sign reads: 'say Abeyaratne, help' for assistance",

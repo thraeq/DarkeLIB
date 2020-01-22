@@ -40,20 +40,20 @@ void create() {
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Marketplace");
+	set("short", "   0\n   | \n0--@--0\n   | \n   0\nMarketplace");
 	set("long",
 		"Being the center of the Kurilian trade economy, the "
 		"marketplace is full of merchants and buyers during the "
 		"daylight hours.  Merchants sell their goods all around you.  "
 		"To the north is the corpse market while the marketplace "
-		"continues to the east and south."
+		"continues to the east and south.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set("night long",
 		"Now desolate, the marketplace of Kuril is quiet and empty.  "
 		"Creatures stir about you in the darkness.  Cries in the night "
 		"continue to remind you to keep alert.  A shop to the north "
 		"is open for some reason.  Strange that this shop has remained "
-		"open while all the others have long since closed."
+		"open while all the others have long since closed.\n   0\n   | \n0--@--0\n   | \n   0\n"
 	);
 	set_items( ([
 		"vendors": "They are very busy hangling over the values " +

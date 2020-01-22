@@ -45,7 +45,7 @@ void create() {
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Fountain Square");
+	set("short", "   0\n   | \n0--@--0\n    \n   \nFountain Square");
 	set("long",
 		"An ocean breeze swirls dust into your eyes as you pass "
 		"underneath a building.  To the north is a small shop "
@@ -54,7 +54,7 @@ void create() {
 		"rusted chains sqeak softly.  On the ground are runes.  "
 		"They connect toward a fountain to the east.  To the east "
 		"a cheap gate has been put up to keep out the residents of "
-		"the Lower Ward."
+		"the Lower Ward.\n   0\n   | \n0--@--0\n    \n   \n"
 	);
 	set_items( ([
 		"shop": "From here you can see many fine books waiting to " +

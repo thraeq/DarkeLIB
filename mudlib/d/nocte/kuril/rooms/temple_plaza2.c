@@ -47,7 +47,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Temple Plaza");
+	set("short", "   \n    \n0--@--0\n    \n   \nTemple Plaza");
 	set("long",
 		"Standing before this evil temple, you feel small and "
 		"insignificant next to the tide of evil that flows "
@@ -58,7 +58,7 @@ void create(){
 		"scared and marked with burns and carved runes.  The runes "
 		"glow with a redish light.  The entire effect is to make the "
 		"temple look like it has been cut apart and left to bleed to "
-		"death..."
+		"death...\n   \n    \n0--@--0\n    \n   \n"
 	);
 	set_items( ([
 		({"runes", "sigils"}): (: this_object(), "look_sigils" :),

@@ -24,7 +24,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "Northern City Guard Post");
+	set("short", "   \n    \n0--@   \n    \n   \nNorthern City Guard Post");
 	set("long",
 		"Tables, chairs, filthy clothes, and empty bottles litter "
 		"the floor of this room.  Once used by the original city "
@@ -33,7 +33,7 @@ void create(){
 		"enter while a make shift barrier has been constructed to "
 		"keep out the cold at night.  From the stench in the room "
 		"something is obviously rotting underneath all that trash "
-		"and refuse."
+		"and refuse.\n   \n    \n0--@   \n    \n   \n"
 	);
 	set_items( ([
 		({"tables", "chairs", "clothes", "bottles"}): "What a mess!!!",

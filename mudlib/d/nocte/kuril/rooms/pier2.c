@@ -41,7 +41,7 @@ void create(){
 	set_property("light", 2);
 	set_property("night light", -3);
 	set_property("no castle", 1);
-	set("short", "A city pier.");
+	set("short", "   \n    \nO  @--0\n   s \n    \nA city pier.");
 	set("long",
 		"You barely manage to keep your footing as you step on the "
 		"slippery pier.  An ocean breeze fills your nose with fresh "
@@ -56,7 +56,7 @@ void create(){
 		"instantly recognize the work of elven hands.  A cluster of "
 		"towers to the east, reaching for the sky like a clawing fist, "
 		"mark the location of the School of Necromancy.  To the east "
-		"is a road and a tavern of sorts." 
+		"is a road and a tavern of sorts.\n   \n    \nO  @--0\n   s \n    \n" 
 	);
 	set_items( ([
 	]) );
