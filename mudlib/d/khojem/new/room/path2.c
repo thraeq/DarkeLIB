@@ -10,12 +10,12 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded path");
+    set("short", "   0\n   | \n   @   \n   | \n   0\nA wooded path");
     set("day long", "You are on a north/south path.  The trees grow "+
       "close around and start to cut off the light above. "+
       "Off to the side you see a few squirrels scampering about.  "+
       "The trail extends southward and starts to wind about the "+
-      "trees to this point."
+      "trees to this point.\n   0\n   | \n   @   \n   | \n   0\n"
     );
     set("night long", "You are on a north/south path.  The trees grow "+
       "close around and start to cut off the night's light above. "+

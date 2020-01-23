@@ -16,9 +16,9 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded path");
+    set("short", "   0\n   | \n0--@--0\n    \n   \nA wooded path");
     set("long", "You are at an intersection of paths.  The trees grow "+
-      "close around and cut off some of the light from above. "
+      "close around and cut off some of the light from above.\n   0\n   | \n0--@--0\n    \n   \n"
     );
     add_exit("/d/khojem/new/room/annex2","east");
     add_exit("/d/khojem/new/room/annex6","west");

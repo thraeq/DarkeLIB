@@ -19,11 +19,11 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded platform");
+    set("short", "   0\n   | \n   @--0\n   | \n   0\nA wooded platform");
     set("long", "High-up in a tree a wooden platform is lashed together.  "+
       "This place appears to be a gathering place for the tree-living "+
       "wood-elves.  A place of business is north from here.  "+
-      "The forest floor is far below."
+      "The forest floor is far below.\n   0\n   | \n   @--0\n   | \n   0\n"
     );
     add_exit("/d/khojem/new/shop/grocery_shop","north");
     add_exit("walk7","south");

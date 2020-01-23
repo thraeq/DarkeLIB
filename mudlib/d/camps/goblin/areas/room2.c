@@ -7,8 +7,8 @@ void create() {
 	::create();
 	set_property("indoors", 2);
 	set_property("light", 1);
-	set("short", "A secret passage");
-	set("long", "A deeper secret passage in the goblin settlement, there seems something strange with the room, maybe in the walls or floor.");
+	set("short", "   0\n   u \n   @--0\n   | \n   0\nA secret passage");
+	set("long", "A deeper secret passage in the goblin settlement, there seems something strange with the room, maybe in the walls or floor.\n   0\n   u \n   @--0\n   | \n   0\n");
 	add_exit("room1", "up");
 	add_exit("cave4", "east");
 	add_exit("grom", "north");

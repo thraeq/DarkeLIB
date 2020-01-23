@@ -7,8 +7,8 @@ void create() {
 	::create();
 	set_property("indoors", 2);
 	set_property("light", 3);
-	set("short", "The room with a statue of a god");
-	set("long", "This is a large and spacious room which seems to be overtly clean.  There is nothing in this room except for a large statue.  The statue pretty much fills the whole room up with its massive size.");
+	set("short", "    \n     \n   @   \n   | \n   0\nThe room with a statue of a god");
+	set("long", "This is a large and spacious room which seems to be overtly clean.  There is nothing in this room except for a large statue.  The statue pretty much fills the whole room up with its massive size.\n    \n     \n   @   \n   | \n   0\n");
 set_exits( ({(ROOMS+"hallway")}), ({"south"}));
 	add_exit("room1", "down");
 	add_exit("cave3", "west");

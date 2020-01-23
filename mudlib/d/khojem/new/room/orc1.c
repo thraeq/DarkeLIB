@@ -10,10 +10,10 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 1);
-    set("short", "An underground passage");
+    set("short", "   \n     \n   @--0\n   | \n   0\nAn underground passage");
     set("long", "You are in an underground passage.  Dirt walls "+ 
       "surround the small passage and the dirt floor is hard and "+
-      "smooth from repeated use."
+      "smooth from repeated use.\n   \n     \n   @--0\n   | \n   0\n"
     );
     add_exit("orc2","east");
     add_exit("hole","south");

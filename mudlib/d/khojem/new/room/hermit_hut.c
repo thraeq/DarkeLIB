@@ -17,13 +17,13 @@ void create() {
     ::create();
     set_property("light", 3);
     set_property("indoors", 0);
-    set("short", "Hermit's Treehut");
+    set("short", "    \n     \n   @   \n   d \n   \nHermit's Treehut");
     set("long", "You have reached a small hut built here in the "+
       "treetops.  The rope which has served you well so far dangles "+
       "off into the darkness below. The hut is well lit and cheerful.  "+
       "The surroundings are clean and well maintained.  The hut "+
       "is sparsely furnished.  It contains only a chair, table, "+
-      "hutch, and bed."
+      "hutch, and bed.\n    \n     \n   @   \n   d \n   \n"
      );
     add_exit("htree2","down");
     set_items(([

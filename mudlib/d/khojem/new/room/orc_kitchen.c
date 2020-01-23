@@ -18,11 +18,11 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A small kitchen");
+    set("short", "   0\n   | \n   @   \n     \n    \nA small kitchen");
     set("long", "You are in a small room that is used as the kitchen "+
       "for these underground dwellers.  A small cooking fire is "+
       "burning in the center of the kitchen and the smoke drifts "+
-      "up to a hole high up in the ceiling."
+      "up to a hole high up in the ceiling.\n   0\n   | \n   @   \n     \n    \n"
     );
     add_exit("orc8","north");
     set_items(([

@@ -10,12 +10,12 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A suspended walkway");
+    set("short", "   0\n   | \n0--@--0\n    \n   \n A suspended walkway");
     set("long", "You are high above the forest floor on a swinging "+
       "rope bridge.  The bridge serves as a walkway between "+
       "trees.  Each tree has its own platform and the walkways "+
       "link the platforms together to form a small village above "+
-      "the forest floor."  
+      "the forest floor.\n   0\n   | \n0--@--0\n    \n   \n "  
     );
     add_exit("hut3","east");
     add_exit("walk1","west");

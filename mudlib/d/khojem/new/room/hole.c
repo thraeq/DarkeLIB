@@ -10,11 +10,11 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 1);
-    set("short", "A deep hole");
+    set("short", "   0\n   | \n   @   \n   h \n   \nA deep hole");
     set("long", "You are in an underground cave.  An opening through "+
       "the ceiling above allows in light, but is far too high for you "+
       "to climb up through it.  Dirt walls surround the small cavern "+
-      "and the dirt floor is hard and smooth from repeated use."
+      "and the dirt floor is hard and smooth from repeated use.\n   0\n   | \n   @   \n   h \n   \n"
     );
     add_exit("/d/khojem/new/room/orc1","north");
     add_exit("/d/khojem/new/room/hill2","hole");

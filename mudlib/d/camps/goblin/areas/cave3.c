@@ -7,8 +7,8 @@ void create() {
 	::create();
 	set_property("indoors", 2);
 	set_property("light", 3);
-	set("short", "The end of the east cave.");
-	set("long", "This is the end of the east cave, there are even more mushrooms here, bright ones, dark ones, shiny ones, dull ones, there are so many that it dazzles you with their multitude of colors.  Snotlings are here to pick and collect mushrooms, there are also snotlings taking a few samples.");
+	set("short", "   \n    \n0--@   \n    \n   \nThe end of the east cave.");
+	set("long", "This is the end of the east cave, there are even more mushrooms here, bright ones, dark ones, shiny ones, dull ones, there are so many that it dazzles you with their multitude of colors.  Snotlings are here to pick and collect mushrooms, there are also snotlings taking a few samples.\n   \n    \n0--@   \n    \n   \n");
 set_exits( ({(ROOMS+"cave1")}), ({"west"}));
 	add_exit("room1", "north");
 	add_exit("idolroom", "east");

@@ -17,11 +17,11 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A broad gallery");
+    set("short", "    \n     \n   @   \n   | \n   0\nA broad gallery");
     set("long", "You are standing within a large gallery.  The vaulted, ceiling "+
       "is trussed with large, wooden beams.  This is a place where the wood-elf "+
       "king conducts affairs of state.  Your footsteps echo through the large "+
-      "chamber."
+      "chamber.\n    \n     \n   @   \n   | \n   0\n"
     );
     add_exit("foyer","south");
     set_items(([

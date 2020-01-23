@@ -10,13 +10,13 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "Up a tree");
+    set("short", "   0\n   u \n   @   \n   d \n   \nUp a tree");
     set("long", "To your amazement this near slither of a rope is "+
       "holding your weight!  The rope has served you well so far.  "+
       "You are very high above the forest floor below you.  The light "+
       "here is greatly improved as you work your way through the "+
       "foliage.  The taunt rope extends above "+
-      "and below you.  A large branch reaches out to the north."
+      "and below you.  A large branch reaches out to the north.\n   0\n   u \n   @   \n   d \n   \n"
     );
     add_exit("htree1","down");
     add_exit("branch3","north");

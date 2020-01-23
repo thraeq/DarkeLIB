@@ -19,10 +19,10 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 1);
-    set("short", "An underground room");
+    set("short", "\n   \n    \n0--@   \n    \n   \nAn underground room");
     set("long", "This room appears to be a place for soldiers.  Weapons "+
       "line the walls.  Several benches are here to allow the soldiers "+
-      "to rest after standing their long watches."
+      "to rest after standing their long watches.\n   \n    \n0--@   \n    \n   \n"
     );
     add_exit("orc2","west");
     set_items(([

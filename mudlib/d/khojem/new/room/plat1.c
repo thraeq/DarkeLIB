@@ -25,10 +25,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded platform");
+    set("short", "   \n   l \n0--@--0\n    \n   \nA wooded platform");
     set("long", "High-up in a tree a wooden platform is lashed together.  "+
       "A ladder rest against the platform's edge.  The forest floor is "+
-      "far below."
+      "far below.\n   \n   l \n0--@--0\n    \n   \n"
     );
     add_exit("/d/khojem/new/room/walk1","east");
     add_exit("/d/khojem/new/room/walk9","west");

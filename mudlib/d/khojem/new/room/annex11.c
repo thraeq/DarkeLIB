@@ -21,9 +21,9 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded path");
+    set("short", "   0\n   | \n   @   \n     \n    \nA wooded path");
     set("long", "You are on a path.  The trees grow "+
-      "close around and cut off some of the light from above. "
+      "close around and cut off some of the light from above.\n   0\n   | \n   @   \n     \n    \n"
     );
     add_exit("/d/damned/virtual/room_14_20.world","north");
     add_exit("/d/khojem/new/room/annex9","stream");

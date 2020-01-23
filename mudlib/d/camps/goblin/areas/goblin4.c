@@ -7,8 +7,8 @@ void create() {
 	::create();
 	set_property("indoors", 2);
 	set_property("light", 3);
-	set("short", "A room in the hut");
-	set("long", "This is a room in the large hut, it is the largest room in the hut, with a long roughly built table in the center.  At the end of the table is a large goblin, maybe one of the champions of the settlement.  There are some goblins running around trying to make themselves look good to the champion.");
+	set("short", "    \n     \n   @   \n   | \n   0\nA room in the hut");
+	set("long", "This is a room in the large hut, it is the largest room in the hut, with a long roughly built table in the center.  At the end of the table is a large goblin, maybe one of the champions of the settlement.  There are some goblins running around trying to make themselves look good to the champion.\n    \n     \n   @   \n   | \n   0\n");
 set_exits( ({(ROOMS+"goblin2")}), ({"south"}));
 }
 	//add_exit("goblin3", "west");

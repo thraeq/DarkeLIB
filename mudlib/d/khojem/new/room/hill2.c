@@ -25,10 +25,10 @@ void create() {
     ::create();
     set_property("light", 3);
     set_property("indoors", 0);
-    set("short", "A steep, hill path");
+    set("short", "   \n     \n0--@   \n   d \n   \nA steep, hill path");
     set("long", "The steep trail ends here on a small clearing atop "+
       "the hill.  The forest bordering the clearing appears dense and "+
-      "impassible.  In the center of the small clearing is a hole."
+      "impassible.  In the center of the small clearing is a hole.\n   \n     \n0--@   \n   d \n   \n"
     );
     add_exit("/d/khojem/new/room/hole","down");
     add_exit("hill1","west");

@@ -15,10 +15,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A firefighter's station");
+    set("short", "   0\n   | \n   @   \n   | \n   0\nA firefighter's station");
     set("long", "This small, roofless platform serves one purpose in "+
       "this small, wood-elf village.  It is a central place from "+
-      "which fires may be fought.  The forest floor is far below."
+      "which fires may be fought.  The forest floor is far below.\n   0\n   | \n   @   \n   | \n   0\n"
     );
     add_exit("walk6","north");
     add_exit("walk8","south");

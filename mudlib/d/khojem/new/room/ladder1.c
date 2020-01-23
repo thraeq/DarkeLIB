@@ -18,11 +18,11 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "A wooded ladder");
+    set("short", "   \n   l \n   @--0\n     \n    \nA wooded ladder");
     set("long", "The path ends here.  A large tree is here and high up in "+
       "its branches you see a platform.  A ladder rest against the edge of "+
       "platform.  The trees grow "+
-      "close around and cut off some of the light from above. "
+      "close around and cut off some of the light from above.\n   \n   l \n   @--0\n     \n    \n"
     );
     add_exit("trail4","east");
     add_exit("plat1","ladder");

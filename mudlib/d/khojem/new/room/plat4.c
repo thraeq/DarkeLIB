@@ -17,10 +17,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded platform");
+    set("short", "   0\n   | \n0--@--0\n   | \n   0\nA wooded platform");
     set("long", "High-up in a tree a wooden platform is lashed together.  "+
       "Small huts are east and west from here.  A large, dome-shaped hut "+
-      "is to the south.  The forest floor is far below."
+      "is to the south.  The forest floor is far below.\n   0\n   | \n0--@--0\n   | \n   0\n"
     );
     add_exit("hut6","north");
     add_exit("mage_hut","south");

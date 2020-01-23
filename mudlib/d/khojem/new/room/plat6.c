@@ -16,10 +16,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded platform");
+    set("short", "   0\n   | \n   @--0\n   | \n   0\nA wooded platform");
     set("long", "High-up in a tree a wooden platform is lashed together.  "+
       "To the south is a larger hut with a sign.  "+
-      "The forest floor is far below."
+      "The forest floor is far below.\n   0\n   | \n   @--0\n   | \n   0\n"
     );
     add_exit("walk7","north");
     add_exit("/d/khojem/new/shop/pub","south");

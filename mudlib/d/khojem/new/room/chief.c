@@ -18,10 +18,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "Half-Orc Chief's Chamber");
+    set("short", "   \n    \n0--@   \n    \n   \nHalf-Orc Chief's Chamber");
     set("long", "You are in the Half-Orc Chief's Chamber.  "+
       "From here the chief makes his plans against the Wood-Elves.  "+
-      "A small fire burns here for light and warmth in the dank cave."
+      "A small fire burns here for light and warmth in the dank cave.\n   \n    \n0--@   \n    \n   \n"
     );
     add_exit("orc9","west");
     set_items(([

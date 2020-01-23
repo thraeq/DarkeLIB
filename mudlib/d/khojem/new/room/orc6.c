@@ -18,10 +18,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "Shaman's Chamber");
+    set("short", "\n   0\n   | \n   @   \n     \n    \nShaman's Chamber");
     set("long", "This room is the home of the Shaman.  The priest's home "+
       "is sparely furnished.  The dirt floor is tampered hard due long "+
-      "use and the walls are bare."
+      "use and the walls are bare.\n   0\n   | \n   @   \n     \n    \n"
     );
     add_exit("orc3","north");
     set_items(([

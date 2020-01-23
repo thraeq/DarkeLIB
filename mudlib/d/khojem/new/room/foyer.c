@@ -17,10 +17,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A wide foyer");
+    set("short", "   0\n   | \n   @   \n   | \n   0\nA wide foyer");
     set("long", "This is a wide foyer.  People that require an audience "+
       "with the king wait here.   "+
-      "The foyer is filled with paintings."
+      "The foyer is filled with paintings.\n   0\n   | \n   @   \n   | \n   0\n"
     );
     add_exit("gallery","north");
     add_exit("plat3","south");

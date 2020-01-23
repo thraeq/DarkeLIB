@@ -17,11 +17,11 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A small wood-elf hut");
+    set("short", "    \n     \n   @   \n   | \n   0\nA small wood-elf hut");
     set("long", "This is a small, one-room hut with a thatched roof.  "+
       "The small, stone hearth with its fire makes this a "+
       "warm, comfortable place.  The window provides fresh air "+
-      "and light.  A short table is surrounded by equally short chairs."   
+      "and light.  A short table is surrounded by equally short chairs.\n    \n     \n   @   \n   | \n   0\n"   
     );
     add_exit("plat4","south");
     set_items(([

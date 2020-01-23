@@ -20,10 +20,10 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A nursery");
+    set("short", "   0\n   | \n   @   \n     \n    \nA nursery");
     set("long", "You are in a small nursery for the elven children.  "+
       "The hut is well maintained and several small chairs and desks "+
-      "are arranged here."
+      "are arranged here.\n   0\n   | \n   @   \n     \n    \n"
     );
     add_exit("/d/khojem/new/room/annex6","north");
     set_items(([

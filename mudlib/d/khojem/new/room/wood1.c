@@ -10,12 +10,12 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "Dark woods");
+    set("short", "   0\n   | \n0--@--0\n   | \n   0\nDark woods");
     set("long", "You are closely surrounded by dense wooded growth.  "+
       "The tall, towering trees above block all light to you.  "+
       "There are no signs of a trail or path to guide you through "+
       "this maze of densely wooded growth.  Even if there were a "+
-      "trail it would prove hard to follow in this darkness."
+      "trail it would prove hard to follow in this darkness.\n   0\n   | \n0--@--0\n   | \n   0\n"
     );
     add_exit("wood3","north");
     add_exit("wood2","east");

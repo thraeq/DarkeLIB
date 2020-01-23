@@ -18,9 +18,9 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "A wooded path");
+    set("short", "   \n    \n0--@--0\n    \n   \nA wooded path");
     set("long", "You are on an east/west path.  The trees grow "+
-      "close around and cut off most of the available light from above. "
+      "close around and cut off most of the available light from above.\n   \n    \n0--@--0\n    \n   \n"
     );
     add_exit("hill1","east");
     add_exit("trail1","west");

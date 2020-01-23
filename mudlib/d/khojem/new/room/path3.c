@@ -10,11 +10,11 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "A dark path intersection");
+    set("short", "   0\n   | \n0--@--0\n   | \n   0\nA dark path intersection");
     set("day long", "You follow the winding trail to this point.  "+
       "The trees grow close all around and shroud most of the light "+
       "from above.  The trail splits here in all directions and "+
-      "appears more frequently used by others."
+      "appears more frequently used by others.\n   0\n   | \n0--@--0\n   | \n   0\n"
     );
     set("night long", "You follow the winding trail to this point.  "+
       "The trees grow close all around and shroud most of the night's light "+
