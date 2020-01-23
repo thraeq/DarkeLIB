@@ -13,8 +13,8 @@ void reset() {
 
     set_property("light", 4);
     set_property("indoors", 1);
-    set("short", "Weapon Store");
-    set("long", "The only weapon store in all of Newbieville is run by Don Juan, who built the business by hand and hammer. He charges fair prices, and delivers high quality wares. There is a staircase leading upwards, but is blocked by a large iron door that Don also protects.");
+    set("short", "   0\n   | \n0--@   \n     \n    \nWeapon Store");
+    set("long", "The only weapon store in all of Newbieville is run by Don Juan, who built the business by hand and hammer. He charges fair prices, and delivers high quality wares. There is a staircase leading upwards, but is blocked by a large iron door that Don also protects.\n   0\n   | \n0--@   \n     \n    \n");
     add_exit(ROOMS+"commonstreet", "west");
     add_exit(ROOMS+"lightway", "north");
     add_exit(ROOMS+"wstores", "up");

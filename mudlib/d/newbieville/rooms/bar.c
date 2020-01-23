@@ -24,13 +24,13 @@ void create() {
     ::create();
     set_property("light", 4);
     set_property("indoors", 1);
-    set("short", "A Bar");
+    set("short", "   \n     \n   @--0\n   | \n   0\nA Bar");
     set("long",
         "This is the world-renowned bar of Newbieville. There are "+
         "many people in here, but they are mostly keeping to themselves. "+
         "This feels like a good place to relax, due to the clean air "+
         "and plesant smell. You see a sign in on the wall, perhaps "+
-        "detailing the prices. "
+        "detailing the prices.\n   \n     \n   @--0\n   | \n   0\n"
         );
     set_items(([
      ({ "pub", "alehouse" }) :
